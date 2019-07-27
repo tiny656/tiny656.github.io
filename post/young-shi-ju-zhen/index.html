@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>Young氏矩阵 | Gridea</title>
+<meta name="description" content="温故而知新">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://tiny656.github.io/favicon.ico?v=1564243137311">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="stylesheet" href="https://tiny656.github.io/styles/main.css">
+
+
+  
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/disqusjs@1.1/dist/disqusjs.css" />
+  
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://tiny656.github.io">
+        <img src="https://tiny656.github.io/images/avatar.png?v=1564243137311" class="site-logo">
+        <h1 class="site-title">Gridea</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      温故而知新
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://tiny656.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">Young氏矩阵</h2>
+            <div class="post-date">2014-07-09</div>
+            
+            <div class="post-content">
+              <h3 id="定义">定义</h3>
+<p>一个<span class='katex-error' title='ParseError: KaTeX parse error: Undefined control sequence: \* at position 2: m\̲*̲n'>m\*n</span>的Young氏矩阵是指，每一行数据都是从左到右排好序，每一列的数据也都是从上到下排好序。其中也可能存在一些INF的数据，他们表示不存在的元素，一个<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>m</mi><mo>×</mo><mi>n</mi></mrow><annotation encoding="application/x-tex">m \times n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.66666em;vertical-align:-0.08333em;"></span><span class="mord mathdefault">m</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">n</span></span></span></span>的Young氏矩阵最多用来存放 <span class='katex-error' title='ParseError: KaTeX parse error: Undefined control sequence: \* at position 7: r &lt;= m\̲*̲n'>r &lt;= m\*n</span>个元素。</p>
+<!--more-->
+<p>具体也可以参考《算法导论》P.83</p>
+<h3 id="主要api">主要API</h3>
+<p>Young氏矩阵类似于堆的结构，主要实现的API包括以下：</p>
+<hr>
+<h4 id="void-insertint-x">void insert(int x)</h4>
+<p>功能：将一个元素x插入到矩阵中,复杂度<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><mi>m</mi><mo>+</mo><mi>n</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">O(m+n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathdefault">m</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">n</span><span class="mclose">)</span></span></span></span></p>
+<p>算法过程：</p>
+<ol>
+<li>
+<p>判断矩阵是否为Full</p>
+</li>
+<li>
+<p>如果不为Full，插入元素到矩阵的右下角(row, col)位置，然后进行swim(row, col)将元素移动到合适位置。</p>
+</li>
+</ol>
+<hr>
+<h4 id="int-getmin">int getMin()</h4>
+<p>功能：返回矩阵中的最小值,复杂度<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><mn>1</mn><mo>)</mo></mrow><annotation encoding="application/x-tex">O(1)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord">1</span><span class="mclose">)</span></span></span></span></p>
+<p>算法过程：</p>
+<ol>
+<li>
+<p>判断矩阵是否为Empty</p>
+</li>
+<li>
+<p>直接返回mat[0][0].左上角元素，依据矩阵的性质</p>
+</li>
+</ol>
+<hr>
+<h4 id="int-delmin">int delMin()</h4>
+<p>功能：返回矩阵中的最小值，并把它从矩阵中删除,复杂度<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><mi>m</mi><mo>+</mo><mi>n</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">O(m+n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathdefault">m</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">n</span><span class="mclose">)</span></span></span></span></p>
+<p>算法过程：</p>
+<ol>
+<li>
+<p>判断矩阵是否为Empty</p>
+</li>
+<li>
+<p>暂存mat[0][0]元素用于返回，把矩阵最右下角的元素放到mat[0][0]，使用sink(0, 0)进行下沉调整元素到合适位置</p>
+</li>
+</ol>
+<hr>
+<h4 id="bool-seachint-x">bool seach(int x)</h4>
+<p>功能：判断矩阵是否存在元素x,复杂度<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><mi>m</mi><mo>+</mo><mi>n</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">O(m+n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathdefault">m</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">n</span><span class="mclose">)</span></span></span></span></p>
+<p>算法过程：</p>
+<p>版本1：通过递归的方式，比较当前mat[x][y] 和 key的关系，将划分到是否需要在<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>(</mo><mi>m</mi><mo>−</mo><mn>1</mn><mo>)</mo><mo>×</mo><mi>n</mi></mrow><annotation encoding="application/x-tex">(m-1) \times n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathdefault">m</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">1</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">n</span></span></span></span>子矩阵和<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>m</mi><mo>×</mo><mo>(</mo><mi>n</mi><mo>−</mo><mn>1</mn><mo>)</mo></mrow><annotation encoding="application/x-tex">m \times (n-1)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.66666em;vertical-align:-0.08333em;"></span><span class="mord mathdefault">m</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathdefault">n</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">1</span><span class="mclose">)</span></span></span></span>子矩阵进行递归查找</p>
+<p>版本2：初始位置为矩阵右上角，如果当前元素大于key，向左移动，如果当前元素小于key向下移动。</p>
+<hr>
+<h4 id="void-sort">void sort()</h4>
+<p>功能：对矩阵元素进行排序，对矩阵执行元素个数次的delMin()操作就可以得到排序结果。复杂度<span class='katex-error' title='ParseError: KaTeX parse error: Undefined control sequence: \* at position 4: O(n\̲*̲m\*(n+m))'>O(n\*m\*(n+m))</span></p>
+<hr>
+<h4 id="辅助函数">辅助函数</h4>
+<p><strong>下面两个函数的实现与实现堆操作的swim和sink操作思想完全一样</strong></p>
+<p>void swim(int i, int j)</p>
+<p>功能：对(i, j)位置元素进行上浮操作，与(i-1, j) 和 (i, j-1)位置的元素进行比较，与他们之间的最大值进行交换</p>
+<p>void sink(int i, int j)</p>
+<p>功能：对(i, j)位置元素进行下沉操作，与(i+1, j) 和 (i, j+1)位置的元素进行比较， 与他们之间的最小值进行交换</p>
+<hr>
+<h3 id="完整代码">完整代码</h3>
+<pre><code class="language-cpp">const int INF = 0x3fffffff;
+
+class YoungMatrix {
+public:
+    YoungMatrix(int row, int col); // constructor
+    ~YoungMatrix(); // destructor
+
+    void insert(int x); // insert a element
+    int delMin(); // delete and return the minimal element
+    bool search(int x, int version = 1); // search a element
+    int getMin(); // return the minimal element
+    // sort(); // 调用 n*n delMin()得到结果n*n*(n+n) O(n^3)
+
+    // print the matrix
+    void printMatrix() {
+        for (int i = 0; i &lt; row; i++) {
+            for (int j = 0; j &lt; col; j++)
+                cout &lt;&lt; mat[i][j] &lt;&lt; &quot;\t&quot;;
+            cout &lt;&lt; endl;
+        }
+        cout &lt;&lt; endl;
+    }
+
+    /*** auxiliary function ***/
+private:
+    void swim(int i, int j); // swim the element at (i, j), 从右下角上升到左上角
+    void sink(int i, int j); // sink the element at (i, j), 从左上角下沉到右下角
+
+    // recursive function to search the element,
+    // divide the problem into sub-matrix (m, n-1) and (m-1, n)
+    bool searchHelp1(int x, int y, int key);
+
+    // init the position in (0, col-1).
+    // like go down the stairs from right to left
+    bool searchHelp2(int key);
+
+private:
+    int **mat;
+    int row, col;
+    int num;
+};
+
+YoungMatrix::YoungMatrix(int row, int col) {
+    this-&gt;num = 0;
+    this-&gt;row = row;
+    this-&gt;col = col;
+    mat = new int*[row];
+    for (int i = 0; i &lt; row; i++)
+        mat[i] = new int[col];
+    for (int i = 0; i &lt; row; i++)
+    for (int j = 0; j &lt; col; j++)
+        mat[i][j] = INF;
+}
+
+YoungMatrix::~YoungMatrix() {
+    for (int i = 0; i &lt; row; i++)
+        delete[] mat[i];
+    delete[] mat;
+}
+
+void YoungMatrix::swim(int i, int j) {
+    while (true) {
+        int v = mat[i][j], p = -1;
+        if (i - 1 &gt;= 0 &amp;&amp; v &lt; mat[i - 1][j]) { v = mat[i - 1][j], p = 0; }
+        if (j - 1 &gt;= 0 &amp;&amp; v &lt; mat[i][j - 1]) { v = mat[i][j - 1]; p = 1; }
+
+        if (p == -1) break;
+
+        if (p == 0) {
+            swap(mat[i - 1][j], mat[i][j]);
+            i -= 1;
+        }
+        else {
+            swap(mat[i][j - 1], mat[i][j]);
+            j -= 1;
+        }
+    }
+}
+
+void YoungMatrix::sink(int i, int j) {
+    while (true) {
+        int v = mat[i][j], p = -1;
+        if (i + 1 &lt; row &amp;&amp; v &gt; mat[i + 1][j]) { v = mat[i + 1][j], p = 0; }
+        if (j + 1 &lt; col &amp;&amp; v &gt; mat[i][j + 1]) { v = mat[i][j + 1]; p = 1; }
+
+        if (p == -1) break;
+
+        if (p == 0) {
+            swap(mat[i + 1][j], mat[i][j]);
+            i += 1;
+        }
+        else {
+            swap(mat[i][j + 1], mat[i][j]);
+            j += 1;
+        }
+    }
+}
+
+void YoungMatrix::insert(int x) {
+    // is full?
+    if (num == col * row) {
+        cerr &lt;&lt; &quot;Error: the matrix is full&quot; &lt;&lt; endl;
+        return;
+    }
+
+    // put at the last position
+    this-&gt;num++;
+
+    int i = row - 1, j = col - 1;
+    mat[i][j] = x;
+    swim(i, j);
+}
+
+int YoungMatrix::getMin() {
+    if (this-&gt;num &gt; 0) return mat[0][0];
+    else {
+        cerr &lt;&lt; &quot;Error: The matrix is empty&quot; &lt;&lt; endl;
+        return -1;
+    }
+}
+
+int YoungMatrix::delMin() {
+    if (this-&gt;num &lt;= 0) {
+        cerr &lt;&lt; &quot;Error: The matrix is empty&quot; &lt;&lt; endl;
+        return -1;
+    } else {
+        int ret = mat[0][0];
+        mat[0][0] = mat[row - 1][col - 1];
+        this-&gt;num--;
+        sink(0, 0);
+        return ret;
+    }
+}
+
+bool YoungMatrix::search(int x, int version) {
+    if (this-&gt;num &lt;= 0) return false;
+    if (version == 1) {
+        return searchHelp1(0, 0, x);
+    } else {
+        return searchHelp2(x);
+    }
+}
+
+
+bool YoungMatrix::searchHelp1(int x, int y, int key) {
+    if (x &gt;= row || y &gt;= col) return false;
+    if (mat[x][y] &lt; key) return searchHelp1(x + 1, y, key) || searchHelp1(x, y + 1, key);
+    else if (mat[x][y] &gt; key) return false;
+    else return true;
+}
+
+bool YoungMatrix::searchHelp2(int key) {
+    int i = 0, j = col - 1;
+    while (true) {
+        if (i &gt;= row || j &gt;= col) return false;
+        if (mat[i][j] == key) return true;
+        else if (mat[i][j] &lt; key) i++;
+        else if (mat[i][j] &gt; key) j--;
+    }
+}
+</code></pre>
+
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://tiny656.github.io/tag/qt77konh0" class="tag">
+                    Data Structure
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://tiny656.github.io/post/bing-cha-ji-union-find-sets">
+                  <h3 class="post-title">
+                    并查集(Union Find Sets)
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+              
+
+              
+                <div id="disqus_thread" data-aos="fade-in"></div>
+              
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<script type="application/javascript">
+
+AOS.init();
+
+hljs.initHighlightingOnLoad()
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+  
+
+  
+    <script src="https://unpkg.com/disqusjs@1.1/dist/disqus.js"></script>
+    <script>
+
+    var options = {
+      shortname: 'tiny656',
+      apikey: 'KPROXOCtTYtTmQ5bfpCsNOgeDwKNaqYYL8fpjSKmHR9k9rsImDKH6OILEtON2fpw',
+    }
+    if ('https://disqus.skk.moe/disqus/') {
+      options.api = 'https://disqus.skk.moe/disqus/'
+    }
+    var dsqjs = new DisqusJS(options)
+
+    </script>
+  
+
+
+
+
+  </body>
+</html>

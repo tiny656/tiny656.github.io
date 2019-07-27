@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>并查集(Union Find Sets) | Gridea</title>
+<meta name="description" content="温故而知新">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://tiny656.github.io/favicon.ico?v=1564243137311">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="stylesheet" href="https://tiny656.github.io/styles/main.css">
+
+
+  
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/disqusjs@1.1/dist/disqusjs.css" />
+  
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://tiny656.github.io">
+        <img src="https://tiny656.github.io/images/avatar.png?v=1564243137311" class="site-logo">
+        <h1 class="site-title">Gridea</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      温故而知新
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://tiny656.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">并查集(Union Find Sets)</h2>
+            <div class="post-date">2014-07-08</div>
+            
+            <div class="post-content">
+              <h3 id="并查集是什么">并查集是什么？</h3>
+<p>并查集是一种树型的数据结构，用于处理一些不相交集合（Disjoint Sets）的合并及查询问题。常常在使用中以森林来表示。<br>
+集就是让每个元素构成一个单元素的集合，也就是按一定顺序将属于同一组的元素所在的集合合并。</p>
+<!--more-->
+<h3 id="并查集能做什么">并查集能做什么？</h3>
+<p>1.连接两个对象;</p>
+<p>2.查询两个对象是否在一个集合中，或者说两个对象是否是连接在一起的。</p>
+<h3 id="并查集有什么应用">并查集有什么应用？</h3>
+<ol>
+<li>
+<p>Percolation问题、</p>
+</li>
+<li>
+<p>无向图连通子图个数</p>
+</li>
+<li>
+<p>最近公共祖先问题</p>
+</li>
+<li>
+<p>Kruskal最小生成树</p>
+</li>
+<li>
+<p>社交网络 等等</p>
+</li>
+</ol>
+<h3 id="并查集数据结构">并查集数据结构：</h3>
+<p>并查集是一种树形的数据结构，处理不相交集合的合并和查询操作。</p>
+<p>并查集常用的启发式策略：路径压缩，按秩合并(或按集合元素个数合并)</p>
+<p>路径压缩是为了加快查找的效率，让树变得竟可能的平。</p>
+<p>按秩合并(或按集合元素个数合并)是一种加权合并的策略，让包含较少节点的根指向较多节点的根。</p>
+<p>初始化：每个元素自身代表一个集合</p>
+<pre><code class="language-cpp">void init(int n) {
+    for (int i = 0; i &lt;= n; i++) {
+        fa[i] = i;
+        rank[i] = 0;
+    }
+}
+</code></pre>
+<p>查找：找到当前集合的最顶端元素，并且在查找的过程中进行路径压缩，下面是三种查找的写法，第一种递归查找并压缩路径，第二种显式的进行查找和压缩，第三种两次遍历，第一次找根，第二次进行路径压缩。</p>
+<pre><code class="language-cpp">int find(int x) {
+    return (x==fa[x]) ? x : (fa[x]=find(fa[x]));
+}
+
+int find(int x) {
+    while (x != fa[x]) {
+        fa[x] = fa[fa[x]];
+        x = fa[x];
+    }
+    return x;
+}
+
+int find(int x) {
+    int root = x;
+    while (root != fa[root]) root = fa[root];
+
+    while (x != fa[x]) {
+        fa[x] = root;
+        x = fa[x];
+    }
+    retur root;
+}
+</code></pre>
+<p>合并：合并操作将p和q所在的集合，合并在一起，合并采用了按秩合并的启发式策略。</p>
+<pre><code class="language-cpp">void unionSet(int p, int q) {
+    int fp = find(p);
+    int fq = find(q);
+    if (fp == fq)    return;
+    if (rank[fp] &lt; rank[fq]) fa[fp] = fq;
+    else {
+        fa[fq] = fp;
+        if (rank[fp] == rank[fq])    rank[fp]++;
+    }
+}
+</code></pre>
+<p>集合关系：判断p和q是否在同一集合中</p>
+<pre><code class="language-cpp">bool connected(int p, int q) {
+    return find(p) == find(q);
+}
+</code></pre>
+<p>基本的带路径压缩的按秩合并的并查集结构就差不多是这样.</p>
+<h3 id="经典题目">经典题目</h3>
+<h4 id="poj-1182-食物链">POJ 1182 食物链</h4>
+<p>经典的种类并查集，参考《挑战程序设计》上的思想，对于动物X我们分别使用X表示A种类，X+n表示B种类，X+2n表示C种类。</p>
+<p>主要思考如何判断当前话与前面的话冲突。</p>
+<p>对于输入1, x, y来说，这句话表明x, y是同类，那么如果x的A种类与y的B种类，或者x的A种类与y的C种类为一个集合，那么这句话就是假话。否则，我们就要把x与y的A种类合并，x与y的B种类合并，x与y的C种类合并。</p>
+<pre><code class="language-cpp">if (connected(x, y+n) || connected(x, y+2*n)) {
+    ans++;
+} else {
+    unionSet(x, y);
+    unionSet(x+n, y+n);
+    unionSet(x+2*n, y+2*n);
+}
+</code></pre>
+<p>对于输入2, x, y来说，这句话表明x吃y，如果x的A种类与y的A种类为一个集合，那么同类集合不能捕食，这是假话。如果x的A种类与y的C种类为一个集合，表明y捕食x，这也是不正确的。其他情况下，就可以合并x的A种类与y的B种类，x的B种类与y的C种类，x的C种类与y的A种类。</p>
+<pre><code class="language-cpp">if (connected(x, y) || connected(x, y+2*n)) {
+    ans++;
+} else {
+    unionSet(x, y+n);
+    unionSet(x+n, y+2*n);
+    unionSet(x+2*n, y);
+}
+</code></pre>
+<p>完整代码：https://gist.github.com/tiny656/edc34d790461afae190e#file-poj_1182-cpp</p>
+<p>BTW，坑爹的这道题是单Case。</p>
+<h4 id="poj-2524-ubiquitous-religions">POJ 2524 Ubiquitous Religions</h4>
+<p>初始每个元素为一个集合，将输入p和q集合合并，最后输出有多少个集合。使用一个component变量维护集合的数量，初始为N个，每当两个不在同一个集合的p和q进行合并时，component的数量就减去1，最后component存储的就是集合数。</p>
+<p>完整代码：https://gist.github.com/tiny656/edc34d790461afae190e#file-poj_2524-cpp</p>
+<h4 id="poj-1611-the-suspects">POJ 1611 The Suspects</h4>
+<p>题意是不断进行集合合并操作，最后输出0所在集合的大小。这里我们就可以使用前面提到的按照集合元素个数的启发式规则来进行合并，最后输出0所在集合最顶端元素的集合元素个数，就是所要求解的答案了。其他的方法我们也可以把所有集合合并完后，对除0以外的所有进行判断是否Find(0) == Find(other)成立，这样来统计0所在集合元素个数。</p>
+<p>完整代码：https://gist.github.com/tiny656/edc34d790461afae190e#file-poj_1611-cpp</p>
+<h4 id="poj-1456-supermarket">POJ 1456 Supermarket</h4>
+<p>题目描述的是对于每个商品有p和d，分别代表商品的价值和它要卖出的截止时间。</p>
+<p>那么我们可以有一个贪心的策略，将商品按照价值从大到小进行排序，如果价值相同按照时间从大到小进行排序，我们要获取的商品价值越大越好，截止时间越久我们选择的空间就越不会与其他时间发生冲突。使用一个d[]标记哪些截止时间被用掉了，如果被用掉，我们就去截止时间之前找未被使用的截止时间，如果没被用掉的，就直接使用。</p>
+<p>完整代码：https://gist.github.com/tiny656/edc34d790461afae190e#file-poj_1456v2-cpp</p>
+<p>那么这题并查集又有什么关系？当我们发现某个截止时间被用掉了，我们for循环向前去枚举查找，没有被用掉的截止时间，这里并查集登场了。用并查集去替代for循环去查找，将被用过的当前点i与它的前一个点i-1进行合并，当我们要知道i之前未使用的截止时间时候，我们只要pos = find(i.time)，就得到了它的位置，细节地方注意一下边界。</p>
+<p>完整代码：https://gist.github.com/tiny656/edc34d790461afae190e#file-poj_1456v1-cpp</p>
+<h4 id="poj-1703-find-them-catch-them">POJ 1703 Find them, Catch them</h4>
+<p>和食物链类似的种类并查集，对于某人X，用X表示他所在的帮派，X+n表示他的敌对帮派。</p>
+<p>对于操作 D, x, y，x和y属于不同帮派，那么x所在帮派和y的敌对帮派是同盟，union(x, y+n)，x的敌对帮派与y的帮派是同盟，union(x+n, y)。敌人的敌人是朋友</p>
+<p>对于操作 A, x, y, 判断x 和 y是否是同一帮派，如果find(x) == find(y)，那么就是同一帮派了。如果find(x) == find(y+n)， 那么就是敌对帮派了。其他就是未知。</p>
+<p>完整代码：https://gist.github.com/tiny656/edc34d790461afae190e#file-poj_1703-cpp</p>
+<h4 id="poj-1988-cube-stacking">POJ 1988 Cube Stacking</h4>
+<p>这个题目描述是有N个栈，初始每个栈里面是1-N个方块，定义两个操作，第一个操作是M X Y，将X所在的栈移动到Y所在的栈的上面，另一个操作是C X，当前X下面有多少个方块。</p>
+<p>采用并查集实现，对于M X Y操作， X所在栈放在Y所在栈上面，我们要合并X，Y所在集合，把Y所在的集合指向X所在的集合。但是对于C X操作进行查询的时候，我们如何得到X下面有多少个方块？如果我们记录了当前点并查集最顶根的距离，如果我们又知道了当前这个并查集元素个数，size为多大，那么二者之差减1就可以得到C X操作的结果了。</p>
+<p>那么点到的根的距离如何维护，我们用数组up[]，up[x]表示x到他所在并查集树根的距离，初始时候每个自身为树根，那么up[] = 0,在进行合并时候，我们相当于在X集合上附加了一个集合Y，那么初始X集合的root到自身距离为0，现在root指向了Y的root，就被修正成了Y所在集合大小也就是sz[fy]，然后还要更新Y所在集合的大小sz[fy] += sz[fx]</p>
+<pre><code class="language-cpp">void union_set(int p, int q) {
+    //把p所在的栈放在q所在栈上面
+    int fp = find(p);
+    int fq = find(q);
+    if (fp == fq) return;
+    fa[fq] = fp;//fq指向fp
+    up[fq] += sz[fp];//更新q的root节点到新的p的根节点的距离
+    sz[fp] += sz[fq];//更新p的root的节点个数
+}
+</code></pre>
+<p>这里我们只是修改了X的root的up的值但是对于X的root下面的节点元素，up的值都还没有更新，这一步的更新是在find操作中，在进行压缩路径的同时，进行当前点到root距离的更新。</p>
+<pre><code class="language-cpp">int find(int x) {
+    int tmp = fa[x];
+    if (x == fa[x])    return x;
+    fa[x] = find(fa[x]);
+    up[x] += up[tmp];//求解当前点到root的距离,up[x] += up[未压缩之前的fa[x]]
+    return fa[x];
+}
+</code></pre>
+<p>附图：</p>
+<p><img src="/image/union_find_sets.jpg" alt="Unioin Find Sets"></p>
+<p>完整代码：https://gist.github.com/tiny656/edc34d790461afae190e#file-poj_1988-cpp</p>
+<h4 id="poj-1038-is-it-a-tree">POJ 1038 Is It A Tree?</h4>
+<p>题意很简答，给很多的边，最后判断能否构成一棵树，对于题目来说，树是不存在环，并且仅能只有一棵。</p>
+<p>简单的并查集操作在加边时候判断，两个点是否已经在一个集合了。然后判断一下是否所有点都在一个集合，不能构成森林。</p>
+<p>完整代码：https://gist.github.com/tiny656/edc34d790461afae190e#file-poj_1038-cpp</p>
+<h4 id="poj-2492-a-bugs-life">POJ 2492 A Bugs Life</h4>
+<p>这一题的解题思路与POJ1703类似，每只虫子分为公母两类，如果某一类夹杂了公母，那么就是有问题的。</p>
+<p>完整代码：https://gist.github.com/tiny656/edc34d790461afae190e#file-poj_2492-cpp</p>
+<h4 id="poj-2236-wireless-network">POJ 2236 Wireless Network</h4>
+<p>裸的并查集。需要预先处理一下d^2之内的computer邻接表，然后再做并查集操作时候，将已经open的computer也一起加进来。</p>
+<p>完整代码：https://gist.github.com/tiny656/edc34d790461afae190e#file-poj_2236-cpp</p>
+<h4 id="poj-1962-coporative-network">POJ 1962 Coporative Network</h4>
+<p>这一题的思路做法和POJ1988一样。这里就不赘述了，</p>
+<p>完整代码：https://gist.github.com/tiny656/edc34d790461afae190e#file-poj_1962-cpp</p>
+
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://tiny656.github.io/tag/qt77konh0" class="tag">
+                    Data Structure
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://tiny656.github.io/post/programming-assignment-5-kd-trees">
+                  <h3 class="post-title">
+                    Programming Assignment 5: Kd-Trees
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+              
+
+              
+                <div id="disqus_thread" data-aos="fade-in"></div>
+              
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<script type="application/javascript">
+
+AOS.init();
+
+hljs.initHighlightingOnLoad()
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+  
+
+  
+    <script src="https://unpkg.com/disqusjs@1.1/dist/disqus.js"></script>
+    <script>
+
+    var options = {
+      shortname: 'tiny656',
+      apikey: 'KPROXOCtTYtTmQ5bfpCsNOgeDwKNaqYYL8fpjSKmHR9k9rsImDKH6OILEtON2fpw',
+    }
+    if ('https://disqus.skk.moe/disqus/') {
+      options.api = 'https://disqus.skk.moe/disqus/'
+    }
+    var dsqjs = new DisqusJS(options)
+
+    </script>
+  
+
+
+
+
+  </body>
+</html>
