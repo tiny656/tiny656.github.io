@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>Mini projects #6 ---- Blackjack | Gridea</title>
+<meta name="description" content="温故而知新">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://tiny656.github.io/favicon.ico?v=1564242683469">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="stylesheet" href="https://tiny656.github.io/styles/main.css">
+
+
+  
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/disqusjs@1.1/dist/disqusjs.css" />
+  
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://tiny656.github.io">
+        <img src="https://tiny656.github.io/images/avatar.png?v=1564242683469" class="site-logo">
+        <h1 class="site-title">Gridea</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      温故而知新
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://tiny656.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">Mini projects #6 ---- Blackjack</h2>
+            <div class="post-date">2014-10-30</div>
+            
+            <div class="post-content">
+              <p>课程全名：An Introduction to Interactive Programming in Python，来自 Rice University</p>
+<p>授课教授：Joe Warren, Scott Rixner, John Greiner, Stephen Wong</p>
+<p>工具：http://www.codeskulptor.org/， simplegui 模块</p>
+<p>第6周讲述：</p>
+<ul>
+<li>OO面向对象编程。走向更高级。</li>
+</ul>
+<!--more-->
+<blockquote>
+<p>Python中一切皆是对象，通过对象的属性(变量、attribute)和行为(方法、method)来描述对象长什么样。<br>
+简单例子，具体的一个人是一个对象，他的年龄、身高、体重都是属性，他吃饭、走路、说话是他的行为。<br>
+python中相同对象的集合叫做一个类(class)。OO最核心的思想在于抽象。类是对象的抽象，对象是类的实例化。类是从对象中抽象出的共有部分，而对象才是具体的事物。<br>
+编程的过程中，是对具体的对象进行操作，实现相应功能。类的良好设计会事半功倍。</p>
+</blockquote>
+<pre><code>class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def __str__(self):
+        return &quot;I'm &quot; + self.name + &quot;, &quot; + self.age + &quot; years old&quot;
+
+    def speak(self):
+        print &quot;Hello, everyone&quot;
+
+p1 = Person(&quot;James&quot;, &quot;18&quot;)
+p1.speak()
+print p1
+</code></pre>
+<blockquote>
+<p>类里的每一个方法都必须有self参数(其他名字也都可以，self不是关键字)，self参数传递当前实例，相当于c++中的this指针，指出究竟是哪个对象调用的。<br>
+__init__作为构造函数，__str__用来在print 对象时候进行调用，这课上就讲了这么多。还有很多其他的__del__析构，__doc__类帮助信息等，就不详细记录了。</p>
+</blockquote>
+<ul>
+<li>while 和 for 的选择</li>
+</ul>
+<blockquote>
+<p>一般使用for i in range()，range()会生成一个list，<br>
+但是while循环可以避免这种list产生，其实用xrange()产生一个生成器也可以避免内存空间的消耗。</p>
+</blockquote>
+<ul>
+<li>Tiled images</li>
+</ul>
+<blockquote>
+<p>打印扑克牌的例子，下面的图也是够通俗易懂了，图片格式化成下面的形式，它就是一个4*6的数组，每次的位移就是CARD_SIZE.不赘述了。</p>
+</blockquote>
+<p><img src="https://tiny656.github.io/post-images/1564241984670.png" alt="Blackjack 1"></p>
+<p><strong>本周的游戏：</strong></p>
+<p>完成blackjack(21点)游戏，界面如下：</p>
+<p><img src="https://tiny656.github.io/post-images/1564242000268.png" alt="Blackjack 2"></p>
+<p>游戏规则：</p>
+<ol>
+<li>
+<p>dealer代表庄家，player代表你(玩家)</p>
+</li>
+<li>
+<p>Deal 开始新的一局，Hit表示继续要牌，Stand表示停止要牌</p>
+</li>
+<li>
+<p>没有王，JQK代表10点，数字牌代表数字点，A可以代表1点也可以代表11点，需要具体判断</p>
+</li>
+<li>
+<p>游戏流程是初始Dealer两张牌，一张牌Dealer自己知道，Player看不到，Player两张牌，Player处于活动状态，可以选择Hit或者Stand，也可以Deal新局，但这要扣分。如果Hit超过21点，则Play输了，没超过可以继续选择上述三种操作。如果觉得点数差不多了，那么可以Stand，这时轮到Dealer操作，在这个简化版的Blackjack中，Dealer如果点数小于17就Hit，最后如果Dealer的点数超21了，那么Player胜，没超21就和Play的点数比大小，如果Dealer点数大于等于Player点数，则Dealer胜，否则Player输。</p>
+</li>
+<li>
+<p>当前手牌的点数计算，这个老师竟然也在课件中给了，其他基本没什么难度了。</p>
+</li>
+</ol>
+<p><img src="https://tiny656.github.io/post-images/1564242015738.png" alt="Blackjack 3"></p>
+<p><strong>游戏框架：</strong></p>
+<p><strong>class Card:  定义扑克牌</strong></p>
+<p>suit,rank 属性分别代表花色和几号牌</p>
+<p>def get_suit(): 返回花色</p>
+<p>def get_rank(): 返回牌号</p>
+<p>def draw(canvas, pos): 在canvas上pos位置绘制card</p>
+<p><strong>class Hand(): 定义玩家的 &lt;手&gt;，处理玩家当前手上的牌</strong></p>
+<p>def add_card(card): 添加一张新牌到手上</p>
+<p>def get_value()： 返回当前手上所有牌的点数之和</p>
+<p>def draw(canvas, pos): 在canvas上pos位置绘制当前手上Card</p>
+<p><strong>class Deck(): 桌子，其实就是牌堆，负责处理所有牌，相当于发牌人</strong></p>
+<p>def shuffle(): 洗牌</p>
+<p>def deal_card(): 发牌</p>
+<p><strong>def deal(): 初始化新牌局</strong></p>
+<p><strong>def hit():继续要牌</strong></p>
+<p><strong>def stand(): 停止要牌</strong></p>
+<p><strong>def draw(): canvas绘制，主要是下面的几块，Dealer的第一张牌，在游戏in_player状态时候需要在绘制一个card_back的牌。</strong></p>
+<p><img src="https://tiny656.github.io/post-images/1564242034145.png" alt="Blackjack 4"></p>
+<p><strong>我把牌堆分成了两层来绘制，每层最多绘制5张。初始Deck 用 [Card(suit, rank) for suit in SUITS for rank in RANKS]列表表达式，可以方便生成所有的牌。</strong></p>
+<p><strong>还有一个利器，enumerate， 遍历的同时既可以取得元素又可以取得索引，相当方便。其余只要根据游戏规则制定好处理逻辑就可以出炉了。</strong></p>
+<pre><code>for i, card in enumerate(self.hand_card):
+    if i &lt; 5:
+        card.draw(canvas, (pos[0] + i*1.35*CARD_SIZE[0], pos[1]))
+    else:
+        card.draw(canvas, (pos[0] + (i%5)*1.35*CARD_SIZE[0], pos[1] + 1.2*CARD_SIZE[1]))
+</code></pre>
+<p><strong>具体看代码和注释</strong></p>
+<pre><code># Mini-project #6 - Blackjack
+
+import simplegui
+import random
+
+# load card sprite - 936x384 - source: jfitz.com
+CARD_SIZE = (72, 96)
+CARD_CENTER = (36, 48)
+card_images = simplegui.load_image(&quot;http://storage.googleapis.com/codeskulptor-assets/cards_jfitz.png&quot;)
+
+CARD_BACK_SIZE = (72, 96)
+CARD_BACK_CENTER = (36, 48)
+card_back = simplegui.load_image(&quot;http://storage.googleapis.com/codeskulptor-assets/card_jfitz_back.png&quot;)
+
+# initialize some useful global variables
+in_play = False
+outcome = &quot;&quot;
+score = 0
+tips = &quot;&quot;
+
+# define globals for cards
+SUITS = ('C', 'S', 'H', 'D')
+RANKS = ('A', '2', '3', '4', '5', '6', '7', '8', '9', 'T', 'J', 'Q', 'K')
+VALUES = {'A':1, '2':2, '3':3, '4':4, '5':5, '6':6, '7':7, '8':8, '9':9, 'T':10, 'J':10, 'Q':10, 'K':10}
+
+
+# define card class
+class Card:
+    def __init__(self, suit, rank):
+        if (suit in SUITS) and (rank in RANKS):
+            self.suit = suit
+            self.rank = rank
+        else:
+            self.suit = None
+            self.rank = None
+            print &quot;Invalid card: &quot;, suit, rank
+
+    def __str__(self):
+        return self.suit + self.rank
+
+    def get_suit(self):
+        return self.suit
+
+    def get_rank(self):
+        return self.rank
+
+    def draw(self, canvas, pos):
+        card_loc = (CARD_CENTER[0] + CARD_SIZE[0] * RANKS.index(self.rank),
+                    CARD_CENTER[1] + CARD_SIZE[1] * SUITS.index(self.suit))
+        canvas.draw_image(card_images, card_loc, CARD_SIZE, [pos[0] + CARD_CENTER[0], pos[1] + CARD_CENTER[1]], CARD_SIZE)
+
+# define hand class
+class Hand:
+    def __init__(self):
+        # create Hand object
+        self.hand_card = []
+
+    def __str__(self):
+        # return a string representation of a hand
+        ret_str = &quot;Hand contains&quot;
+        for card in self.hand_card:
+            ret_str += &quot; &quot; + card.get_suit() + card.get_rank()
+        return ret_str
+
+    def add_card(self, card):
+        self.hand_card.append(card)
+
+    def get_value(self):
+        # count aces as 1, if the hand has an ace, then add 10 to hand value if it doesn't bust
+        # compute the value of the hand, see Blackjack video
+        has_ace = False
+        hand_value = 0
+        for card in self.hand_card:
+            hand_value += VALUES[card.get_rank()]
+            if card.get_rank() == 'A':
+                has_ace = True
+
+        if has_ace is False:
+            return hand_value
+        else:
+            if hand_value + 10 &lt;= 21:
+                return hand_value + 10
+            else:
+                return hand_value + 1
+
+    def draw(self, canvas, pos):
+        # draw a hand on the canvas, use the draw method for cards
+        for i, card in enumerate(self.hand_card):
+            if i &lt; 5:
+                card.draw(canvas, (pos[0] + i*1.35*CARD_SIZE[0], pos[1]))
+            else:
+                card.draw(canvas, (pos[0] + (i%5)*1.35*CARD_SIZE[0], pos[1] + 1.2*CARD_SIZE[1]))
+
+# define deck class
+class Deck:
+    def __init__(self):
+        # create a Deck object
+        self.deck_card = [Card(suit, rank) for suit in SUITS for rank in RANKS]
+
+    def shuffle(self):
+        # shuffle the deck, use random.shuffle()
+        random.shuffle(self.deck_card)
+
+    def deal_card(self):
+        # deal a card object from the deck
+        if len(self.deck_card) &gt; 0:
+            return self.deck_card.pop(0)
+        else:
+            print 'deck_card is empty'
+            return None
+
+    def __str__(self):
+        # return a string representing the deck
+        ret_str = &quot;Deck contains&quot;
+        for card in self.deck_card:
+            ret_str += &quot; &quot; + card.get_suit() + card.get_rank()
+        return ret_str
+
+
+#define event handlers for buttons
+def deal():
+    global outcome, in_play, dealer, player, deck, tips, score
+    # penalty
+    if in_play is True:
+        score -= 1
+
+    # create dealer and player
+    dealer, player = Hand(), Hand()
+
+    # create deck
+    deck = Deck()
+    deck.shuffle()
+
+    # initiate variable
+    outcome = &quot;&quot;
+    tips = &quot;Hit or stand?&quot;
+    in_play = True
+
+    # deal 4 cards
+    player.add_card(deck.deal_card())
+    dealer.add_card(deck.deal_card())
+    player.add_card(deck.deal_card())
+    dealer.add_card(deck.deal_card())
+
+
+def hit():
+    # if the hand is in play, hit the player
+    global player, deck, in_play, outcome, tips, score
+    if in_play is True and player.get_value() &lt;= 21:
+        player.add_card(deck.deal_card())
+        # if busted, assign a message to outcome, update in_play and score
+        if player.get_value() &gt; 21:
+            outcome = &quot;You went bust and lose.&quot;
+            tips = &quot;New deal?&quot;
+            in_play = False
+            score -= 1
+
+def stand():
+    # if hand is in play, repeatedly hit dealer until his hand has value 17 or more
+    global in_play, dealer, player, outcome, tips, score
+    if in_play is True:
+        while dealer.get_value() &lt; 17:
+            dealer.add_card(deck.deal_card())
+        dealer_value = dealer.get_value()
+        # assign a message to outcome, update in_play and score
+        if  dealer_value &gt; 21:
+            outcome = &quot;Dealer went bust. You win.&quot;
+            score += 1
+        else:
+            player_value = player.get_value()
+            if player_value &lt;= dealer_value:
+                outcome = &quot;You lose.&quot;
+                score -= 1
+            else:
+                outcome = &quot;You win.&quot;
+                score += 1
+        tips = &quot;New deal?&quot;
+        in_play = False
+
+
+# draw handler
+def draw(canvas):
+    canvas.draw_text(&quot;Blackjack&quot;, (100,40), 40, &quot;Blue&quot;)
+    canvas.draw_text(&quot;Score &quot; + str(score), (400, 40), 30, &quot;Black&quot;)
+    canvas.draw_text(&quot;Dealer&quot;, (60, 80), 30, &quot;Black&quot;)
+    canvas.draw_text(outcome, (200, 80), 30, &quot;Red&quot;)
+    dealer.draw(canvas, (60, 100))
+    # in_play state draw a back card
+    if in_play is True:
+        card_loc = (CARD_BACK_CENTER[0] + CARD_BACK_SIZE[0], CARD_BACK_CENTER[1])
+        canvas.draw_image(card_back, card_loc, CARD_BACK_SIZE, [60 + CARD_BACK_CENTER[0], 100 + CARD_BACK_CENTER[1]], CARD_BACK_SIZE)
+    canvas.draw_text(outcome, (200, 80), 30, &quot;Red&quot;)
+    canvas.draw_text(&quot;Player&quot;, (60, 350), 30, &quot;Black&quot;)
+    canvas.draw_text(tips, (200, 350), 30, &quot;Black&quot;)
+    player.draw(canvas, (60, 370))
+    # author info
+    canvas.draw_text(&quot;tiny656&quot;, (480, 555), 18, &quot;Aqua&quot;)
+    canvas.draw_text(&quot;236798656@qq.com&quot;, (425, 580), 18, &quot;Aqua&quot;)
+
+# initialization frame
+frame = simplegui.create_frame(&quot;Blackjack&quot;, 600, 600)
+frame.set_canvas_background(&quot;Green&quot;)
+
+#create buttons and canvas callback
+frame.add_button(&quot;Deal&quot;, deal, 200)
+frame.add_button(&quot;Hit&quot;,  hit, 200)
+frame.add_button(&quot;Stand&quot;, stand, 200)
+frame.set_draw_handler(draw)
+
+
+# get things rolling
+deal()
+frame.start()
+
+# remember to review the gradic rubric
+</code></pre>
+<p>最后在附上课程主页在Youtube上讲OOP的一个链接http://www.youtube.com/watch?v=xzjHT6CVcAA ,需要FQ观看</p>
+<p>很有意思，对于理解OOP是很不错的参考。</p>
+<p>这些代码只是体力活，只是对于Python语法熟悉，外加了解一些OOP思想，真正的干货是一个产品实现思想和逻辑，正确、高效、简单，类的设计，数据结构设计，算法设计，代码风格，复杂度分析，再发散就是软件工程、安全、测试、交互、美工等？所以任重道远，需要不断积累经验和多去阅读和学习更多的知识。</p>
+<p>碎碎念，骑车、每天运动以及坚持背单词。谈谈习惯的形成，坚持的初期比较难，尤其是思想上容易妥协，会给自己找借口安慰，这种状况对我来说多发于起初的2-4周，可能也就放弃不做或者零零散散的去坚持几次，后来每天打卡，在睡前打卡，总结今天要做的事情有什么心得和体会，简短的记录，去感受通过这些行为，我产生的感觉以及发生的改变(思想和心理的体会)，这样下来，坚持就完全成了习惯。我觉得很重要一个环节就是，打卡时候一定要去体会做完这些给你的改变。</p>
+<p>背单词，想吐槽的，在扇贝上加了小组，打卡率太低，会被组长踢出，=.=, 3进3出以后，打卡率稳定到了93%，累计打卡的天数也有240多天，每天第一件事也是去背单词，也就只需要30min都不到，而且发现这样的积累真的是能起到很不错的效果。</p>
+<p>运动也是一样，HIIT和俯卧撑，自己摸索和看很多健身跑步相关的文章，体会运动带给自己的改变。很多道理都是相近，想要把Mini Project写好，得看视频、project介绍，自己体会理解，上网查资料，想要跑步，得去体会跑姿的影响，跑步的发力、了解跑鞋、，如何安排训练计划，以及热身和跑后的拉伸运动等，在我看来，体验这些的过程，让我觉得受益无穷。</p>
+<p>也有激进过，同时修3门Coursera的课程，发现时间完全吃不消，还是认真修一到两门，性价比更高，这个是自身trade-off的过程，自己要为自己定位。</p>
+<p>关于每天时间的安排，我觉得还是凌乱，很多细小琐碎的时间，可以整理起来用(就和每天抽30min背单词一样)。</p>
+<p>后面尝试着能拟出一个最适合我自己的计划安排，思考、阅读、旅游、运动……</p>
+<p>经验是个可怕的东西，只有尝试和经历过才会有刻骨铭心的感觉，而且在以后过程中阅历越丰富，处理事情的灵活度越高(万金油)。所以现在的心理感觉，就是处在对什么都充满好奇心的阶段，都想去尝试和探索，体会这个过程，耐心踏实的去做事情，感觉做什么，都会有不错的收获。</p>
+<p>功不唐捐，与君共勉。</p>
+
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://tiny656.github.io/tag/fAC4IfIQ3" class="tag">
+                    Python
+                  </a>
+                
+                  <a href="https://tiny656.github.io/tag/0HiI0D0Zs" class="tag">
+                    Coursera
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://tiny656.github.io/post/mini-projects-5-memory">
+                  <h3 class="post-title">
+                    Mini projects #5 ---- Memory
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+              
+
+              
+                <div id="disqus_thread" data-aos="fade-in"></div>
+              
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<script type="application/javascript">
+
+AOS.init();
+
+hljs.initHighlightingOnLoad()
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+  
+
+  
+    <script src="https://unpkg.com/disqusjs@1.1/dist/disqus.js"></script>
+    <script>
+
+    var options = {
+      shortname: 'tiny656',
+      apikey: 'KPROXOCtTYtTmQ5bfpCsNOgeDwKNaqYYL8fpjSKmHR9k9rsImDKH6OILEtON2fpw',
+    }
+    if ('https://disqus.skk.moe/disqus/') {
+      options.api = 'https://disqus.skk.moe/disqus/'
+    }
+    var dsqjs = new DisqusJS(options)
+
+    </script>
+  
+
+
+
+
+  </body>
+</html>

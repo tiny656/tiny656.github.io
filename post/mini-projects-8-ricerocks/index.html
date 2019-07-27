@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>Mini projects #8 ---- RiceRocks | Gridea</title>
+<meta name="description" content="温故而知新">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://tiny656.github.io/favicon.ico?v=1564242683469">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="stylesheet" href="https://tiny656.github.io/styles/main.css">
+
+
+  
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/disqusjs@1.1/dist/disqusjs.css" />
+  
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://tiny656.github.io">
+        <img src="https://tiny656.github.io/images/avatar.png?v=1564242683469" class="site-logo">
+        <h1 class="site-title">Gridea</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      温故而知新
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://tiny656.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">Mini projects #8 ---- RiceRocks</h2>
+            <div class="post-date">2014-11-09</div>
+            
+            <div class="post-content">
+              <p>课程全名：An Introduction to Interactive Programming in Python，来自 Rice University</p>
+<p>授课教授：Joe Warren, Scott Rixner, John Greiner, Stephen Wong</p>
+<p>工具：<a href="http://www.codeskulptor.org/">http://www.codeskulptor.org/</a>, simplegui 模块</p>
+<p>最后一个project，继续完善上一周的工程，做完就是一个既简单又棒棒的打陨石(飞机)游戏。</p>
+<!--more-->
+<p>第八周：</p>
+<p>关于Python的知识，set类型的用法</p>
+<blockquote>
+<p>定义：set和C++中的STL中的set类似，用来维护一组不重复的无序元素。</p>
+</blockquote>
+<pre><code># 定义一个空的set
+set_empty = set() # or set([])
+print set_empty
+# set([])
+
+# 定义set
+set_a = set([1, 2, 3])
+set_b = set((1, 2, 3))
+set_c = set({1:1, 2:1, 3:1})
+set_d = set(&quot;abcd&quot;)
+set_e = set([&quot;a&quot;, &quot;b&quot;, &quot;cd&quot;])
+print set_a, set_b, set_c
+print set_d, set_e
+# set([1, 2, 3]) set([1, 2, 3]) set([1, 2, 3])
+# set(['a', 'b', 'c', 'd']) set(['a', 'b', 'cd'])
+
+# set的交、并、差运算、对称差集
+# 这些操作返回一个新的集合,set_a,set_b不发生改变
+set_a = set([1, 2, 3])
+set_b = set([2, 3, 4])
+print set_a.intersection(set_b)
+# set([2, 3])
+print set_a.union(set_b)
+# set([1, 2, 3, 4])
+print set_a.difference(set_b)
+# set([1])
+print set_a.symmetric_difference(set_b)
+# set([1, 4])
+
+# 这些对应操作没有返回值，并且直接改变set_a,set_b不变化
+set_a.intersection_update(set_b)
+set_a.update(set_b) # 添加多个元素，就是union含义
+set_a.difference_update(set_b)
+set_a.symmetric_difference_update(set_b)
+
+# set 其他的操作符
+s = set([1, 2, 3, 4])
+s.add(5) # 添加单个元素
+s.add(4) # 重复元素没有效果
+s.remove(4) # 移除集合中的元素，如果元素不存在会报错
+s.discard(8) # 也是移除集合中的元素，但是对于不存在元素不影响
+s.pop() # 弹出集合中的任意一个元素，如果集合为空执行该操作报错
+
+set([2, 9, 7, 1].issubset(set([1, 7])) # 判断是否是子集，返回True或者False
+set([2, 9, 7, 1]).issuperset(set([1, 7])) # 判断是否是父集，返回True或者False
+</code></pre>
+<blockquote>
+<p>set因为是无序集合，所以不支持index索引和slice([ ])切片的操作，可以用element in set来判断集合是否存在该元素。或者for 循环用iterable遍历。<br>
+set和list是可变类型，下面的a和b都是指向同一个空间位置。</p>
+</blockquote>
+<pre><code>a = set([1, 2, 3])
+b = a
+print a
+# set([1, 2, 3])
+b.add(4)
+print a
+# set([1, 2, 3, 4])
+</code></pre>
+<p>Python知识介绍完，上游戏图</p>
+<p><img src="https://tiny656.github.io/post-images/1564242289631.png" alt="RiceRocks 1"></p>
+<p>回顾上周，完成了一个飞船，一个陨石，一个子弹。</p>
+<p>基本的绘制、更新以及大部分的方法都已经实现，这一周主要是实现多个陨石以及子弹的连续发射，还有加上飞船三者之间碰撞的关系处理。</p>
+<blockquote>
+<p>对于游戏来说，掌握<strong>关键的一帧</strong>，核心就在draw的绘制中：<br>
+更新时间，绘制背景元素<br>
+绘制和更新my_ship<br>
+如果游戏开始<br>
+　　绘制更新rock_group<br>
+　　绘制更新missile_group　<br>
+　　绘制更新explosion_group　　<br>
+　　如果 rock_group和my_ship碰撞，lives –= 1<br>
+　　如果 lives&lt;=0，init_game()<br>
+　　score 加上发生rock_group与missile_group碰撞的数量(biu~~~~)<br>
+游戏没开始就换个splah提示<br>
+绘制lives text<br>
+绘制score text</p>
+</blockquote>
+<pre><code># draw handler
+def draw(canvas):
+    global time, lives, rock_group, missile_group, my_ship, score, started
+
+    # animiate background
+    time += 1
+    wtime = (time / 4) % WIDTH
+    center = debris_info.get_center()
+    size = debris_info.get_size()
+    canvas.draw_image(nebula_image, nebula_info.get_center(), nebula_info.get_size(), [WIDTH / 2, HEIGHT / 2], [WIDTH, HEIGHT])
+    canvas.draw_image(debris_image, center, size, (wtime - WIDTH / 2, HEIGHT / 2), (WIDTH, HEIGHT))
+    canvas.draw_image(debris_image, center, size, (wtime + WIDTH / 2, HEIGHT / 2), (WIDTH, HEIGHT))
+
+    # draw and update ship
+    my_ship.draw(canvas)
+    my_ship.update()
+
+    if started:
+
+        # draw and update rock_group
+        process_sprite_group(rock_group, canvas)
+
+        # draw and update missile_group
+        process_sprite_group(missile_group, canvas)
+
+        # draw and update explosioin_group
+        process_sprite_group(explosion_group, canvas)
+
+        # ship - rock_group collide and update the lives
+        if group_collide(rock_group, my_ship):
+            lives -= 1
+        # game over
+        if lives &lt;= 0:
+            init_game()
+            message_label.set_text('Click to start!')
+        # update score
+        score += group_group_collide(rock_group, missile_group) * 10
+
+    else:
+        canvas.draw_image(splash_image, splash_info.get_center(), splash_info.get_size(), (WIDTH / 2, HEIGHT / 2), splash_info.get_size())
+
+    # draw lives
+    canvas.draw_text(&quot;Lives&quot;, [WIDTH / 12, HEIGHT / 12], 30, &quot;White&quot;)
+    canvas.draw_text(str(lives), [WIDTH / 12, HEIGHT / 12 + 40], 30, &quot;White&quot;)
+
+    # draw score
+    canvas.draw_text(&quot;Score&quot;, [10 * WIDTH / 12, HEIGHT/12], 30, &quot;White&quot;)
+    canvas.draw_text(str(score), [10 * WIDTH /12, HEIGHT/12 + 40], 30, &quot;White&quot;)
+</code></pre>
+<p>my_ship的绘制更新上周已经完成，上周主要处理一个陨石和子弹的情形，这周完成多个，奥秘就在process_sprite_group()中。</p>
+<pre><code>def process_sprite_group(sprite_group, canvas):
+    remove_set = set([])
+    for sprite in sprite_group:
+        sprite.draw(canvas)
+        if sprite.update():
+            remove_set.add(sprite)
+    sprite_group.difference_update(remove_set)
+</code></pre>
+<blockquote>
+<p>process_sprite_group完成对group中每一个对象的绘制和更新，sprite.update()的if判断主要是针对子弹，子弹发生是存在距离，这个距离通过age时间来衡量，当sprite.lifespan超过了age，那么update就返回True，我们就要把这些过了保质期的子弹从他的group中移走，而默认rock陨石的lifespan保质期是inf，永不过期，除非被飞机打掉了。这样通过process_sprite_group就可以维护rock_group，missile_group，explosion_group.</p>
+</blockquote>
+<p>那么接下来重要的问题来了？挖掘机….处理元素之间的碰撞关系。这里碰撞主要存在两种，飞机与陨石之间碰撞，陨石和子弹之间碰撞。</p>
+<pre><code>def group_collide(group, other_object):
+    is_collide = False
+    remove_set = set([])
+    for obj in group:
+        if obj.collide(other_object):
+            is_collide = True
+            remove_set.add(obj)
+            # create new explosion
+            pos = [other_object.pos[0], other_object.pos[1]]
+            new_explosion = Sprite(pos, [0, 0], other_object.angle, 0, explosion_image, explosion_info, explosion_sound)
+            explosion_group.add(new_explosion)
+
+    group.difference_update(remove_set)
+    return is_collide
+
+def group_group_collide(group, other_group):
+    num_collide = 0
+    for obj in list(group):
+        if group_collide(other_group, obj):
+            group.discard(obj)
+            num_collide += 1
+    return num_collide
+</code></pre>
+<blockquote>
+<p>通过上面两个Help Function，第一个可以用来检测rock_group和my_ship，需要实现一个sprite的collide方法，用距离和半径和的关系判断是否碰撞，然后再group_collide函数中只要遍历rock_group，调用collide方法判断是否和my_ship相撞。相撞的元素从group中移走，为了实现explosion的效果，在这里向explosion_group添加以other_project坐标属性的新元素。<br>
+第二个，主要用来监测rock_group和missile_group的碰撞关系，遍历rock_group然后在调用group_collide方法，判断单个元素和group之间碰撞(复用大法好)。<br>
+碰撞检测后，记得更新score 和 lives的值。</p>
+</blockquote>
+<p>游戏的核心也就差不多了。剩下的就没什么了。started变量控制一下游戏开始状态，基本的Tile的图像绘制，加个偏移就好。再有就是一些加速的参数需要自己手工调整，关乎你游戏的可玩性。忘记一点，随机生成rock的时候，加一个判断当坐标离自己飞船在一定范围之外，才能生成，不然莫宁奇妙的躺枪。</p>
+<p>一个陨石10分，无聊的加了个button，500分换一条命。</p>
+<p>下面就贴完整代码：</p>
+<pre><code># program template for Spaceship
+import simplegui
+import math
+import random
+
+# globals for user interface
+WIDTH = 800
+HEIGHT = 600
+score = 0
+lives = 3
+time = 0.5
+
+class ImageInfo:
+    def __init__(self, center, size, radius = 0, lifespan = None, animated = False):
+        self.center = center
+        self.size = size
+        self.radius = radius
+        if lifespan:
+            self.lifespan = lifespan
+        else:
+            self.lifespan = float('inf')
+        self.animated = animated
+
+    def get_center(self):
+        return self.center
+
+    def get_size(self):
+        return self.size
+
+    def get_radius(self):
+        return self.radius
+
+    def get_lifespan(self):
+        return self.lifespan
+
+    def get_animated(self):
+        return self.animated
+
+
+# art assets created by Kim Lathrop, may be freely re-used in non-commercial projects, please credit Kim
+
+# debris images - debris1_brown.png, debris2_brown.png, debris3_brown.png, debris4_brown.png
+#                 debris1_blue.png, debris2_blue.png, debris3_blue.png, debris4_blue.png, debris_blend.png
+debris_info = ImageInfo([320, 240], [640, 480])
+debris_image = simplegui.load_image(&quot;http://commondatastorage.googleapis.com/codeskulptor-assets/lathrop/debris2_blue.png&quot;)
+
+# nebula images - nebula_brown.png, nebula_blue.png
+nebula_info = ImageInfo([400, 300], [800, 600])
+nebula_image = simplegui.load_image(&quot;http://commondatastorage.googleapis.com/codeskulptor-assets/lathrop/nebula_blue.f2014.png&quot;)
+
+# splash image
+splash_info = ImageInfo([200, 150], [400, 300])
+splash_image = simplegui.load_image(&quot;http://commondatastorage.googleapis.com/codeskulptor-assets/lathrop/splash.png&quot;)
+
+# ship image
+ship_info = ImageInfo([45, 45], [90, 90], 35)
+ship_image = simplegui.load_image(&quot;http://commondatastorage.googleapis.com/codeskulptor-assets/lathrop/double_ship.png&quot;)
+
+# missile image - shot1.png, shot2.png, shot3.png
+missile_info = ImageInfo([5,5], [10, 10], 3, 50)
+missile_image = simplegui.load_image(&quot;http://commondatastorage.googleapis.com/codeskulptor-assets/lathrop/shot2.png&quot;)
+
+# asteroid images - asteroid_blue.png, asteroid_brown.png, asteroid_blend.png
+asteroid_info = ImageInfo([45, 45], [90, 90], 40)
+asteroid_image = simplegui.load_image(&quot;http://commondatastorage.googleapis.com/codeskulptor-assets/lathrop/asteroid_blue.png&quot;)
+
+# animated explosion - explosion_orange.png, explosion_blue.png, explosion_blue2.png, explosion_alpha.png
+explosion_info = ImageInfo([64, 64], [128, 128], 17, 24, True)
+explosion_image = simplegui.load_image(&quot;http://commondatastorage.googleapis.com/codeskulptor-assets/lathrop/explosion_alpha.png&quot;)
+
+# sound assets purchased from sounddogs.com, please do not redistribute
+soundtrack = simplegui.load_sound(&quot;http://commondatastorage.googleapis.com/codeskulptor-assets/sounddogs/soundtrack.mp3&quot;)
+missile_sound = simplegui.load_sound(&quot;http://commondatastorage.googleapis.com/codeskulptor-assets/sounddogs/missile.mp3&quot;)
+missile_sound.set_volume(.5)
+ship_thrust_sound = simplegui.load_sound(&quot;http://commondatastorage.googleapis.com/codeskulptor-assets/sounddogs/thrust.mp3&quot;)
+explosion_sound = simplegui.load_sound(&quot;http://commondatastorage.googleapis.com/codeskulptor-assets/sounddogs/explosion.mp3&quot;)
+
+# helper functions to handle transformations
+def angle_to_vector(ang):
+    return [math.cos(ang), math.sin(ang)]
+
+def dist(p,q):
+    return math.sqrt((p[0] - q[0]) ** 2+(p[1] - q[1]) ** 2)
+
+
+# Ship class
+class Ship:
+    def __init__(self, pos, vel, angle, image, info):
+        self.pos = [pos[0],pos[1]]
+        self.vel = [vel[0],vel[1]]
+        self.thrust = False
+        self.angle = angle
+        self.angle_vel = 0
+        self.image = image
+        self.image_center = info.get_center()
+        self.image_size = info.get_size()
+        self.radius = info.get_radius()
+
+    def draw(self,canvas):
+        if self.thrust:
+            center = (self.image_center[0]+self.image_size[0], self.image_center[1])
+            canvas.draw_image(self.image, center, self.image_size, self.pos, self.image_size, self.angle)
+        else:
+            canvas.draw_image(self.image, self.image_center, self.image_size, self.pos, self.image_size, self.angle)
+
+
+    def update(self):
+        self.angle += self.angle_vel
+        self.pos[0] = (self.pos[0] + self.vel[0]) % WIDTH
+        self.pos[1] = (self.pos[1] + self.vel[1]) % HEIGHT
+        c = 0.05
+        self.vel[0] *= (1 - c)
+        self.vel[1] *= (1 - c)
+        forward = angle_to_vector(self.angle)
+        if self.thrust:
+            self.vel[0] += forward[0] * 0.8
+            self.vel[1] += forward[1] * 0.8
+
+
+    def change_angle_vel(self, ori, key_state):
+        if ((ori == &quot;right&quot; and key_state == &quot;keyup&quot;) or
+            (ori == &quot;left&quot; and key_state == &quot;keydown&quot;)):
+            self.angle_vel -= 0.1
+        elif ((ori == &quot;right&quot; and key_state == &quot;keydown&quot;) or
+            (ori == &quot;left&quot; and key_state == &quot;keyup&quot;)):
+            self.angle_vel += 0.1
+
+    def set_thruster(self, thruster_state):
+        self.thrust = thruster_state
+        if self.thrust:
+            ship_thrust_sound.rewind()
+            ship_thrust_sound.play()
+        else:
+            ship_thrust_sound.rewind()
+
+    def shoot(self):
+        global missile_group
+        offset = self.image_size[0] / 2.0
+        forward = angle_to_vector(self.angle)
+        pos = [self.pos[0] + offset * forward[0], self.pos[1] + offset * forward[1]]
+        vel = [self.vel[0] + 6 * forward[0], self.vel[1] + 6 * forward[1]]
+        ang = 0
+        ang_vel = 0
+        missile_group.add(Sprite(pos, vel, ang, ang_vel, missile_image, missile_info, missile_sound))
+
+    def get_position(self):
+        return self.pos
+
+    def get_radius(self):
+        return self.radius
+
+# Sprite class
+class Sprite:
+    def __init__(self, pos, vel, ang, ang_vel, image, info, sound = None):
+        self.pos = [pos[0],pos[1]]
+        self.vel = [vel[0],vel[1]]
+        self.angle = ang
+        self.angle_vel = ang_vel
+        self.image = image
+        self.image_center = info.get_center()
+        self.image_size = info.get_size()
+        self.radius = info.get_radius()
+        self.lifespan = info.get_lifespan()
+        self.animated = info.get_animated()
+        self.age = 0
+        if sound:
+            sound.rewind()
+            sound.play()
+
+    def draw(self, canvas):
+        if self.animated:
+            center = (self.image_center[0] + self.age * self.image_size[0], self.image_center[1])
+            canvas.draw_image(self.image, center, self.image_size, self.pos, self.image_size, self.angle)
+        else:
+            canvas.draw_image(self.image, self.image_center, self.image_size, self.pos, self.image_size, self.angle)
+
+
+    def update(self):
+        if started:
+            self.angle += self.angle_vel
+            self.pos[0] = (self.pos[0] + self.vel[0]) % WIDTH
+            self.pos[1] = (self.pos[1] + self.vel[1]) % HEIGHT
+
+            self.age += 1
+            if self.age &gt;= self.lifespan:
+                return True
+            else:
+                return False
+
+    def get_position(self):
+        return self.pos
+
+    def get_radius(self):
+        return self.radius
+
+    def collide(self, other_object):
+        dis = self.get_radius() + other_object.get_radius()
+        if dis &gt; dist(self.get_position(), other_object.get_position()):
+            return True
+        else:
+            return False
+
+# Help Function to deal collision
+def group_collide(group, other_object):
+    is_collide = False
+    remove_set = set([])
+    for obj in group:
+        if obj.collide(other_object):
+            is_collide = True
+            remove_set.add(obj)
+            # create new explosion
+            pos = [other_object.pos[0], other_object.pos[1]]
+            new_explosion = Sprite(pos, [0, 0], other_object.angle, 0, explosion_image, explosion_info, explosion_sound)
+            explosion_group.add(new_explosion)
+
+    group.difference_update(remove_set)
+    return is_collide
+
+def group_group_collide(group, other_group):
+    num_collide = 0
+    for obj in list(group):
+        if group_collide(other_group, obj):
+            group.discard(obj)
+            num_collide += 1
+    return num_collide
+
+def process_sprite_group(sprite_group, canvas):
+    remove_set = set([])
+    for sprite in sprite_group:
+        sprite.draw(canvas)
+        if sprite.update():
+            remove_set.add(sprite)
+    sprite_group.difference_update(remove_set)
+
+# draw handler
+def draw(canvas):
+    global time, lives, rock_group, missile_group, my_ship, score, started
+
+    # animiate background
+    time += 1
+    wtime = (time / 4) % WIDTH
+    center = debris_info.get_center()
+    size = debris_info.get_size()
+    canvas.draw_image(nebula_image, nebula_info.get_center(), nebula_info.get_size(), [WIDTH / 2, HEIGHT / 2], [WIDTH, HEIGHT])
+    canvas.draw_image(debris_image, center, size, (wtime - WIDTH / 2, HEIGHT / 2), (WIDTH, HEIGHT))
+    canvas.draw_image(debris_image, center, size, (wtime + WIDTH / 2, HEIGHT / 2), (WIDTH, HEIGHT))
+
+    # draw and update ship
+    my_ship.draw(canvas)
+    my_ship.update()
+
+    if started:
+
+        # draw and update rock_group
+        process_sprite_group(rock_group, canvas)
+
+        # draw and update missile_group
+        process_sprite_group(missile_group, canvas)
+
+        # draw and update explosioin_group
+        process_sprite_group(explosion_group, canvas)
+
+        # ship - rock_group collide and update the lives
+        if group_collide(rock_group, my_ship):
+            lives -= 1
+        # game over
+        if lives &lt;= 0:
+            init_game()
+            message_label.set_text('Click to start!')
+        # update score
+        score += group_group_collide(rock_group, missile_group) * 10
+
+    else:
+        canvas.draw_image(splash_image, splash_info.get_center(), splash_info.get_size(), (WIDTH / 2, HEIGHT / 2), splash_info.get_size())
+
+    # draw lives
+    canvas.draw_text(&quot;Lives&quot;, [WIDTH / 12, HEIGHT / 12], 30, &quot;White&quot;)
+    canvas.draw_text(str(lives), [WIDTH / 12, HEIGHT / 12 + 40], 30, &quot;White&quot;)
+
+    # draw score
+    canvas.draw_text(&quot;Score&quot;, [10 * WIDTH / 12, HEIGHT/12], 30, &quot;White&quot;)
+    canvas.draw_text(str(score), [10 * WIDTH /12, HEIGHT/12 + 40], 30, &quot;White&quot;)
+
+# timer handler that spawns a rock
+def rock_spawner():
+    global rock_group
+    if started and len(rock_group) &lt; 12:
+        pos = [random.randint(0, WIDTH-1), random.randint(0, HEIGHT-1)]
+        # dist great than 20 can spawn a new rock
+        if dist(pos, my_ship.get_position()) &gt; 150:
+            vel = [random.randrange(1, 3, 1)*random.choice([1, -1]), random.randrange(1, 3, 1)*random.choice([1, -1])]
+            ang = 0
+            ang_vel = random.randrange(5, 10, 1) / 100.0 * random.choice([1, -1])
+            new_rock = Sprite(pos, vel, ang, ang_vel, asteroid_image, asteroid_info)
+            rock_group.add(new_rock)
+
+
+# key_up handler
+def key_up(key):
+    if started:
+        if simplegui.KEY_MAP['left'] == key:
+            my_ship.change_angle_vel(&quot;left&quot;, &quot;keyup&quot;)
+        elif simplegui.KEY_MAP['right'] == key:
+            my_ship.change_angle_vel(&quot;right&quot;, &quot;keyup&quot;)
+        elif simplegui.KEY_MAP['up'] == key:
+            my_ship.set_thruster(False)
+
+# key_down handler
+def key_down(key):
+    if started:
+        if simplegui.KEY_MAP['left'] == key:
+            my_ship.change_angle_vel(&quot;left&quot;, &quot;keydown&quot;)
+        elif simplegui.KEY_MAP['right'] == key:
+            my_ship.change_angle_vel(&quot;right&quot;, &quot;keydown&quot;)
+        elif simplegui.KEY_MAP['up'] == key:
+            my_ship.set_thruster(True)
+        elif simplegui.KEY_MAP['space'] == key:
+            my_ship.shoot()
+
+# mouse_click handler
+def mouse_click(position):
+    global started
+    if position[0] &lt; WIDTH and position[1] &lt; HEIGHT and not started :
+        started = True
+        soundtrack.rewind()
+        soundtrack.play()
+        message_label.set_text('Welcome, enjoy!')
+
+# puchase button handler:
+def purchase_button():
+    global score, lives, message_label
+    if started:
+        if score &gt;= 500:
+            score -= 500
+            lives += 1
+            message_label.set_text(&quot;Purchase successfully.&quot;)
+        else:
+            message_label.set_text(&quot;Scores are not enough.&quot;)
+    else:
+        message_label.set_text(&quot;Game hasn't started yet.&quot;)
+
+# exit game button
+def exit_button():
+    soundtrack.rewind()
+    ship_thrust_sound.rewind()
+    missile_sound.rewind()
+    explosion_sound.rewind()
+    frame.stop()
+
+
+# init the game state
+def init_game():
+    global my_ship, rock_group, missile_group, explosion_group, started, score, lives
+    # initialize ship and two sprites
+    my_ship = Ship([WIDTH / 2, HEIGHT / 3], [0, 0], 1.5*math.pi, ship_image, ship_info)
+    rock_group = set([])
+    missile_group = set([])
+    explosion_group = set([])
+    score, lives = 0, 3
+    started = False
+    soundtrack.rewind()
+    ship_thrust_sound.rewind()
+    missile_sound.rewind()
+    explosion_sound.rewind()
+
+# initialize frame
+frame = simplegui.create_frame(&quot;Asteroids&quot;, WIDTH, HEIGHT)
+
+# init the game
+init_game()
+
+# register handlers
+frame.set_draw_handler(draw)
+frame.set_keydown_handler(key_down)
+frame.set_keyup_handler(key_up)
+frame.set_mouseclick_handler(mouse_click)
+frame.add_button('500 Scores for a life', purchase_button, 200)
+frame.add_button('Quit', exit_button, 200)
+message_label = frame.add_label('Click to start!')
+author_label = frame.add_label('Tiny656')
+contact_label = frame.add_label('236798656@qq.com')
+timer = simplegui.create_timer(1000.0, rock_spawner)
+
+# get things rolling
+timer.start()
+frame.start()
+</code></pre>
+<p>坐等最后的Peer Evaluation，这么课应该就结束了，感谢Rice大学这些兢兢业业对于教学富有激情和创意的老师，能让我有幸聆听到这么有意思的课程，收获满满，感谢Coursera这么棒棒的平台，拉近了每个人与知识的距离，对于充满好奇心的我，一比无价的财富。现在的环境是，永远不缺知识以及还有这么多优秀的知识分享者，缺少一颗渴望学习的心，不管做什么，耐心和毅力总能感觉到自己不断成长的步伐，学习的道路上，永远不应该放下脚步，引用Jobs的话，stay hungry, stay foolish, 求知若饥求知若愚。</p>
+<p>接下来开始认真跟Princeton的算法II，妈蛋的，第二周都放出来了，第一周的视频还一点没看，得抓紧。还有老板的活要干，还有英语要复习，真是分神乏力。咬咬牙，坚持下来。12月开始刷题复习，明年找工作。</p>
+
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://tiny656.github.io/tag/fAC4IfIQ3" class="tag">
+                    Python
+                  </a>
+                
+                  <a href="https://tiny656.github.io/tag/0HiI0D0Zs" class="tag">
+                    Coursera
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://tiny656.github.io/post/mini-projects-7-spaceship">
+                  <h3 class="post-title">
+                    Mini projects #7 ---- Spaceship
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+              
+
+              
+                <div id="disqus_thread" data-aos="fade-in"></div>
+              
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<script type="application/javascript">
+
+AOS.init();
+
+hljs.initHighlightingOnLoad()
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+  
+
+  
+    <script src="https://unpkg.com/disqusjs@1.1/dist/disqus.js"></script>
+    <script>
+
+    var options = {
+      shortname: 'tiny656',
+      apikey: 'KPROXOCtTYtTmQ5bfpCsNOgeDwKNaqYYL8fpjSKmHR9k9rsImDKH6OILEtON2fpw',
+    }
+    if ('https://disqus.skk.moe/disqus/') {
+      options.api = 'https://disqus.skk.moe/disqus/'
+    }
+    var dsqjs = new DisqusJS(options)
+
+    </script>
+  
+
+
+
+
+  </body>
+</html>

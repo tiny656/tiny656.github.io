@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>Mini projects #3 ---- Stopwatch: The Game | Gridea</title>
+<meta name="description" content="温故而知新">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://tiny656.github.io/favicon.ico?v=1564242683469">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="stylesheet" href="https://tiny656.github.io/styles/main.css">
+
+
+  
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/disqusjs@1.1/dist/disqusjs.css" />
+  
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://tiny656.github.io">
+        <img src="https://tiny656.github.io/images/avatar.png?v=1564242683469" class="site-logo">
+        <h1 class="site-title">Gridea</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      温故而知新
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://tiny656.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">Mini projects #3 ---- Stopwatch: The Game</h2>
+            <div class="post-date">2014-10-06</div>
+            
+            <div class="post-content">
+              <p>课程全名：An Introduction to Interactive Programming in Python，来自 Rice University</p>
+<p>授课教授：Joe Warren, Scott Rixner, John Greiner, Stephen Wong</p>
+<p>工具：http://www.codeskulptor.org/  , 主要是simplegui 模块</p>
+<p>这是第三次作业，前面两次主要是熟悉Python动手做起来都很简单，就不记录了。</p>
+<p>作业需要完成一个关于手表的游戏，估计很多人也都玩过。初中和高中考试做完卷子，但离收卷还有很久，就折腾手上的电子表用来掐秒，锻炼反应力。这里要实现的游戏是一个道理，就是酱紫。</p>
+<!--more-->
+<p>这个Mini project开始采用事件驱动(event-driven)的交互方式，所以先明确一些问题。</p>
+<ol>
+<li>
+<p>界面canvas的drawing速率大概是 60 frams/sec</p>
+</li>
+<li>
+<p>每一个应用程序需要注册一个特殊的事件句柄叫做 draw handler</p>
+</li>
+<li>
+<p>在simplegui 模块中，创建和注册draw handler最后的绘制是在canvas中</p>
+</li>
+<li>
+<p>绘制的操作有很多种，例如线、圆、多边形等，这些都在simplegui模块里面定义，具体查看doc</p>
+</li>
+</ol>
+<p>canvas的布局如下，原点在左上角，第一个坐标是宽度，第二个坐标是高度</p>
+<p><img src="https://tiny656.github.io/post-images/1564241806991.png" alt="Stopwatch The Game 1"></p>
+<p>Stopwatch完成的结果如下：</p>
+<p><img src="https://tiny656.github.io/post-images/1564241834553.png" alt="Stopwatch The Game 2"></p>
+<p>Start开始游戏，Stop暂停，Reset重置。右上角记录 成功停在整数秒次数/尝试次数</p>
+<p>需要的元素:</p>
+<p>frame:主界面</p>
+<p>start button, stop button, reset button.</p>
+<p>timer: 计时</p>
+<p>逻辑设计：</p>
+<p>start button事件: 开始计时</p>
+<pre><code>def start_handler():
+    global is_running
+    if is_running is False:
+        timer.start()
+        is_running = True
+</code></pre>
+<p>stop button事件：停止计时，更新右上角记录</p>
+<pre><code>def stop_handler():
+    global num_stop, num_succ_stop, is_running
+    if is_running is True:
+        timer.stop()
+        num_stop += 1
+        if tick % 10 == 0 and tick != 0:
+            num_succ_stop += 1
+        is_running = False
+</code></pre>
+<p>reset button事件：停止计时，重置相关参数</p>
+<pre><code>def reset_handler():
+    global tick, num_stop, num_succ_stop, is_running
+    timer.stop()
+    num_succ_stop, num_stop, tick = 0, 0, 0
+    is_running = False
+</code></pre>
+<p>timer 事件：负责计时不断增加，每次0.1s</p>
+<pre><code>def timer_handler():
+    global tick
+    tick += 1
+</code></pre>
+<p>draw事件：界面元素绘制</p>
+<pre><code>def draw_handler(canvas):
+    canvas.draw_text(format(tick), [100, 100], 30, &quot;Green&quot;)
+    canvas.draw_text(str(num_succ_stop) + &quot;/&quot; + str(num_stop), [250, 20], 20, &quot;Green&quot;)
+
+</code></pre>
+<p>定义了一个辅助的方法format用来转换当前时间t为00:00.0格式</p>
+<pre><code>def format(t):
+    D = str(t % 10)
+    BC = t / 10 % 60
+    if BC &lt; 10:
+        BC = '0'+str(BC)
+    else:
+        BC = str(BC)
+    A = str(t / 10 / 60)
+    return A + &quot;:&quot; + BC + &quot;.&quot; + D
+</code></pre>
+<p>整体完整代码如下：</p>
+<pre><code># template for &quot;Stopwatch: The Game&quot;
+
+import simplegui
+
+# define global variables
+tick = 0
+num_stop = 0
+num_succ_stop = 0
+is_running = False
+
+# define helper function format that converts time
+# in tenths of seconds into formatted string A:BC.D
+def format(t):
+    D = str(t % 10)
+    BC = t / 10 % 60
+    if BC &lt; 10:
+        BC = '0'+str(BC)
+    else:
+        BC = str(BC)
+    A = str(t / 10 / 60)
+    return A + &quot;:&quot; + BC + &quot;.&quot; + D
+
+# define event handlers for buttons; &quot;Start&quot;, &quot;Stop&quot;, &quot;Reset&quot;
+def start_handler():
+    global is_running
+    if is_running is False:
+        timer.start()
+        is_running = True
+
+def stop_handler():
+    global num_stop, num_succ_stop, is_running
+    if is_running is True:
+        timer.stop()
+        num_stop += 1
+        if tick % 10 == 0 and tick != 0:
+            num_succ_stop += 1
+        is_running = False
+
+def reset_handler():
+    global tick, num_stop, num_succ_stop, is_running
+    timer.stop()
+    num_succ_stop, num_stop, tick = 0, 0, 0
+    is_running = False
+
+
+# define event handler for timer with 0.1 sec interval
+def timer_handler():
+    global tick
+    tick += 1
+
+# define draw handler
+def draw_handler(canvas):
+    canvas.draw_text(format(tick), [100, 100], 30, &quot;Green&quot;)
+    canvas.draw_text(str(num_succ_stop) + &quot;/&quot; + str(num_stop), [250, 20], 20, &quot;Green&quot;)
+
+# create frame
+frame = simplegui.create_frame('Stopwatch: The Game', 300, 200)
+
+# register event handlers
+start_btn = frame.add_button('Start', start_handler, 200)
+stop_btn = frame.add_button('Stop', stop_handler, 200)
+reset_btn = frame.add_button('Reset', reset_handler, 200)
+frame.set_draw_handler(draw_handler)
+timer = simplegui.create_timer(100, timer_handler)
+
+# start frame
+frame.start()
+
+# Please remember to review the grading rubric
+</code></pre>
+<p>其中is_running用来记录当前timer是否在运行，防止重复点击stop出现计数错误的问题。</p>
+<p>整体逻辑也比较简单，课程挺有意思，声音听着超棒，锻炼听力挺不错。每个老师相当的负责和认真。感叹自己本科那时初学C的时候，授课的差距是那么大，也感慨现在有这么多好的资源可以利用。学无止境。</p>
+
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://tiny656.github.io/tag/fAC4IfIQ3" class="tag">
+                    Python
+                  </a>
+                
+                  <a href="https://tiny656.github.io/tag/0HiI0D0Zs" class="tag">
+                    Coursera
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://tiny656.github.io/post/programming-assignment-5-kd-trees">
+                  <h3 class="post-title">
+                    Programming Assignment 5: Kd-Trees
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+              
+
+              
+                <div id="disqus_thread" data-aos="fade-in"></div>
+              
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<script type="application/javascript">
+
+AOS.init();
+
+hljs.initHighlightingOnLoad()
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+  
+
+  
+    <script src="https://unpkg.com/disqusjs@1.1/dist/disqus.js"></script>
+    <script>
+
+    var options = {
+      shortname: 'tiny656',
+      apikey: 'KPROXOCtTYtTmQ5bfpCsNOgeDwKNaqYYL8fpjSKmHR9k9rsImDKH6OILEtON2fpw',
+    }
+    if ('https://disqus.skk.moe/disqus/') {
+      options.api = 'https://disqus.skk.moe/disqus/'
+    }
+    var dsqjs = new DisqusJS(options)
+
+    </script>
+  
+
+
+
+
+  </body>
+</html>

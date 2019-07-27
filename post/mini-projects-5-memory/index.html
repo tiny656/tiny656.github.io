@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>Mini projects #5 ---- Memory | Gridea</title>
+<meta name="description" content="温故而知新">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://tiny656.github.io/favicon.ico?v=1564242683469">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="stylesheet" href="https://tiny656.github.io/styles/main.css">
+
+
+  
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/disqusjs@1.1/dist/disqusjs.css" />
+  
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://tiny656.github.io">
+        <img src="https://tiny656.github.io/images/avatar.png?v=1564242683469" class="site-logo">
+        <h1 class="site-title">Gridea</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      温故而知新
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://tiny656.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">Mini projects #5 ---- Memory</h2>
+            <div class="post-date">2014-10-21</div>
+            
+            <div class="post-content">
+              <p>课程全名：An Introduction to Interactive Programming in Python，来自 Rice University</p>
+<p>授课教授：Joe Warren, Scott Rixner, John Greiner, Stephen Wong</p>
+<p>工具：http://www.codeskulptor.org/ , simplegui 模块</p>
+<p>第5周讲述</p>
+<ol>
+<li>simplegui模块中鼠标的控制方式</li>
+</ol>
+<!--more-->
+<ol start="2">
+<li>
+<p>list的各种操作, append, pop, extend, index, remove, reverse, sort</p>
+</li>
+<li>
+<p>Iteration,迭代器，遍历对象方式 for x in lst:… 或者列表生成式 [exp for x in lst]</p>
+</li>
+</ol>
+<blockquote>
+<p>[exp for x in lst] # 迭代器，遍历x中的所有元素x执行exp的操作，返回一个计算完整的列表<br>
+(exp for x in lst) # 生成器，也是一种迭代器，返回一个迭代对象，不计算所有结果，只提供当前需要访问的next元素，所以生成器只能迭代一次。好处是节省内存</p>
+</blockquote>
+<ol start="4">
+<li>dictionaries， python中的字典dict, {}，键值对</li>
+</ol>
+<blockquote>
+<p>字典中只有immutable对象可以做key，value可以是任意的<br>
+例如：d = {(1,2):[1,2,3], True:{1:2}, &quot;123&quot;:(1,2), 4:5}<br>
+<strong>immutable 对象</strong>: string, int, float, tuple, bool，(值类型)<br>
+<strong>mutable 对象</strong>: list, dictionary, set，(自定义类型,引用类型)<br>
+其他的就是浅拷贝和深拷贝的问题：<br>
+当进行a=b赋值操作，如果是immutable对象，a作为b的一个拷贝创建，a和b独立。如果是mutable对象，a作为b的一个引用创建，a和b共享。<br>
+<strong>浅拷贝</strong>---构造一个新的复合对象，使用原来对象元素的引用，(对于immutable类型相当于拷贝)填充新对象。<br>
+<strong>深拷贝</strong>---构造一个新的复合对象，同时递归拷贝对象所包含的所有元素。<br>
+copy模块中<br>
+copy.copy(x) # return a shallow copy of x<br>
+copy.deepcopy(x) # return a deep copy of x</p>
+</blockquote>
+<ol start="5">
+<li>simplegui模块中图像的载入，load_image</li>
+</ol>
+<p><strong>本周的游戏：</strong></p>
+<p>完成一个数字记忆相关游戏，界面如下</p>
+<p><img src="https://tiny656.github.io/post-images/1564241944907.png" alt="Memory 1"></p>
+<p>游戏的规则：</p>
+<ol>
+<li>
+<p>共有16个数字，他们是成对的0-7共8组，随机分布在16个格子里。</p>
+</li>
+<li>
+<p>初始都是cover状态，通过鼠标点击卡牌可以uncover查看对应的数字。</p>
+</li>
+<li>
+<p>如果连续两次点击为相同数字，那么数字会保留uncover状态。</p>
+</li>
+<li>
+<p>如果连续两次的点击为不相同数字，当点击第三个数字，原先卡牌uncover状态将恢复成cover</p>
+</li>
+<li>
+<p>Turns记录每轮点击次数，并且重复点击已经点开的卡牌没有效果，reset重置游戏。</p>
+</li>
+</ol>
+<p>游戏框架：</p>
+<p><strong>def new_game() # 游戏初始化</strong></p>
+<ol>
+<li>
+<p>思考关于游戏逻辑，需要记录那些属性，至少有个list用来记录16个数字，命名为memory_list好了。还要有个list记录哪些牌需要翻开哪些牌是不翻开的，命名为exposed。需要初始化turns，turns为一个数值记录当前次数。需要一个list命名prev_card_id用来记录先前翻开的牌。还需要state变量，记录当前处于游戏的哪个状态，0表示处于初始状态，1表示已经翻开一张牌</p>
+</li>
+<li>
+<p>初始化memory_list，直接生成0-16然后对8取模，在进行shuffle</p>
+</li>
+</ol>
+<pre><code>memory_list = [i%8 for i in range(16)]
+random.shuffle(memory_list)
+</code></pre>
+<p><strong>def mouseclick(pos) # 鼠标交互事件</strong></p>
+<ol>
+<li>
+<p>鼠标点击，得到了什么？鼠标点击的坐标位置，那需要什么？点了哪张牌。so，for循环枚举每张牌的左右两条竖线(x方向信息)，判断点击牌序号存在card_id</p>
+</li>
+<li>
+<p>如果当前牌是uncover，或者点击极限位置没找到牌(可能么？)的那么就不管他，否则，进入游戏规则2、3、4的逻辑判断。</p>
+</li>
+</ol>
+<p>需要注意就是，在状态0时候，要先把prev_card_id里面的卡牌状态翻转成未翻开</p>
+<pre><code>if state == 0:
+    for i in prev_card_id:
+        exposed[i] = False
+    prev_card_id = [card_id]
+    exposed[card_id] = True
+    turns += 1
+    state = 1
+    label.set_text(&quot;Turns = &quot; + str(turns))
+else:
+    exposed[card_id] = True
+    state = 0
+    if memory_list[prev_card_id[0]] == memory_list[card_id]:
+        exposed[card_id] = True
+        prev_card_id = []
+    else:
+        prev_card_id.append(card_id)
+</code></pre>
+<p><strong>def draw(canvas) # 界面绘制事件</strong></p>
+<p>界面就负责绘制，800的宽度分成16份</p>
+<p>第i个的宽度分别是i*50, (i+1)*50</p>
+<ol>
+<li>
+<p>如果exposed[i]是True，翻开就绘制Text</p>
+</li>
+<li>
+<p>否则，未翻开就绘制polygon</p>
+</li>
+</ol>
+<pre><code>for i in range(len(exposed)):
+    if exposed[i]:
+        canvas.draw_text(str(memory_list[i]), (i*50+10, 100/1.75), 50, 'White')
+    else:
+        canvas.draw_polygon([(i*50, 0), ((i+1)*50, 0), ((i+1)*50, 100), ((i*50), 100)], 1, 'Red', 'Green')
+</code></pre>
+<p>完整代码如下：</p>
+<pre><code># implementation of card game - Memory
+
+import simplegui
+import random
+
+# helper function to initialize globals
+def new_game():
+    global exposed, prev_card_id, turns, memory_list, state
+    # init variables
+    exposed = [False]*16
+    turns = state = 0
+    label.set_text(&quot;Turns = &quot; + str(turns))
+    prev_card_id = []
+    memory_list = [i%8 for i in range(16)]
+    random.shuffle(memory_list)
+
+# define event handlers
+def mouseclick(pos):
+    global state, prev_card_id, exposed, turns
+    # find the clicked card's id
+    card_id = -1
+    for i in range(len(exposed)):
+        if pos[0] &gt;= i*50 and pos[0] &lt; (i+1)*50:
+            card_id = i
+
+    if (card_id != -1) and (exposed[card_id] is False):
+        # state logic processed
+        if state == 0:
+            for i in prev_card_id:
+                exposed[i] = False
+            prev_card_id = [card_id]
+            exposed[card_id] = True
+            turns += 1
+            state = 1
+            label.set_text(&quot;Turns = &quot; + str(turns))
+        else:
+            exposed[card_id] = True
+            state = 0
+            if memory_list[prev_card_id[0]] == memory_list[card_id]:
+                exposed[card_id] = True
+                prev_card_id = []
+            else:
+                prev_card_id.append(card_id)
+
+# cards are logically 50x100 pixels in size
+def draw(canvas):
+    for i in range(len(exposed)):
+        if exposed[i]:
+            canvas.draw_text(str(memory_list[i]), (i*50+10, 100/1.75), 50, 'White')
+        else:
+            canvas.draw_polygon([(i*50, 0), ((i+1)*50, 0), ((i+1)*50, 100), ((i*50), 100)], 1, 'Red', 'Green')
+
+# create frame and add a button and labels
+frame = simplegui.create_frame(&quot;Memory&quot;, 800, 100)
+frame.add_button(&quot;Reset&quot;, new_game, 200)
+label = frame.add_label(&quot;Turns = 0&quot;)
+
+# register event handlers
+frame.set_mouseclick_handler(mouseclick)
+frame.set_draw_handler(draw)
+
+# get things rolling
+new_game()
+frame.start()
+
+# Always remember to review the grading rubric
+</code></pre>
+
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://tiny656.github.io/tag/fAC4IfIQ3" class="tag">
+                    Python
+                  </a>
+                
+                  <a href="https://tiny656.github.io/tag/0HiI0D0Zs" class="tag">
+                    Coursera
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://tiny656.github.io/post/mini-projects-4-pong">
+                  <h3 class="post-title">
+                    Mini projects #4 ---- Pong
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+              
+
+              
+                <div id="disqus_thread" data-aos="fade-in"></div>
+              
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<script type="application/javascript">
+
+AOS.init();
+
+hljs.initHighlightingOnLoad()
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+  
+
+  
+    <script src="https://unpkg.com/disqusjs@1.1/dist/disqus.js"></script>
+    <script>
+
+    var options = {
+      shortname: 'tiny656',
+      apikey: 'KPROXOCtTYtTmQ5bfpCsNOgeDwKNaqYYL8fpjSKmHR9k9rsImDKH6OILEtON2fpw',
+    }
+    if ('https://disqus.skk.moe/disqus/') {
+      options.api = 'https://disqus.skk.moe/disqus/'
+    }
+    var dsqjs = new DisqusJS(options)
+
+    </script>
+  
+
+
+
+
+  </body>
+</html>

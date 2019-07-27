@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>Programming Assignment 2: Randomized Queues and Deques | Gridea</title>
+<meta name="description" content="温故而知新">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://tiny656.github.io/favicon.ico?v=1564242683469">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="stylesheet" href="https://tiny656.github.io/styles/main.css">
+
+
+  
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/disqusjs@1.1/dist/disqusjs.css" />
+  
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://tiny656.github.io">
+        <img src="https://tiny656.github.io/images/avatar.png?v=1564242683469" class="site-logo">
+        <h1 class="site-title">Gridea</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      温故而知新
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://tiny656.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">Programming Assignment 2: Randomized Queues and Deques</h2>
+            <div class="post-date">2014-07-03</div>
+            
+            <div class="post-content">
+              <p>实现一个泛型的双端队列和随机化队列，用数组和链表的方式实现基本数据结构，主要介绍了泛型和迭代器。</p>
+<!--more-->
+<p><strong>Dequeue.</strong> 实现一个双端队列，它是栈和队列的升级版，支持首尾两端的插入和删除。Deque的API如下</p>
+<pre><code>public class Deque&lt;Item&gt; implements Iterable&lt;Item&gt; {
+   public Deque()                           // construct an empty deque
+   public boolean isEmpty()                 // is the deque empty?
+   public int size()                        // return the number of items on the deque
+   public void addFirst(Item item)          // insert the item at the front
+   public void addLast(Item item)           // insert the item at the end
+   public Item removeFirst()                // delete and return the item at the front
+   public Item removeLast()                 // delete and return the item at the end
+   public Iterator&lt;Item&gt; iterator()         // return an iterator over items in order from front to end
+   public static void main(String[] args)   // unit testing
+}
+</code></pre>
+<p>deque的操作实现必须是常数时间，使用空间是当前元素个数，迭代器的实现next()和hasNext()操作也是常数时间和常数空间,具体的要求如下。</p>
+<p><img src="https://tiny656.github.io/post-images/1564240221320.jpg" alt="Randomized Queues and Deques_1"></p>
+<p>所以Deque采用Linked-list实现方式。</p>
+<p>结点定义成：</p>
+<pre><code>private class Node {
+    private Item item;
+    private Node prev;
+    private Node next;
+}
+</code></pre>
+<p>双端队列使用Linked-List实现，那么使用一个哨兵sentinel来辅助实现Deque，这在Programming Tricks and Common Pitfalls中有讲到，每个Assignment中checklist的内容对于理解和实现有很大帮助，那么我们可以这样设计：</p>
+<p><img src="https://tiny656.github.io/post-images/1564240170854.jpg" alt="Randomized Queues and Deques_2"></p>
+<p>使用哨兵指向deque的队首元素，而队尾元素指向哨兵，现在我们来分析每个方法实现。</p>
+<p>Deque(): 初始Deque没有元素，元素个数为0，那么哨兵的prev和next也都指向自身。</p>
+<p>addFirst(): 队首添加元素时候，就是简单的链表操作在sentinel和第一个Node之间插入一个新的Node，并记得把元素个数加1.</p>
+<p>addLast(): 同理</p>
+<p>removeFirst(): 首先要判断，deque是否为空，能否支持删除操作，可以的话，删除首元素，更新第二个元素和sentinel之间的关系，然后元素个数减1</p>
+<p>removeLast(): 同理</p>
+<p>isEmpty()和size(): 用一直维护元素个数变量来进行操作</p>
+<p>迭代器Iterator的操作也十分简单了, 我们只需要获取sentinel哨兵，然后遍历就可以实现。hasNext()直到下一个元素又走回了sentinel哨兵，那么我们就已经遍历完了所有元素。</p>
+<p><strong>Randomized queue.</strong> 随机化队列也和栈和队列十分相似，区别在于它的remove操作是随机删除队列中的一个元素。API如下：</p>
+<pre><code>public class RandomizedQueue&lt;Item&gt; implements Iterable&lt;Item&gt; {
+   public RandomizedQueue()                 // construct an empty randomized queue
+   public boolean isEmpty()                 // is the queue empty?
+   public int size()                        // return the number of items on the queue
+   public void enqueue(Item item)           // add the item
+   public Item dequeue()                    // delete and return a random item
+   public Item sample()                     // return (but do not delete) a random item
+   public Iterator&lt;Item&gt; iterator()         // return an independent iterator over items in random order
+   public static void main(String[] args)   // unit testing
+}
+</code></pre>
+<p>时间和空间复杂度的要求看上面那个表格，我们使用Array数组的实现方式。注意一下java不能创建泛型数组，用cast强制转换来实现，但会导致warning</p>
+<pre><code>Item[] a = (Item[]) new Object[1];
+</code></pre>
+<p>Randomized queue和一般的queue基本操作都是一样，由于随机出队，那入队元素也不一定按照正常的队列来使用，我们只需要把队列的元素维护在连续起始开始的一段就可以了。</p>
+<p>那么我们只需要使用一个tail尾指针，当插入元素的时候，把元素直接插入在队尾：</p>
+<pre><code>public void enqueue(Item item) {
+    if (item == null)
+        throw new java.lang.NullPointerException(&quot;can't add a null item&quot;);
+    if (N == q.length) resize(2*q.length);
+    q[tail++] = item;
+    N++;
+}
+</code></pre>
+<p>当出队的时候，随即一个1-元素个数之间的下标，删除这个元素，那么这个位置空出来怎么办？把队尾元素填充上去,然后队尾置为空。</p>
+<p>在入队和出队的时候，要进行resize操作维护空间大小，resize看PPT上面有讲解。</p>
+<pre><code>public Item dequeue() {
+    if (isEmpty())
+        throw new java.util.NoSuchElementException(&quot;underflow&quot;);
+
+    int index = StdRandom.uniform(N);
+    Item item = q[index];
+    //because random, just simply put q[tail-1] to q[index]
+    q[index] = q[--tail];
+    q[tail] = null;
+    N--;
+    if (N &gt; 0 &amp;&amp; N == q.length/4) resize(q.length/2);
+
+    return item;
+}
+</code></pre>
+<p>迭代器的操作，不能需改原来的元素，需要重新申请空间，随机化的出队思考起来也很简单，我们使用Elementary Sort中介绍的Shuffle的方法来对元素重新组合一下</p>
+<pre><code>for (int i = 0; i &lt; N; i++) {
+    int r = StdRandom.uniform(i+1);
+    Item tmp = array[i];
+    array[i] = array[r];
+    array[r] = tmp;
+}
+</code></pre>
+<p>**Subset client. **从n个string中随机输出k个，n中的所有元素每个最多只能输出一次。</p>
+<p>要求使用Deque或者RandomizedQueue空间复杂度最多为N，时间复杂度为N线性。</p>
+<p>使用RandomizedQueue实现的话，初始把所有N个元素都加入到队列中，然后dequeue()其中n-k个，然后输出剩下的k个元素就是结果了。</p>
+<p>使用Deque随机的把N个元素加入队首和队尾，接下来随机的在队首和队尾删除n-k元素，然后输出剩下的k个元素就可以得到结果了。</p>
+
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://tiny656.github.io/tag/0HiI0D0Zs" class="tag">
+                    Coursera
+                  </a>
+                
+                  <a href="https://tiny656.github.io/tag/YcQ7F_Qrc" class="tag">
+                    Algorithm
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://tiny656.github.io/post/programming-assignment-1-percolation">
+                  <h3 class="post-title">
+                    Programming Assignment 1: Percolation
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+              
+
+              
+                <div id="disqus_thread" data-aos="fade-in"></div>
+              
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<script type="application/javascript">
+
+AOS.init();
+
+hljs.initHighlightingOnLoad()
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+  
+
+  
+    <script src="https://unpkg.com/disqusjs@1.1/dist/disqus.js"></script>
+    <script>
+
+    var options = {
+      shortname: 'tiny656',
+      apikey: 'KPROXOCtTYtTmQ5bfpCsNOgeDwKNaqYYL8fpjSKmHR9k9rsImDKH6OILEtON2fpw',
+    }
+    if ('https://disqus.skk.moe/disqus/') {
+      options.api = 'https://disqus.skk.moe/disqus/'
+    }
+    var dsqjs = new DisqusJS(options)
+
+    </script>
+  
+
+
+
+
+  </body>
+</html>

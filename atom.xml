@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://tiny656.github.io</id>
     <title>Gridea</title>
-    <updated>2019-07-27T07:43:12.284Z</updated>
+    <updated>2019-07-27T15:51:37.071Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://tiny656.github.io"/>
     <link rel="self" href="https://tiny656.github.io/atom.xml"/>
@@ -11,35 +11,2346 @@
     <icon>https://tiny656.github.io/favicon.ico</icon>
     <rights>All rights reserved 2019, Gridea</rights>
     <entry>
-        <title type="html"><![CDATA[Hello Gridea]]></title>
-        <id>https://tiny656.github.io/post/hello-gridea</id>
-        <link href="https://tiny656.github.io/post/hello-gridea">
+        <title type="html"><![CDATA[15终末，16伊始]]></title>
+        <id>https://tiny656.github.io/post/15-zhong-mo-16-yi-shi</id>
+        <link href="https://tiny656.github.io/post/15-zhong-mo-16-yi-shi">
         </link>
-        <updated>2018-12-11T16:00:00.000Z</updated>
-        <summary type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
-✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
+        <updated>2016-02-01T08:33:13.000Z</updated>
+        <summary type="html"><![CDATA[<p>15终末，16伊始</p>
 ]]></summary>
-        <content type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
-✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
+        <content type="html"><![CDATA[<p>15终末，16伊始</p>
 <!-- more -->
-<p><a href="https://github.com/getgridea/gridea">Github</a><br>
-<a href="http://hvenotes.fehey.com/">Gridea 主页</a><br>
-<a href="http://fehey.com/">示例网站</a></p>
-<h2 id="特性">特性👇</h2>
-<p>📝  你可以使用最酷的 <strong>Markdown</strong> 语法，进行快速创作</p>
-<p>🌉  你可以给文章配上精美的封面图和在文章任意位置插入图片</p>
-<p>🏷️  你可以对文章进行标签分组</p>
-<p>📋  你可以自定义菜单，甚至可以创建外部链接菜单</p>
-<p>💻  你可以在 <strong>𝖶𝗂𝗇𝖽𝗈𝗐𝗌</strong> 或 <strong>𝖬𝖺𝖼𝖮𝖲</strong> 设备上使用此客户端</p>
-<p>🌎  你可以使用 <strong>𝖦𝗂𝗍𝗁𝗎𝖻 𝖯𝖺𝗀𝖾𝗌</strong> 或 <strong>Coding Pages</strong> 向世界展示，未来将支持更多平台</p>
-<p>💬  你可以进行简单的配置，接入 <a href="https://github.com/gitalk/gitalk">Gitalk</a> 或 <a href="https://github.com/SukkaW/DisqusJS">DisqusJS</a> 评论系统</p>
-<p>🇬🇧  你可以使用<strong>中文简体</strong>或<strong>英语</strong></p>
-<p>🌁  你可以任意使用应用内默认主题或任意第三方主题，强大的主题自定义能力</p>
-<p>🖥  你可以自定义源文件夹，利用 OneDrive、百度网盘、iCloud、Dropbox 等进行多设备同步</p>
-<p>🌱 当然 <strong>Gridea</strong> 还很年轻，有很多不足，但请相信，它会不停向前🏃</p>
-<p>未来，它一定会成为你离不开的伙伴</p>
-<p>尽情发挥你的才华吧！</p>
-<p>😘 Enjoy~</p>
+<p>2015的开始，手机里最早的照片定格在1月28日。</p>
+<p><img src="file://C:/GitRepos/tiny656.github.io/source/image/15%E7%BB%88%E6%9C%AB-16%E4%BC%8A%E5%A7%8B/20150128.jpg" alt="beer"></p>
+<p>归家前在寝室的最后一晚，啤酒相伴。</p>
+<p><img src="file://C:/GitRepos/tiny656.github.io/source/image/15%E7%BB%88%E6%9C%AB-16%E4%BC%8A%E5%A7%8B/20150209.jpg" alt="running"></p>
+<p><strong>晨跑</strong>。2月的寒假，感觉并不太冷，仍是冰封的河道，但沐浴在柔柔的阳光下却是那么温暖。东方还未日出的清晨，就穿上跑鞋和卫衣离开家门去晨跑。河道的景观在每年归来都给我焕然一新的感觉。</p>
+<p><img src="file://C:/GitRepos/tiny656.github.io/source/image/15%E7%BB%88%E6%9C%AB-16%E4%BC%8A%E5%A7%8B/20150219.jpg" alt="aksu"></p>
+<p><strong>多浪河</strong>。15年2月时候，新修建的多浪河。</p>
+<p>在外读书的这几年，每一年回家，都会感到城市建设发生翻天覆地的变化，也总能漫步在其中寻找到很多儿时回忆。新华书店、母校的篮球场、元旦的狂欢、平安夜的苹果、上完课疾奔去五连坐的网吧、CS、War3、Wow、DotA，没有旧时的模样和氛围，确在心里烙下岁月的痕迹。这片土地和河流滋养一代又一代人，来了、走了、又来了、又走了，开心过、悲伤过、感动过、徘徊过，终有一天，心里满怀感恩之情，留下幸福眼泪，因为有一个叫做家的地方。</p>
+<p><img src="file://C:/GitRepos/tiny656.github.io/source/image/15%E7%BB%88%E6%9C%AB-16%E4%BC%8A%E5%A7%8B/20150314.jpg" alt="huadian"></p>
+<p><strong>项目</strong>。3月的标签注定是磨练。3月到4月一直在外做项目，每天和伙伴们赶进度开发功能。印象最深刻的便是宾馆门口回民饭店那只小猫了，乖巧可爱，每次去吃饭必定要逗乐一番。可能是去的次数多了也便熟悉了，每次刚坐下，小猫就静静的走来坐在我们的桌子边，嗷嗷待哺的眼神。记得3月中旬的一次大雾，有点伸手不见五指感觉，杭州今天着实在地图上消失了一天。上学期水比赛的渣打小熊也寄到了家里。</p>
+<p><img src="file://C:/GitRepos/tiny656.github.io/source/image/15%E7%BB%88%E6%9C%AB-16%E4%BC%8A%E5%A7%8B/mashushu.jpg" alt="mashushu"></p>
+<p><strong>Ukulele</strong>。5月有幸去酒球会现场相约马叔叔。从初识Ukulele起，应该是14年寒假结束回家的火车上，认识的三个小伙伴，一个在德国当兵，另外两个还在本科就读，当兵的汉子语言天赋极高，又在上学时候玩乐队，而另一个小伙伴正捧着Ukulele，一路充满欢笑和有趣的故事，三天两夜的火车也只不过是眨眼。到了杭州，一起去城站的Burger King(现在好像已经没有了)，买了夜宵，乘上归校的地铁，互相道别，没有留下联系方式，也许注定未来的某天自会相见。</p>
+<p>从那时起，Ukulele是一件有魔力的小妖怪，让我魂牵梦绕，也由此入手Uma的一个基本款，认识了马叔叔、Jake、郑成河...忧郁和阴霾在琴弦拨动的那一刻被一扫而空，琴箱共鸣，内心平静。也是从那时起，Ukulele、钢琴、吉他、萨克斯...声音变成了一种绝美的享受，尤其是在优美旋律和好心情不期而遇的时候，那感觉棒极了。也喜欢上了那句话，'你的手指划过琴弦，时光变化成了烟~'</p>
+<p><img src="file://C:/GitRepos/tiny656.github.io/source/image/15%E7%BB%88%E6%9C%AB-16%E4%BC%8A%E5%A7%8B/suzhoums.jpg" alt="suzhoums"></p>
+<p><strong>实习</strong>。6月到9月去苏州微软实习，开始了一段新生活。第一周Manager带着我们去吃了烤羊排。大筒骨是和同事们一起去文星广场的东北菜。冰箱那张是炎热夏季的Ice Cream Day，每张脸上洋溢的笑容都那么难忘，边走边吃着冰激凌闲聊。Team是从3月初成立，从最早的几个人迅速成长到几十人(图片直接从微软招聘的公众号粘来了)。最后的一张是Intern Engagement结束后的合影，与共度3个月欢乐时光的同伴们。</p>
+<p>在苏州的三个月，是令我最难忘的时刻。本科保研，从来没有过如此在企业实习的经历，十分感激微软提供的实习机会，在这短短三个月内让我受益良多，Manager Andrew和Mentor Feng给予了极大地帮助和指导，向Zhengguo学习和一起做Hackthon的日子，充实而难忘。Cozy丰富的经验、诗词和饮酒的雅兴让我学习和接触到了很多有意思的而我所不熟悉的领域。从Team每个人身上，都能感受到大家乐于分享的精神，任何问题都会在这个团队的面前迎刃而解。3个月的时光让我快速成长，而人生中又能有多少个这么宝贵的机会，对此，心怀感激，生活不经意的为我埋下了一颗充满惊喜的彩蛋，而我恰好砸开了它。</p>
+<p><strong>山地</strong>。10月的某天，卖掉了骑了1年的多的勇士600，1100km行程骑得也并不算多，尺寸不是特别适合了。当在玉泉31舍楼下把车卖给学弟的时候，竟然滔滔不绝的讲了1个小时。陪伴我这么久的'兄弟'，我也是再熟悉不过了，每次骑行归来，都会认真的擦拭一遍，检查链条是否需要上油，盘牙松紧是否合适，转动起来的声音是否正常，刹车是否依旧灵敏，每一处痕迹都有一段可以讲述的故事。过了一年，虽有些苍老的感觉，但是被我保养得很好，直到卖掉的时候，心里涌上失落的感觉，再看到寝室空荡出的自行车位，脑海里就浮现一幅幅骑行的画面。</p>
+<p><strong>马拉松</strong>。14年11月尝试短程马拉松(12.8km)，今年报名半程马拉松(21km)，运气也比较好，抽签中了。可是临近的那一段时间，都没有认真的锻炼，一直抱着消极心态，到了要开始的前一晚，第二天天气预报下雨，尽有丝毫的开心，因为有一个好理由或许可以名正言顺的放弃了。在正赛的当天，清早下起了小雨，匆忙赶到黄龙出发点，雷厉风行的换好衣服把包裹放到寄存车，就出发了。跑起来以后，周围的世界瞬间就变的无比安静，能听到的只有自己的内心，调整着自己的配速，迎着小雨就不断的跑起来了。13km膝盖到了上坡时候有了一点反应，上坡放慢速度，顺带走了一小段，13km到18km的期间，身体反应更剧烈了些，一直在内心自我鼓舞，找到一个配速适合的妹子作为参考，一直跟在她后面的不远处来调整自己的配速。最后的几km，当上了复兴大桥时候，身体有一点到极限的感觉，一路都是跑一段走一段，来调节自己膝盖和小腿的适应能力，一直都在脑海里徘徊，我还能坚持么？也就不远了，再忍忍吧？如此纠结的自我，却是经过了一个又一个的公里牌。当跑到终点时候，疲劳感瞬间而散，我做到了。找到存物车穿好衣服，便独自乘地铁回学校了。</p>
+<p>马拉松是一个很神奇的东西，并不是所说的能跑20km、40km的神奇，而是奔跑中内心的感受。每一次的奔跑和坚持是自我的追求和求证，让体质和精神都得到自我磨练和成长，它更是日积月累下的修炼。特别是，当身处马拉松的盛会是，两边渐渐划过的美景，周围那些从不见过或认识的人，有老有少为你递水为你加油鼓劲，那眼神和话语所透露出的，像是代表了一切叫做美好的东西，更要对辛勤的医务人员和志愿者表示感谢，感谢这一天在彼此的生活里留下的美好回忆。奔跑的感觉和马拉松已将成为生活中不可或缺的一部分。</p>
+<p><strong>毕设</strong>。10月下旬直到16年1月都奋战在毕设的战场，效率不高。选题有意义，可就是实验比较简单粗暴，需要的时间太久，后面心情也不好了，总是耐心一阵之后就需要自我调节一天，才能继续正常工作。理想和实际总是有差距，在交完初稿的情况下，现在，正好有时间可以思考，哪些地方可以做的更好。毕设的完成离不开师姐的大力帮助，还有老师的细心督促，也期待能在进一步完善，成为一个比较不错的工作。</p>
+<p><strong>写在最后</strong></p>
+<p>逃离社交软件。微博已经有接近2年没有用过，最近很长时间也不怎么用微信朋友圈。这样没有目的性的社交占用了生活中太多的宝贵而又零碎的时间，就像豆瓣的一篇文章所讲，我只是把想分享的东西直接发给了可能会对它感兴趣的人，如此一番聊下来，似乎感受更深，而彼此赞和留言并不是我想关心的东西，社交于我更是与感兴趣的人一起做感兴趣的事情。尤其是在拿到Kindle之后，地铁和公交的闲暇时间啃着感兴趣的书总是心情愉快(费曼，杀死一只反舌鸟，禅与摩托车维修艺术...)。当逃离了“社交的恐惧圈”，能够更内心平静的专注于自己想做的事情。寻找自己的兴趣点。专注几个兴趣点的专注和投入，弹琴、跑步、骑行和阅读，给生活带来极大地乐趣。踏实的做好每件事，在个人追求的道路上，寻求内心的平静，要有自己的分析和思考，将时间留给更值得人或事情。</p>
+<p>即将离开校园，踏上工作岗位，人生道路又将是一个崭新的开始~</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[诚品之行]]></title>
+        <id>https://tiny656.github.io/post/cheng-pin-zhi-xing</id>
+        <link href="https://tiny656.github.io/post/cheng-pin-zhi-xing">
+        </link>
+        <updated>2016-01-27T07:57:26.000Z</updated>
+        <summary type="html"><![CDATA[<p>2016.1.27，小雨，苏州诚品之行。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>2016.1.27，小雨，苏州诚品之行。</p>
+<!-- more -->
+<p>8点坐上高铁驶往苏州，下车就径直的搭上地铁，苏州站-&gt;广济南路-&gt;时代广场。</p>
+<p>回想起15年8月拜访的那次，当时还在装修，对面的开放的是mini体验店，可惜的是去的那天也没有开业。</p>
+<blockquote>
+<p>诚， 是一份诚恳的心意，一份执著的关怀<br>
+品， 是一份专业的素养，一份严谨的选择<br>
+取名“诚品”，代表着诚品书局对美好社会的追求与实践</p>
+</blockquote>
+<p>诚品的牌子也有些许年的历史了。而位于苏州工业园区金鸡湖畔的这一家诚品书店，是大陆的第一家。</p>
+<p>它三层楼的布局，外加地下一层。二楼和三楼是图书，其他主要是商场和餐饮。设计风格很有特点，进去转一圈就不知道东西南北。没有看地图走完一层，摸清了它的布局风格。</p>
+<p>来到三楼，工作日的正午，往来的读者并不算特别多，装成文艺青年范，走过一排排的书架，用心感受诚品的风格和结构。书的品类相对还是比较全，有很多的外文书籍，书架边还有精心设计桌椅供读者畅游书海，书架间偶然还能见到沏茶的服务，一壶60元左右，读书品茗，确是别样一番感受。</p>
+<p>深处的一个文具区，羽毛笔、 笔记本、皮具，独特又精致，火漆印章更是吸引眼球。</p>
+<p>二楼的文具类更多，中间的展品多是笔记本和明信片，音乐区的部分是各类传奇自传，还有黑胶片，也遇到在Amazon上看到的Ukulele HandBook，让人惊喜。其余的展柜还有LAMY、moleskine等。二楼的除去书店部分，其余就是百货和餐饮，只是相对价格都比较高。</p>
+<p>一楼意外的发现了挂着MS标志的一个实体店，近距离打望了下Surface Book，第二个展台却是Apple设备坐镇。比较诧异。</p>
+<p>诚品是我所见到的把书店和百货结合的很棒的一家，不免会想到和对比南京的先锋书店(Librairie Avant-Garde)。两家各具风格，先锋被BBC选为全球十大最美书店，五台山店也被称为南大的校外图书馆，2014年10月有幸前往一次，令我难以忘怀。先锋是主营图书业务，走进先锋扑面而来是书的灵魂气息，地下车库的独特设计，附上老旧灯光和熙熙攘攘的读者，或站或坐或蜷缩在沙发中，这就是南京的文化名片。诚品商业气息更加浓郁，却也是在这道路上探索出了自己的模式。</p>
+<p>书店都是具有活生生灵魂的地域，捧过的每一本书，不只是简单的文字，更是先辈和智者对于生活的思考和感悟。在互联网讲究的高效、低成本、快节奏下，看着Amazon、京东、当当图书业务的崛起，更可贵的是看到先锋、诚品这些实体书店深受大家的喜爱，这类实体书店中所带来的氛围和感受是不可或缺的，是人们精神和思想重要的营养剂。</p>
+<hr>
+<p>流水账的最后</p>
+<p>今天没有拍一张相片，只是将它刻在了脑海</p>
+<p>与毕业论文抗战的四个月，心情一直低迷，不断的在否定自己和肯定自己徘徊</p>
+<p>任性的赶着一大早的高铁跑来，坐着最末的一趟班车回去，延迟的完成了9月对自己的承诺。可怜的胃被无情的折磨</p>
+<p>总是发现心里想表达的东西，到说出来却被自己加工成了另一番样子，神经病晚期</p>
+<p>约好一起吃饭，也因C姑娘生病作罢，却是跑到她家蹭了一顿外卖，一起看完了《解决吾先生》</p>
+<p>电影剪辑赞，王千源的演技赞，但是从他的角度来看这个故事，总觉得他心理动机实在牵强</p>
+<p>《杀死一只知更鸟》，路途上都是捧着kindle在读它，描绘的故事特别棒，阿帝克斯所体现的正直和善良，教会了吉姆和斯考特人生中最重要的东西，知行合一。大概这就是信仰的力量吧，</p>
+<p>最喜欢那句话</p>
+<blockquote>
+<p>每个人都有自己的盲点，你永远无法理解一个人，除非你站在他的角度考虑问题</p>
+</blockquote>
+<p>脑海中忽然就一直跳出《愚人节》电影的画面，也许就是这样吧</p>
+<p>自我挣扎歇斯底里症根源可能还是缺乏信心</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[LightOJ Beginners Problems部分题解]]></title>
+        <id>https://tiny656.github.io/post/lightoj-beginners-problems-bu-fen-ti-jie</id>
+        <link href="https://tiny656.github.io/post/lightoj-beginners-problems-bu-fen-ti-jie">
+        </link>
+        <updated>2015-05-02T08:42:28.000Z</updated>
+        <summary type="html"><![CDATA[<p>对于第一次尝试用OJ来编写代码解题的Beginner，这是一个很不错的题目分类。当认真做完这一部分的题目会有很大收获。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>对于第一次尝试用OJ来编写代码解题的Beginner，这是一个很不错的题目分类。当认真做完这一部分的题目会有很大收获。</p>
+<!--more-->
+<p>一些意见，如果这么做你会接触到更多的知识：</p>
+<blockquote>
+<p>a. 尝试在Linux(Ubuntu or MacOS)的环境下用Shell写一些初始化编码环境的脚本<br>
+b. 尝试使用makefile来进行编译<br>
+c. 尝试使用命令行git，对自己编写的代码进行管理<br>
+d. 尝试使用markdown和LaTex来总结解题思路</p>
+</blockquote>
+<p>这里也维护了一份解题的代码。<br>
+<strong>https://coding.net/u/tiny656/p/LightOJ/git</strong></p>
+<p>1006 Hex-a-bonacci. 用数组模拟记录结果，注意取模</p>
+<p>1008 Fibsieve's Fantabulous Birthday. 找规律题，左边列是<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>1</mn><mi mathvariant="normal">，</mi><msup><mn>3</mn><mn>2</mn></msup><mi mathvariant="normal">，</mi><msup><mn>5</mn><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">1，3^2，5^2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8141079999999999em;vertical-align:0em;"></span><span class="mord">1</span><span class="mord cjk_fallback">，</span><span class="mord"><span class="mord">3</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mord cjk_fallback">，</span><span class="mord"><span class="mord">5</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span></span>......下边行是<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>1</mn><mi mathvariant="normal">，</mi><msup><mn>2</mn><mn>2</mn></msup><mi mathvariant="normal">，</mi><msup><mn>4</mn><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">1，2^2， 4^2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8141079999999999em;vertical-align:0em;"></span><span class="mord">1</span><span class="mord cjk_fallback">，</span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mord cjk_fallback">，</span><span class="mord"><span class="mord">4</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span></span>......，找到当前数被包夹的位置，然后处理一下位置关系，注意奇偶。</p>
+<p>1010 Kinghts in Chessboard. 规律题，对于m,n大于2的情况下，使用交叉放置的方法。特判一下情况，对于<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>m</mi><mi>i</mi><mi>n</mi><mo>(</mo><mi>m</mi><mo separator="true">,</mo><mi>n</mi><mo>)</mo><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">min(m,n)=1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">m</span><span class="mord mathdefault">i</span><span class="mord mathdefault">n</span><span class="mopen">(</span><span class="mord mathdefault">m</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">n</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span>，结果<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>m</mi><mo>×</mo><mi>n</mi></mrow><annotation encoding="application/x-tex">m \times n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.66666em;vertical-align:-0.08333em;"></span><span class="mord mathdefault">m</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">n</span></span></span></span>。对于<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>m</mi><mi>i</mi><mi>n</mi><mo>(</mo><mi>m</mi><mo separator="true">,</mo><mi>n</mi><mo>)</mo><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">min(m,n) =2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">m</span><span class="mord mathdefault">i</span><span class="mord mathdefault">n</span><span class="mopen">(</span><span class="mord mathdefault">m</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">n</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">2</span></span></span></span>时候，采用4方格间隔放置的方法。</p>
+<p>1042 Secret Origins. 定义一个数，n的二进制1的个数就是这个值，求二进制1个数相同的下个数。首先，拆分为2进制，寻找最先出现的01，然后交换两者顺序，对于010111100的这类情况，结果应该是011000111，所以要把后面的连续1后移到权值为1的位置。</p>
+<p>1045 Digits of Factorial. 求b进制下n阶乘的位数有多少，用stirling公式和<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mi>b</mi><mi>x</mi></msup><mo>=</mo><mi>r</mi><mi>e</mi><mi>s</mi><mi>u</mi><mi>l</mi><mi>t</mi></mrow><annotation encoding="application/x-tex">b^x=result</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord"><span class="mord mathdefault">b</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.664392em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">x</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mord mathdefault">e</span><span class="mord mathdefault">s</span><span class="mord mathdefault">u</span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span><span class="mord mathdefault">t</span></span></span></span>. 求出x就是位数</p>
+<p>1053 Higher Math. 给三角形的三边，判断是否是直角三角形。按照边大小排序，1.勾股定理 2.两边之和大于第三边，两边之差小于第三边。</p>
+<p>1107 Calm Down. 简单的数学计算，连接两个大圆心和两个小圆心形成一个三角形，连接的角度为<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>360</mn><mi mathvariant="normal">/</mi><mi>n</mi></mrow><annotation encoding="application/x-tex">360/n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">3</span><span class="mord">6</span><span class="mord">0</span><span class="mord">/</span><span class="mord mathdefault">n</span></span></span></span>度，利用余弦定理建立方程，可以求解出r。</p>
+<p>1109 False Ordering. 筛法把所有1-1000的数，因子全部求出来，然后排序查结果。<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><msup><mi>n</mi><mn>2</mn></msup><mo>)</mo></mrow><annotation encoding="application/x-tex">O(n^2)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.064108em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord"><span class="mord mathdefault">n</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span>筛法，排序<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><mi>n</mi><mi>l</mi><mi>o</mi><mi>g</mi><mi>n</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">O(nlogn)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathdefault">n</span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span><span class="mord mathdefault">o</span><span class="mord mathdefault" style="margin-right:0.03588em;">g</span><span class="mord mathdefault">n</span><span class="mclose">)</span></span></span></span> ,每次查询<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><mn>1</mn><mo>)</mo></mrow><annotation encoding="application/x-tex">O(1)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord">1</span><span class="mclose">)</span></span></span></span>.</p>
+<p>1113 Discover the Web. 模拟网页的前进后退访问，算法的步骤已经在题目中详细说明</p>
+<p>1116 Ekka Dokka. 把一个大数拆成奇数乘以偶数。注意x&amp;1判断就就可以。</p>
+<p>1133 Array Simulation. 模拟加减乘除数组运算。</p>
+<p>1136 Division by 3. 1,12,123,1234,...,12345678910,...这种模式<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>a</mi><mi>n</mi></msub><mo>=</mo><mi>n</mi><mo>×</mo><mo>(</mo><mi>n</mi><mo>+</mo><mn>1</mn><mo>)</mo><mi mathvariant="normal">/</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">a_n = n \times (n+1)/2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.58056em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.66666em;vertical-align:-0.08333em;"></span><span class="mord mathdefault">n</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathdefault">n</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">1</span><span class="mclose">)</span><span class="mord">/</span><span class="mord">2</span></span></span></span>，给an 在[a,b]之间，判断被3整除的有多少个。只要判断<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">n</span></span></span></span>或者<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">n+1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.66666em;vertical-align:-0.08333em;"></span><span class="mord mathdefault">n</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span>是否能被3整除，通过左右界<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>a</mi><mo separator="true">,</mo><mi>b</mi></mrow><annotation encoding="application/x-tex">a,b</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord mathdefault">a</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">b</span></span></span></span>运算就可以得到结果。<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">n</span></span></span></span>被3整除数量<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>b</mi><mi mathvariant="normal">/</mi><mn>3</mn><mo>−</mo><mi>a</mi><mi mathvariant="normal">/</mi><mn>3</mn><mo>+</mo><mo>(</mo><mo>(</mo><mi>a</mi><mi mathvariant="normal">%</mi><mn>3</mn><mo>)</mo><mo>=</mo><mo>=</mo><mn>0</mn><mo>?</mo><mn>1</mn><mo>:</mo><mn>0</mn><mo>)</mo></mrow><annotation encoding="application/x-tex">b / 3 - a / 3 + ((a \% 3) == 0 ? 1 : 0)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">b</span><span class="mord">/</span><span class="mord">3</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">a</span><span class="mord">/</span><span class="mord">3</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mopen">(</span><span class="mord mathdefault">a</span><span class="mord">%</span><span class="mord">3</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span></span><span class="base"><span class="strut" style="height:0.36687em;vertical-align:0em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord">0</span><span class="mclose">?</span><span class="mord">1</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">0</span><span class="mclose">)</span></span></span></span>，<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">n+1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.66666em;vertical-align:-0.08333em;"></span><span class="mord mathdefault">n</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span>被3整除数量<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>(</mo><mi>b</mi><mo>+</mo><mn>1</mn><mo>)</mo><mi mathvariant="normal">/</mi><mn>3</mn><mo>−</mo><mo>(</mo><mi>a</mi><mo>+</mo><mn>1</mn><mo>)</mo><mi mathvariant="normal">/</mi><mn>3</mn><mo>+</mo><mo>(</mo><mo>(</mo><mo>(</mo><mi>a</mi><mo>+</mo><mn>1</mn><mo>)</mo><mi mathvariant="normal">%</mi><mn>3</mn><mo>)</mo><mo>=</mo><mo>=</mo><mn>0</mn><mo>?</mo><mn>1</mn><mo>:</mo><mn>0</mn><mo>)</mo></mrow><annotation encoding="application/x-tex">(b + 1) / 3 - (a + 1) / 3 + (((a + 1) \% 3) == 0 ? 1 : 0)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathdefault">b</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">1</span><span class="mclose">)</span><span class="mord">/</span><span class="mord">3</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathdefault">a</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">1</span><span class="mclose">)</span><span class="mord">/</span><span class="mord">3</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mopen">(</span><span class="mopen">(</span><span class="mord mathdefault">a</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">1</span><span class="mclose">)</span><span class="mord">%</span><span class="mord">3</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span></span><span class="base"><span class="strut" style="height:0.36687em;vertical-align:0em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord">0</span><span class="mclose">?</span><span class="mord">1</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">0</span><span class="mclose">)</span></span></span></span>，注意结果用long long</p>
+<p>1182 Parity. 计算二进制1的个数。多种方法</p>
+<p>1189 Sum of Factorials. 计算给定数是否能由阶乘和来表示。注意不要遗漏<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>0</mn><mo>!</mo><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">0!=1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord">0</span><span class="mclose">!</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span>。思考<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>f</mi><mi>a</mi><mi>c</mi><mo>(</mo><mi>n</mi><mo>)</mo><mo>&gt;</mo><mo>=</mo><mi>f</mi><mi>a</mi><mi>c</mi><mo>(</mo><mi>n</mi><mo>−</mo><mn>1</mn><mo>)</mo><mo>+</mo><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mo>+</mo><mi>f</mi><mi>a</mi><mi>c</mi><mo>(</mo><mn>0</mn><mo>)</mo></mrow><annotation encoding="application/x-tex">fac(n) &gt;= fac(n-1)+...+fac(0)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.10764em;">f</span><span class="mord mathdefault">a</span><span class="mord mathdefault">c</span><span class="mopen">(</span><span class="mord mathdefault">n</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">&gt;</span></span><span class="base"><span class="strut" style="height:0.36687em;vertical-align:0em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.10764em;">f</span><span class="mord mathdefault">a</span><span class="mord mathdefault">c</span><span class="mopen">(</span><span class="mord mathdefault">n</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">1</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.66666em;vertical-align:-0.08333em;"></span><span class="mord">.</span><span class="mord">.</span><span class="mord">.</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.10764em;">f</span><span class="mord mathdefault">a</span><span class="mord mathdefault">c</span><span class="mopen">(</span><span class="mord">0</span><span class="mclose">)</span></span></span></span>. 对于给定一个恰好大于<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>f</mi><mi>a</mi><mi>c</mi><mo>(</mo><mi>n</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">fac(n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.10764em;">f</span><span class="mord mathdefault">a</span><span class="mord mathdefault">c</span><span class="mopen">(</span><span class="mord mathdefault">n</span><span class="mclose">)</span></span></span></span>小于<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>f</mi><mi>a</mi><mi>c</mi><mo>(</mo><mi>n</mi><mo>+</mo><mn>1</mn><mo>)</mo></mrow><annotation encoding="application/x-tex">fac(n+1)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.10764em;">f</span><span class="mord mathdefault">a</span><span class="mord mathdefault">c</span><span class="mopen">(</span><span class="mord mathdefault">n</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">1</span><span class="mclose">)</span></span></span></span>的数，<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>f</mi><mi>a</mi><mi>c</mi><mo>(</mo><mn>0...</mn><mi>n</mi><mo>−</mo><mn>1</mn><mo>)</mo></mrow><annotation encoding="application/x-tex">fac(0...n-1)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.10764em;">f</span><span class="mord mathdefault">a</span><span class="mord mathdefault">c</span><span class="mopen">(</span><span class="mord">0</span><span class="mord">.</span><span class="mord">.</span><span class="mord">.</span><span class="mord mathdefault">n</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">1</span><span class="mclose">)</span></span></span></span>都是小于等于<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>f</mi><mi>a</mi><mi>c</mi><mo>(</mo><mi>n</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">fac(n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.10764em;">f</span><span class="mord mathdefault">a</span><span class="mord mathdefault">c</span><span class="mopen">(</span><span class="mord mathdefault">n</span><span class="mclose">)</span></span></span></span>，所以不可能由他们构成给定数，由此我们只用贪心的从大向小取值即可。</p>
+<p>1211 Intersection of Cubes. 给N个长方体的对角线坐标<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>(</mo><msub><mi>x</mi><mn>1</mn></msub><mo separator="true">,</mo><msub><mi>y</mi><mn>1</mn></msub><mo separator="true">,</mo><msub><mi>z</mi><mn>1</mn></msub><mo>)</mo><mo separator="true">,</mo><mo>(</mo><msub><mi>x</mi><mn>2</mn></msub><mo separator="true">,</mo><msub><mi>y</mi><mn>2</mn></msub><mo separator="true">,</mo><msub><mi>z</mi><mn>2</mn></msub><mo>)</mo></mrow><annotation encoding="application/x-tex">(x_1,y_1,z_1),(x_2,y_2,z_2)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03588em;">y</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.03588em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.04398em;">z</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.04398em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">)</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mopen">(</span><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03588em;">y</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.03588em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.04398em;">z</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.04398em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span>，其中<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>x</mi><mn>1</mn></msub><mo>&lt;</mo><msub><mi>x</mi><mn>2</mn></msub><mo separator="true">,</mo><msub><mi>y</mi><mn>1</mn></msub><mo>&lt;</mo><msub><mi>y</mi><mn>2</mn></msub><mo separator="true">,</mo><msub><mi>z</mi><mn>1</mn></msub><mo>&lt;</mo><msub><mi>z</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">x_1&lt;x_2,y_1&lt;y_2,z_1&lt;z_2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6891em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">&lt;</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.7335400000000001em;vertical-align:-0.19444em;"></span><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03588em;">y</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.03588em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">&lt;</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.7335400000000001em;vertical-align:-0.19444em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03588em;">y</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.03588em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.04398em;">z</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.04398em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">&lt;</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.58056em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.04398em;">z</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.04398em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>，求这N个长方体的共有的相交体积是多大。先从二维入手，然后再进行三维。求出所有<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>x</mi><mn>1</mn></msub><mo separator="true">,</mo><msub><mi>y</mi><mn>1</mn></msub><mo separator="true">,</mo><msub><mi>z</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">x_1,y_1,z_1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03588em;">y</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.03588em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.04398em;">z</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.04398em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>的最大值，<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>x</mi><mn>2</mn></msub><mo separator="true">,</mo><msub><mi>y</mi><mn>2</mn></msub><mo separator="true">,</mo><msub><mi>z</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">x_2,y_2,z_2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03588em;">y</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.03588em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.04398em;">z</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.04398em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>的最小值，所得的就是相交长方体，如果构成不了长方体，就为0。</p>
+<p>1214 Large Division. 大数取模，注意加法溢出。</p>
+<p>1227 Boiled Eggs. n个鸡蛋取出p个不超过q的重量，问最多能取出几个。直接从头贪心加最小的。</p>
+<p>1241 Pinocchio. 呀，好坑的一道题，其实就是要找递增序列，上升跳跃过几次，但是每次跳跃最多是1-5cm，而且初始是2cm，对于2 8序列，结果跳跃肯定是2了，对于3 3这种，结果上来要从2-&gt;3。注意这些情况就好了。Sigh!</p>
+<p>1249 Chocolate Thief. 总和除以人数，就是平均水平，枚举所有人，大于平均就是贼，小于平均就是受害者。</p>
+<p>1305 Area of a Parallelogram. 求四边形的第四个顶点和面积。<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>c</mi><mi>x</mi></msub><mo>−</mo><msub><mi>d</mi><mi>x</mi></msub><mo>=</mo><msub><mi>b</mi><mi>x</mi></msub><mo>−</mo><msub><mi>a</mi><mi>x</mi></msub><mo separator="true">,</mo><msub><mi>c</mi><mi>y</mi></msub><mo>−</mo><msub><mi>b</mi><mi>y</mi></msub><mo>=</mo><msub><mi>d</mi><mi>y</mi></msub><mo>−</mo><msub><mi>a</mi><mi>y</mi></msub></mrow><annotation encoding="application/x-tex">c_x-d_x = b_x-a_x, c_y-b_y = d_y-a_y</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.73333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault">c</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">x</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.84444em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault">d</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">x</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.84444em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault">b</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">x</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.8694379999999999em;vertical-align:-0.286108em;"></span><span class="mord"><span class="mord mathdefault">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">x</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathdefault">c</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.15139200000000003em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight" style="margin-right:0.03588em;">y</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.980548em;vertical-align:-0.286108em;"></span><span class="mord"><span class="mord mathdefault">b</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.15139200000000003em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight" style="margin-right:0.03588em;">y</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.980548em;vertical-align:-0.286108em;"></span><span class="mord"><span class="mord mathdefault">d</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.15139200000000003em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight" style="margin-right:0.03588em;">y</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.716668em;vertical-align:-0.286108em;"></span><span class="mord"><span class="mord mathdefault">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.15139200000000003em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight" style="margin-right:0.03588em;">y</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span></span></span></span>. 然后是点到直线距离公式. <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>H</mi><mo>=</mo><mfrac><mrow><mi mathvariant="normal">∣</mi><mi>A</mi><mo>×</mo><msub><mi>x</mi><mn>0</mn></msub><mo>+</mo><mi>B</mi><mo>×</mo><msub><mi>y</mi><mn>0</mn></msub><mo>+</mo><mi>C</mi><mi mathvariant="normal">∣</mi></mrow><msqrt><mrow><msup><mi>A</mi><mn>2</mn></msup><mo>+</mo><msup><mi>B</mi><mn>2</mn></msup></mrow></msqrt></mfrac></mrow><annotation encoding="application/x-tex">H = \frac {|A \times x_0 + B \times y_0 + C|} {\sqrt {A^2+B^2}}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.08125em;">H</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1.548em;vertical-align:-0.538em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.01em;"><span style="top:-2.5445179999999996em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord sqrt mtight"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.9221171428571429em;"><span class="svg-align" style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mtight" style="padding-left:0.833em;"><span class="mord mtight"><span class="mord mathdefault mtight">A</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7463142857142857em;"><span style="top:-2.786em;margin-right:0.07142857142857144em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mbin mtight">+</span><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.05017em;">B</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7463142857142857em;"><span style="top:-2.786em;margin-right:0.07142857142857144em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span><span style="top:-2.882117142857143em;"><span class="pstrut" style="height:3em;"></span><span class="hide-tail mtight" style="min-width:0.853em;height:1.08em;"><svg width='400em' height='1.08em' viewBox='0 0 400000 1080' preserveAspectRatio='xMinYMin slice'><path d='M95,702c-2.7,0,-7.17,-2.7,-13.5,-8c-5.8,-5.3,-9.5,
+-10,-9.5,-14c0,-2,0.3,-3.3,1,-4c1.3,-2.7,23.83,-20.7,67.5,-54c44.2,-33.3,65.8,
+-50.3,66.5,-51c1.3,-1.3,3,-2,5,-2c4.7,0,8.7,3.3,12,10s173,378,173,378c0.7,0,
+35.3,-71,104,-213c68.7,-142,137.5,-285,206.5,-429c69,-144,104.5,-217.7,106.5,
+-221c5.3,-9.3,12,-14,20,-14H400000v40H845.2724s-225.272,467,-225.272,467
+s-235,486,-235,486c-2.7,4.7,-9,7,-19,7c-6,0,-10,-1,-12,-3s-194,-422,-194,-422
+s-65,47,-65,47z M834 80H400000v40H845z'/></svg></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.11788285714285718em;"><span></span></span></span></span></span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.485em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">∣</span><span class="mord mathdefault mtight">A</span><span class="mbin mtight">×</span><span class="mord mtight"><span class="mord mathdefault mtight">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31731428571428577em;"><span style="top:-2.357em;margin-left:0em;margin-right:0.07142857142857144em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight">0</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.143em;"><span></span></span></span></span></span></span><span class="mbin mtight">+</span><span class="mord mathdefault mtight" style="margin-right:0.05017em;">B</span><span class="mbin mtight">×</span><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.03588em;">y</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31731428571428577em;"><span style="top:-2.357em;margin-left:-0.03588em;margin-right:0.07142857142857144em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight">0</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.143em;"><span></span></span></span></span></span></span><span class="mbin mtight">+</span><span class="mord mathdefault mtight" style="margin-right:0.07153em;">C</span><span class="mord mtight">∣</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.538em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span>. <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>S</mi><mo>=</mo><mi>L</mi><mo>×</mo><mi>a</mi><mo>×</mo><mi>b</mi><mo>×</mo><mi>H</mi></mrow><annotation encoding="application/x-tex">S = L \times a \times b \times H</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.05764em;">S</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.76666em;vertical-align:-0.08333em;"></span><span class="mord mathdefault">L</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.66666em;vertical-align:-0.08333em;"></span><span class="mord mathdefault">a</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.77777em;vertical-align:-0.08333em;"></span><span class="mord mathdefault">b</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.08125em;">H</span></span></span></span> 下面可以约掉的根号可以约掉</p>
+<p>1331 Agent J. 推公式，三圆相切，求中间空白面积。圆心构造三角形，用三角形面积减去三个圆弧面积。 海伦公式，求出角平分线交点到各边高，以及反正切函数求角。</p>
+<p>1414 February 29. 求两个日期之间的闰年数量。2015编程之美资格赛原题。定义求n年前的闰年数量，<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>f</mi><mi>u</mi><mi>n</mi><mi>c</mi><mo>(</mo><mi>n</mi><mo>)</mo><mo>=</mo><mi>n</mi><mi mathvariant="normal">/</mi><mn>4</mn><mo>−</mo><mi>n</mi><mi mathvariant="normal">/</mi><mn>100</mn><mo>+</mo><mi>n</mi><mi mathvariant="normal">/</mi><mn>400</mn></mrow><annotation encoding="application/x-tex">func(n)=n/4-n/100+n/400</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.10764em;">f</span><span class="mord mathdefault">u</span><span class="mord mathdefault">n</span><span class="mord mathdefault">c</span><span class="mopen">(</span><span class="mord mathdefault">n</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">n</span><span class="mord">/</span><span class="mord">4</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">n</span><span class="mord">/</span><span class="mord">1</span><span class="mord">0</span><span class="mord">0</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">n</span><span class="mord">/</span><span class="mord">4</span><span class="mord">0</span><span class="mord">0</span></span></span></span>, 即找出所有能被4整除的年，减去能被100整除年，加上400整除的年数量，就是n年(包括n)之前的闰年数量，那么a-b之间闰年数量就是<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>f</mi><mi>u</mi><mi>n</mi><mi>c</mi><mo>(</mo><mi>b</mi><mo>)</mo><mo>−</mo><mi>f</mi><mi>u</mi><mi>n</mi><mi>c</mi><mo>(</mo><mi>a</mi><mo>−</mo><mn>1</mn><mo>)</mo></mrow><annotation encoding="application/x-tex">func(b)-func(a-1)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.10764em;">f</span><span class="mord mathdefault">u</span><span class="mord mathdefault">n</span><span class="mord mathdefault">c</span><span class="mopen">(</span><span class="mord mathdefault">b</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.10764em;">f</span><span class="mord mathdefault">u</span><span class="mord mathdefault">n</span><span class="mord mathdefault">c</span><span class="mopen">(</span><span class="mord mathdefault">a</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">1</span><span class="mclose">)</span></span></span></span>。注意处理一下月和天，修改年。比如第一段时间月份大于等于3，算成下一年。第二段月份如果在2月29之前，算成上一年。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Mini projects #8 ---- RiceRocks]]></title>
+        <id>https://tiny656.github.io/post/mini-projects-8-ricerocks</id>
+        <link href="https://tiny656.github.io/post/mini-projects-8-ricerocks">
+        </link>
+        <updated>2014-11-09T15:32:06.000Z</updated>
+        <summary type="html"><![CDATA[<p>课程全名：An Introduction to Interactive Programming in Python，来自 Rice University</p>
+<p>授课教授：Joe Warren, Scott Rixner, John Greiner, Stephen Wong</p>
+<p>工具：<a href="http://www.codeskulptor.org/">http://www.codeskulptor.org/</a>, simplegui 模块</p>
+<p>最后一个project，继续完善上一周的工程，做完就是一个既简单又棒棒的打陨石(飞机)游戏。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>课程全名：An Introduction to Interactive Programming in Python，来自 Rice University</p>
+<p>授课教授：Joe Warren, Scott Rixner, John Greiner, Stephen Wong</p>
+<p>工具：<a href="http://www.codeskulptor.org/">http://www.codeskulptor.org/</a>, simplegui 模块</p>
+<p>最后一个project，继续完善上一周的工程，做完就是一个既简单又棒棒的打陨石(飞机)游戏。</p>
+<!--more-->
+<p>第八周：</p>
+<p>关于Python的知识，set类型的用法</p>
+<blockquote>
+<p>定义：set和C++中的STL中的set类似，用来维护一组不重复的无序元素。</p>
+</blockquote>
+<pre><code># 定义一个空的set
+set_empty = set() # or set([])
+print set_empty
+# set([])
+
+# 定义set
+set_a = set([1, 2, 3])
+set_b = set((1, 2, 3))
+set_c = set({1:1, 2:1, 3:1})
+set_d = set(&quot;abcd&quot;)
+set_e = set([&quot;a&quot;, &quot;b&quot;, &quot;cd&quot;])
+print set_a, set_b, set_c
+print set_d, set_e
+# set([1, 2, 3]) set([1, 2, 3]) set([1, 2, 3])
+# set(['a', 'b', 'c', 'd']) set(['a', 'b', 'cd'])
+
+# set的交、并、差运算、对称差集
+# 这些操作返回一个新的集合,set_a,set_b不发生改变
+set_a = set([1, 2, 3])
+set_b = set([2, 3, 4])
+print set_a.intersection(set_b)
+# set([2, 3])
+print set_a.union(set_b)
+# set([1, 2, 3, 4])
+print set_a.difference(set_b)
+# set([1])
+print set_a.symmetric_difference(set_b)
+# set([1, 4])
+
+# 这些对应操作没有返回值，并且直接改变set_a,set_b不变化
+set_a.intersection_update(set_b)
+set_a.update(set_b) # 添加多个元素，就是union含义
+set_a.difference_update(set_b)
+set_a.symmetric_difference_update(set_b)
+
+# set 其他的操作符
+s = set([1, 2, 3, 4])
+s.add(5) # 添加单个元素
+s.add(4) # 重复元素没有效果
+s.remove(4) # 移除集合中的元素，如果元素不存在会报错
+s.discard(8) # 也是移除集合中的元素，但是对于不存在元素不影响
+s.pop() # 弹出集合中的任意一个元素，如果集合为空执行该操作报错
+
+set([2, 9, 7, 1].issubset(set([1, 7])) # 判断是否是子集，返回True或者False
+set([2, 9, 7, 1]).issuperset(set([1, 7])) # 判断是否是父集，返回True或者False
+</code></pre>
+<blockquote>
+<p>set因为是无序集合，所以不支持index索引和slice([ ])切片的操作，可以用element in set来判断集合是否存在该元素。或者for 循环用iterable遍历。<br>
+set和list是可变类型，下面的a和b都是指向同一个空间位置。</p>
+</blockquote>
+<pre><code>a = set([1, 2, 3])
+b = a
+print a
+# set([1, 2, 3])
+b.add(4)
+print a
+# set([1, 2, 3, 4])
+</code></pre>
+<p>Python知识介绍完，上游戏图</p>
+<p><img src="https://tiny656.github.io/post-images/1564242289631.png" alt="RiceRocks 1"></p>
+<p>回顾上周，完成了一个飞船，一个陨石，一个子弹。</p>
+<p>基本的绘制、更新以及大部分的方法都已经实现，这一周主要是实现多个陨石以及子弹的连续发射，还有加上飞船三者之间碰撞的关系处理。</p>
+<blockquote>
+<p>对于游戏来说，掌握<strong>关键的一帧</strong>，核心就在draw的绘制中：<br>
+更新时间，绘制背景元素<br>
+绘制和更新my_ship<br>
+如果游戏开始<br>
+　　绘制更新rock_group<br>
+　　绘制更新missile_group　<br>
+　　绘制更新explosion_group　　<br>
+　　如果 rock_group和my_ship碰撞，lives –= 1<br>
+　　如果 lives&lt;=0，init_game()<br>
+　　score 加上发生rock_group与missile_group碰撞的数量(biu~~~~)<br>
+游戏没开始就换个splah提示<br>
+绘制lives text<br>
+绘制score text</p>
+</blockquote>
+<pre><code># draw handler
+def draw(canvas):
+    global time, lives, rock_group, missile_group, my_ship, score, started
+
+    # animiate background
+    time += 1
+    wtime = (time / 4) % WIDTH
+    center = debris_info.get_center()
+    size = debris_info.get_size()
+    canvas.draw_image(nebula_image, nebula_info.get_center(), nebula_info.get_size(), [WIDTH / 2, HEIGHT / 2], [WIDTH, HEIGHT])
+    canvas.draw_image(debris_image, center, size, (wtime - WIDTH / 2, HEIGHT / 2), (WIDTH, HEIGHT))
+    canvas.draw_image(debris_image, center, size, (wtime + WIDTH / 2, HEIGHT / 2), (WIDTH, HEIGHT))
+
+    # draw and update ship
+    my_ship.draw(canvas)
+    my_ship.update()
+
+    if started:
+
+        # draw and update rock_group
+        process_sprite_group(rock_group, canvas)
+
+        # draw and update missile_group
+        process_sprite_group(missile_group, canvas)
+
+        # draw and update explosioin_group
+        process_sprite_group(explosion_group, canvas)
+
+        # ship - rock_group collide and update the lives
+        if group_collide(rock_group, my_ship):
+            lives -= 1
+        # game over
+        if lives &lt;= 0:
+            init_game()
+            message_label.set_text('Click to start!')
+        # update score
+        score += group_group_collide(rock_group, missile_group) * 10
+
+    else:
+        canvas.draw_image(splash_image, splash_info.get_center(), splash_info.get_size(), (WIDTH / 2, HEIGHT / 2), splash_info.get_size())
+
+    # draw lives
+    canvas.draw_text(&quot;Lives&quot;, [WIDTH / 12, HEIGHT / 12], 30, &quot;White&quot;)
+    canvas.draw_text(str(lives), [WIDTH / 12, HEIGHT / 12 + 40], 30, &quot;White&quot;)
+
+    # draw score
+    canvas.draw_text(&quot;Score&quot;, [10 * WIDTH / 12, HEIGHT/12], 30, &quot;White&quot;)
+    canvas.draw_text(str(score), [10 * WIDTH /12, HEIGHT/12 + 40], 30, &quot;White&quot;)
+</code></pre>
+<p>my_ship的绘制更新上周已经完成，上周主要处理一个陨石和子弹的情形，这周完成多个，奥秘就在process_sprite_group()中。</p>
+<pre><code>def process_sprite_group(sprite_group, canvas):
+    remove_set = set([])
+    for sprite in sprite_group:
+        sprite.draw(canvas)
+        if sprite.update():
+            remove_set.add(sprite)
+    sprite_group.difference_update(remove_set)
+</code></pre>
+<blockquote>
+<p>process_sprite_group完成对group中每一个对象的绘制和更新，sprite.update()的if判断主要是针对子弹，子弹发生是存在距离，这个距离通过age时间来衡量，当sprite.lifespan超过了age，那么update就返回True，我们就要把这些过了保质期的子弹从他的group中移走，而默认rock陨石的lifespan保质期是inf，永不过期，除非被飞机打掉了。这样通过process_sprite_group就可以维护rock_group，missile_group，explosion_group.</p>
+</blockquote>
+<p>那么接下来重要的问题来了？挖掘机….处理元素之间的碰撞关系。这里碰撞主要存在两种，飞机与陨石之间碰撞，陨石和子弹之间碰撞。</p>
+<pre><code>def group_collide(group, other_object):
+    is_collide = False
+    remove_set = set([])
+    for obj in group:
+        if obj.collide(other_object):
+            is_collide = True
+            remove_set.add(obj)
+            # create new explosion
+            pos = [other_object.pos[0], other_object.pos[1]]
+            new_explosion = Sprite(pos, [0, 0], other_object.angle, 0, explosion_image, explosion_info, explosion_sound)
+            explosion_group.add(new_explosion)
+
+    group.difference_update(remove_set)
+    return is_collide
+
+def group_group_collide(group, other_group):
+    num_collide = 0
+    for obj in list(group):
+        if group_collide(other_group, obj):
+            group.discard(obj)
+            num_collide += 1
+    return num_collide
+</code></pre>
+<blockquote>
+<p>通过上面两个Help Function，第一个可以用来检测rock_group和my_ship，需要实现一个sprite的collide方法，用距离和半径和的关系判断是否碰撞，然后再group_collide函数中只要遍历rock_group，调用collide方法判断是否和my_ship相撞。相撞的元素从group中移走，为了实现explosion的效果，在这里向explosion_group添加以other_project坐标属性的新元素。<br>
+第二个，主要用来监测rock_group和missile_group的碰撞关系，遍历rock_group然后在调用group_collide方法，判断单个元素和group之间碰撞(复用大法好)。<br>
+碰撞检测后，记得更新score 和 lives的值。</p>
+</blockquote>
+<p>游戏的核心也就差不多了。剩下的就没什么了。started变量控制一下游戏开始状态，基本的Tile的图像绘制，加个偏移就好。再有就是一些加速的参数需要自己手工调整，关乎你游戏的可玩性。忘记一点，随机生成rock的时候，加一个判断当坐标离自己飞船在一定范围之外，才能生成，不然莫宁奇妙的躺枪。</p>
+<p>一个陨石10分，无聊的加了个button，500分换一条命。</p>
+<p>下面就贴完整代码：</p>
+<pre><code># program template for Spaceship
+import simplegui
+import math
+import random
+
+# globals for user interface
+WIDTH = 800
+HEIGHT = 600
+score = 0
+lives = 3
+time = 0.5
+
+class ImageInfo:
+    def __init__(self, center, size, radius = 0, lifespan = None, animated = False):
+        self.center = center
+        self.size = size
+        self.radius = radius
+        if lifespan:
+            self.lifespan = lifespan
+        else:
+            self.lifespan = float('inf')
+        self.animated = animated
+
+    def get_center(self):
+        return self.center
+
+    def get_size(self):
+        return self.size
+
+    def get_radius(self):
+        return self.radius
+
+    def get_lifespan(self):
+        return self.lifespan
+
+    def get_animated(self):
+        return self.animated
+
+
+# art assets created by Kim Lathrop, may be freely re-used in non-commercial projects, please credit Kim
+
+# debris images - debris1_brown.png, debris2_brown.png, debris3_brown.png, debris4_brown.png
+#                 debris1_blue.png, debris2_blue.png, debris3_blue.png, debris4_blue.png, debris_blend.png
+debris_info = ImageInfo([320, 240], [640, 480])
+debris_image = simplegui.load_image(&quot;http://commondatastorage.googleapis.com/codeskulptor-assets/lathrop/debris2_blue.png&quot;)
+
+# nebula images - nebula_brown.png, nebula_blue.png
+nebula_info = ImageInfo([400, 300], [800, 600])
+nebula_image = simplegui.load_image(&quot;http://commondatastorage.googleapis.com/codeskulptor-assets/lathrop/nebula_blue.f2014.png&quot;)
+
+# splash image
+splash_info = ImageInfo([200, 150], [400, 300])
+splash_image = simplegui.load_image(&quot;http://commondatastorage.googleapis.com/codeskulptor-assets/lathrop/splash.png&quot;)
+
+# ship image
+ship_info = ImageInfo([45, 45], [90, 90], 35)
+ship_image = simplegui.load_image(&quot;http://commondatastorage.googleapis.com/codeskulptor-assets/lathrop/double_ship.png&quot;)
+
+# missile image - shot1.png, shot2.png, shot3.png
+missile_info = ImageInfo([5,5], [10, 10], 3, 50)
+missile_image = simplegui.load_image(&quot;http://commondatastorage.googleapis.com/codeskulptor-assets/lathrop/shot2.png&quot;)
+
+# asteroid images - asteroid_blue.png, asteroid_brown.png, asteroid_blend.png
+asteroid_info = ImageInfo([45, 45], [90, 90], 40)
+asteroid_image = simplegui.load_image(&quot;http://commondatastorage.googleapis.com/codeskulptor-assets/lathrop/asteroid_blue.png&quot;)
+
+# animated explosion - explosion_orange.png, explosion_blue.png, explosion_blue2.png, explosion_alpha.png
+explosion_info = ImageInfo([64, 64], [128, 128], 17, 24, True)
+explosion_image = simplegui.load_image(&quot;http://commondatastorage.googleapis.com/codeskulptor-assets/lathrop/explosion_alpha.png&quot;)
+
+# sound assets purchased from sounddogs.com, please do not redistribute
+soundtrack = simplegui.load_sound(&quot;http://commondatastorage.googleapis.com/codeskulptor-assets/sounddogs/soundtrack.mp3&quot;)
+missile_sound = simplegui.load_sound(&quot;http://commondatastorage.googleapis.com/codeskulptor-assets/sounddogs/missile.mp3&quot;)
+missile_sound.set_volume(.5)
+ship_thrust_sound = simplegui.load_sound(&quot;http://commondatastorage.googleapis.com/codeskulptor-assets/sounddogs/thrust.mp3&quot;)
+explosion_sound = simplegui.load_sound(&quot;http://commondatastorage.googleapis.com/codeskulptor-assets/sounddogs/explosion.mp3&quot;)
+
+# helper functions to handle transformations
+def angle_to_vector(ang):
+    return [math.cos(ang), math.sin(ang)]
+
+def dist(p,q):
+    return math.sqrt((p[0] - q[0]) ** 2+(p[1] - q[1]) ** 2)
+
+
+# Ship class
+class Ship:
+    def __init__(self, pos, vel, angle, image, info):
+        self.pos = [pos[0],pos[1]]
+        self.vel = [vel[0],vel[1]]
+        self.thrust = False
+        self.angle = angle
+        self.angle_vel = 0
+        self.image = image
+        self.image_center = info.get_center()
+        self.image_size = info.get_size()
+        self.radius = info.get_radius()
+
+    def draw(self,canvas):
+        if self.thrust:
+            center = (self.image_center[0]+self.image_size[0], self.image_center[1])
+            canvas.draw_image(self.image, center, self.image_size, self.pos, self.image_size, self.angle)
+        else:
+            canvas.draw_image(self.image, self.image_center, self.image_size, self.pos, self.image_size, self.angle)
+
+
+    def update(self):
+        self.angle += self.angle_vel
+        self.pos[0] = (self.pos[0] + self.vel[0]) % WIDTH
+        self.pos[1] = (self.pos[1] + self.vel[1]) % HEIGHT
+        c = 0.05
+        self.vel[0] *= (1 - c)
+        self.vel[1] *= (1 - c)
+        forward = angle_to_vector(self.angle)
+        if self.thrust:
+            self.vel[0] += forward[0] * 0.8
+            self.vel[1] += forward[1] * 0.8
+
+
+    def change_angle_vel(self, ori, key_state):
+        if ((ori == &quot;right&quot; and key_state == &quot;keyup&quot;) or
+            (ori == &quot;left&quot; and key_state == &quot;keydown&quot;)):
+            self.angle_vel -= 0.1
+        elif ((ori == &quot;right&quot; and key_state == &quot;keydown&quot;) or
+            (ori == &quot;left&quot; and key_state == &quot;keyup&quot;)):
+            self.angle_vel += 0.1
+
+    def set_thruster(self, thruster_state):
+        self.thrust = thruster_state
+        if self.thrust:
+            ship_thrust_sound.rewind()
+            ship_thrust_sound.play()
+        else:
+            ship_thrust_sound.rewind()
+
+    def shoot(self):
+        global missile_group
+        offset = self.image_size[0] / 2.0
+        forward = angle_to_vector(self.angle)
+        pos = [self.pos[0] + offset * forward[0], self.pos[1] + offset * forward[1]]
+        vel = [self.vel[0] + 6 * forward[0], self.vel[1] + 6 * forward[1]]
+        ang = 0
+        ang_vel = 0
+        missile_group.add(Sprite(pos, vel, ang, ang_vel, missile_image, missile_info, missile_sound))
+
+    def get_position(self):
+        return self.pos
+
+    def get_radius(self):
+        return self.radius
+
+# Sprite class
+class Sprite:
+    def __init__(self, pos, vel, ang, ang_vel, image, info, sound = None):
+        self.pos = [pos[0],pos[1]]
+        self.vel = [vel[0],vel[1]]
+        self.angle = ang
+        self.angle_vel = ang_vel
+        self.image = image
+        self.image_center = info.get_center()
+        self.image_size = info.get_size()
+        self.radius = info.get_radius()
+        self.lifespan = info.get_lifespan()
+        self.animated = info.get_animated()
+        self.age = 0
+        if sound:
+            sound.rewind()
+            sound.play()
+
+    def draw(self, canvas):
+        if self.animated:
+            center = (self.image_center[0] + self.age * self.image_size[0], self.image_center[1])
+            canvas.draw_image(self.image, center, self.image_size, self.pos, self.image_size, self.angle)
+        else:
+            canvas.draw_image(self.image, self.image_center, self.image_size, self.pos, self.image_size, self.angle)
+
+
+    def update(self):
+        if started:
+            self.angle += self.angle_vel
+            self.pos[0] = (self.pos[0] + self.vel[0]) % WIDTH
+            self.pos[1] = (self.pos[1] + self.vel[1]) % HEIGHT
+
+            self.age += 1
+            if self.age &gt;= self.lifespan:
+                return True
+            else:
+                return False
+
+    def get_position(self):
+        return self.pos
+
+    def get_radius(self):
+        return self.radius
+
+    def collide(self, other_object):
+        dis = self.get_radius() + other_object.get_radius()
+        if dis &gt; dist(self.get_position(), other_object.get_position()):
+            return True
+        else:
+            return False
+
+# Help Function to deal collision
+def group_collide(group, other_object):
+    is_collide = False
+    remove_set = set([])
+    for obj in group:
+        if obj.collide(other_object):
+            is_collide = True
+            remove_set.add(obj)
+            # create new explosion
+            pos = [other_object.pos[0], other_object.pos[1]]
+            new_explosion = Sprite(pos, [0, 0], other_object.angle, 0, explosion_image, explosion_info, explosion_sound)
+            explosion_group.add(new_explosion)
+
+    group.difference_update(remove_set)
+    return is_collide
+
+def group_group_collide(group, other_group):
+    num_collide = 0
+    for obj in list(group):
+        if group_collide(other_group, obj):
+            group.discard(obj)
+            num_collide += 1
+    return num_collide
+
+def process_sprite_group(sprite_group, canvas):
+    remove_set = set([])
+    for sprite in sprite_group:
+        sprite.draw(canvas)
+        if sprite.update():
+            remove_set.add(sprite)
+    sprite_group.difference_update(remove_set)
+
+# draw handler
+def draw(canvas):
+    global time, lives, rock_group, missile_group, my_ship, score, started
+
+    # animiate background
+    time += 1
+    wtime = (time / 4) % WIDTH
+    center = debris_info.get_center()
+    size = debris_info.get_size()
+    canvas.draw_image(nebula_image, nebula_info.get_center(), nebula_info.get_size(), [WIDTH / 2, HEIGHT / 2], [WIDTH, HEIGHT])
+    canvas.draw_image(debris_image, center, size, (wtime - WIDTH / 2, HEIGHT / 2), (WIDTH, HEIGHT))
+    canvas.draw_image(debris_image, center, size, (wtime + WIDTH / 2, HEIGHT / 2), (WIDTH, HEIGHT))
+
+    # draw and update ship
+    my_ship.draw(canvas)
+    my_ship.update()
+
+    if started:
+
+        # draw and update rock_group
+        process_sprite_group(rock_group, canvas)
+
+        # draw and update missile_group
+        process_sprite_group(missile_group, canvas)
+
+        # draw and update explosioin_group
+        process_sprite_group(explosion_group, canvas)
+
+        # ship - rock_group collide and update the lives
+        if group_collide(rock_group, my_ship):
+            lives -= 1
+        # game over
+        if lives &lt;= 0:
+            init_game()
+            message_label.set_text('Click to start!')
+        # update score
+        score += group_group_collide(rock_group, missile_group) * 10
+
+    else:
+        canvas.draw_image(splash_image, splash_info.get_center(), splash_info.get_size(), (WIDTH / 2, HEIGHT / 2), splash_info.get_size())
+
+    # draw lives
+    canvas.draw_text(&quot;Lives&quot;, [WIDTH / 12, HEIGHT / 12], 30, &quot;White&quot;)
+    canvas.draw_text(str(lives), [WIDTH / 12, HEIGHT / 12 + 40], 30, &quot;White&quot;)
+
+    # draw score
+    canvas.draw_text(&quot;Score&quot;, [10 * WIDTH / 12, HEIGHT/12], 30, &quot;White&quot;)
+    canvas.draw_text(str(score), [10 * WIDTH /12, HEIGHT/12 + 40], 30, &quot;White&quot;)
+
+# timer handler that spawns a rock
+def rock_spawner():
+    global rock_group
+    if started and len(rock_group) &lt; 12:
+        pos = [random.randint(0, WIDTH-1), random.randint(0, HEIGHT-1)]
+        # dist great than 20 can spawn a new rock
+        if dist(pos, my_ship.get_position()) &gt; 150:
+            vel = [random.randrange(1, 3, 1)*random.choice([1, -1]), random.randrange(1, 3, 1)*random.choice([1, -1])]
+            ang = 0
+            ang_vel = random.randrange(5, 10, 1) / 100.0 * random.choice([1, -1])
+            new_rock = Sprite(pos, vel, ang, ang_vel, asteroid_image, asteroid_info)
+            rock_group.add(new_rock)
+
+
+# key_up handler
+def key_up(key):
+    if started:
+        if simplegui.KEY_MAP['left'] == key:
+            my_ship.change_angle_vel(&quot;left&quot;, &quot;keyup&quot;)
+        elif simplegui.KEY_MAP['right'] == key:
+            my_ship.change_angle_vel(&quot;right&quot;, &quot;keyup&quot;)
+        elif simplegui.KEY_MAP['up'] == key:
+            my_ship.set_thruster(False)
+
+# key_down handler
+def key_down(key):
+    if started:
+        if simplegui.KEY_MAP['left'] == key:
+            my_ship.change_angle_vel(&quot;left&quot;, &quot;keydown&quot;)
+        elif simplegui.KEY_MAP['right'] == key:
+            my_ship.change_angle_vel(&quot;right&quot;, &quot;keydown&quot;)
+        elif simplegui.KEY_MAP['up'] == key:
+            my_ship.set_thruster(True)
+        elif simplegui.KEY_MAP['space'] == key:
+            my_ship.shoot()
+
+# mouse_click handler
+def mouse_click(position):
+    global started
+    if position[0] &lt; WIDTH and position[1] &lt; HEIGHT and not started :
+        started = True
+        soundtrack.rewind()
+        soundtrack.play()
+        message_label.set_text('Welcome, enjoy!')
+
+# puchase button handler:
+def purchase_button():
+    global score, lives, message_label
+    if started:
+        if score &gt;= 500:
+            score -= 500
+            lives += 1
+            message_label.set_text(&quot;Purchase successfully.&quot;)
+        else:
+            message_label.set_text(&quot;Scores are not enough.&quot;)
+    else:
+        message_label.set_text(&quot;Game hasn't started yet.&quot;)
+
+# exit game button
+def exit_button():
+    soundtrack.rewind()
+    ship_thrust_sound.rewind()
+    missile_sound.rewind()
+    explosion_sound.rewind()
+    frame.stop()
+
+
+# init the game state
+def init_game():
+    global my_ship, rock_group, missile_group, explosion_group, started, score, lives
+    # initialize ship and two sprites
+    my_ship = Ship([WIDTH / 2, HEIGHT / 3], [0, 0], 1.5*math.pi, ship_image, ship_info)
+    rock_group = set([])
+    missile_group = set([])
+    explosion_group = set([])
+    score, lives = 0, 3
+    started = False
+    soundtrack.rewind()
+    ship_thrust_sound.rewind()
+    missile_sound.rewind()
+    explosion_sound.rewind()
+
+# initialize frame
+frame = simplegui.create_frame(&quot;Asteroids&quot;, WIDTH, HEIGHT)
+
+# init the game
+init_game()
+
+# register handlers
+frame.set_draw_handler(draw)
+frame.set_keydown_handler(key_down)
+frame.set_keyup_handler(key_up)
+frame.set_mouseclick_handler(mouse_click)
+frame.add_button('500 Scores for a life', purchase_button, 200)
+frame.add_button('Quit', exit_button, 200)
+message_label = frame.add_label('Click to start!')
+author_label = frame.add_label('Tiny656')
+contact_label = frame.add_label('236798656@qq.com')
+timer = simplegui.create_timer(1000.0, rock_spawner)
+
+# get things rolling
+timer.start()
+frame.start()
+</code></pre>
+<p>坐等最后的Peer Evaluation，这么课应该就结束了，感谢Rice大学这些兢兢业业对于教学富有激情和创意的老师，能让我有幸聆听到这么有意思的课程，收获满满，感谢Coursera这么棒棒的平台，拉近了每个人与知识的距离，对于充满好奇心的我，一比无价的财富。现在的环境是，永远不缺知识以及还有这么多优秀的知识分享者，缺少一颗渴望学习的心，不管做什么，耐心和毅力总能感觉到自己不断成长的步伐，学习的道路上，永远不应该放下脚步，引用Jobs的话，stay hungry, stay foolish, 求知若饥求知若愚。</p>
+<p>接下来开始认真跟Princeton的算法II，妈蛋的，第二周都放出来了，第一周的视频还一点没看，得抓紧。还有老板的活要干，还有英语要复习，真是分神乏力。咬咬牙，坚持下来。12月开始刷题复习，明年找工作。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Mini projects #7 ---- Spaceship]]></title>
+        <id>https://tiny656.github.io/post/mini-projects-7-spaceship</id>
+        <link href="https://tiny656.github.io/post/mini-projects-7-spaceship">
+        </link>
+        <updated>2014-11-06T15:30:52.000Z</updated>
+        <summary type="html"><![CDATA[<p>课程全名：An Introduction to Interactive Programming in Python，来自 Rice University</p>
+<p>授课教授：Joe Warren, Scott Rixner, John Greiner, Stephen Wong</p>
+<p>工具：http://www.codeskulptor.org/, simplegui 模块</p>
+<p>最后两周就要结束了~~~</p>
+<p>第七周：</p>
+<p>先上图，这周完成Spaceship游戏的一部分。</p>
+<p><img src="https://tiny656.github.io/post-images/1564242073263.png" alt="Spaceship 1"></p>
+]]></summary>
+        <content type="html"><![CDATA[<p>课程全名：An Introduction to Interactive Programming in Python，来自 Rice University</p>
+<p>授课教授：Joe Warren, Scott Rixner, John Greiner, Stephen Wong</p>
+<p>工具：http://www.codeskulptor.org/, simplegui 模块</p>
+<p>最后两周就要结束了~~~</p>
+<p>第七周：</p>
+<p>先上图，这周完成Spaceship游戏的一部分。</p>
+<p><img src="https://tiny656.github.io/post-images/1564242073263.png" alt="Spaceship 1"></p>
+<!--more-->
+<p>在这图里面有什么？飞船，陨石，子弹，背景图….</p>
+<p>用OO的对象来看，他们都对应一幅图像，那么抽象一个类ImageInfo来操作这些图像信息，它包括图像的center(中心位置)，size(图像大小)，radius(半径)，lifespan(时间周期)，animated(动画)。可能有些属性比较陌生，有些针对到具体的对象才有用。</p>
+<pre><code>class ImageInfo:
+    def __init__(self, center, size, radius = 0, lifespan = None, animated = False):
+        self.center = center
+        self.size = size
+        self.radius = radius
+        if lifespan:
+            self.lifespan = lifespan
+        else:
+            self.lifespan = float('inf')
+        self.animated = animated
+
+    def get_center(self):
+        return self.center
+
+    def get_size(self):
+        return self.size
+
+    def get_radius(self):
+        return self.radius
+
+    def get_lifespan(self):
+        return self.lifespan
+
+    def get_animated(self):
+        return self.animated
+</code></pre>
+<p>有了图像的表示，那么我们还需要飞船，用Ship来表示</p>
+<p>Ship有什么属性和方法呢？</p>
+<p><strong>pos</strong>: 位置</p>
+<p><strong>vel</strong>：加速度</p>
+<p><strong>thrust</strong>：冲刺状态</p>
+<p><strong>angle</strong>：飞船旋转的角度</p>
+<p><strong>angle_vel</strong>：飞船旋转角速度</p>
+<p><strong>image</strong>：飞船图像</p>
+<p><strong>image_cener</strong>：飞船图像的中心位置</p>
+<p><strong>image_size</strong>：飞船图像的大小</p>
+<p><strong>image_radius</strong>：飞船半径？(这周作业没用到，不知道干嘛的)</p>
+<p>飞船的方法：</p>
+<p><strong>draw(canvas):</strong> 绘制飞船，要求绘制根据是否在冲刺状态，绘制图像不同。所给的飞船image是tiled图像，所以绘制时候计算一下偏移就好</p>
+<p><img src="https://tiny656.github.io/post-images/1564242093040.png" alt="Spaceship 2"></p>
+<p>**update()：**更新当前飞船位置以及角度。基本所有涉及到简单数学计算的公式，课上以及相关ppt都给出来，都比较简单，直接拿来用。对于角度的更新和Pong那周一样，用左右按键按下增加旋转角速度，放开减少旋转角速度，每次更新的时候就只用把飞船的角度加上旋转角速度。</p>
+<p><img src="https://tiny656.github.io/post-images/1564242108604.png" alt="Spaceship 3"></p>
+<p>船的位置更新同理，使用位置加上加速度，但是要考虑飞出边界，所以对WIDTH和HEIGHT分别取模。</p>
+<p><img src="https://tiny656.github.io/post-images/1564242126380.png" alt="Spaceship 4"></p>
+<p>这边与Pong不同的是加速度的计算，Pong只有上下方向，但这里飞船可以旋转指向各个方向，所以加速度修改飞船向着它转角的方向，原理还是一样，把转角方向向水平和垂直方向做投影乘以常量，然后加到原有的加速度上。</p>
+<p><img src="https://tiny656.github.io/post-images/1564242141313.png" alt="Spaceship 5"></p>
+<p>最后剩下的一个问题就是，外太空有&lt;阻力&gt;，所以飞船会不断减速直到速度为0，那么不断按照一定的比例缩小飞船的加速度，直到加速度为0，飞船的位置就不更新了。</p>
+<p><img src="https://tiny656.github.io/post-images/1564242157022.png" alt="Spaceship 6"></p>
+<p>update()的代码如下:</p>
+<pre><code>def update(self):
+    self.angle += self.angle_vel
+    self.pos[0] = (self.pos[0] + self.vel[0]) % WIDTH
+    self.pos[1] = (self.pos[1] + self.vel[1]) % HEIGHT
+    c = 0.05
+    self.vel[0] *= (1 - c)
+    self.vel[1] *= (1 - c)
+    forward = angle_to_vector(self.angle)
+    if self.thrust:
+        self.vel[0] += forward[0] * 1.2
+        self.vel[1] += forward[1] * 1.2
+</code></pre>
+<p>**change_angle_vel(ori, key_state)：**根据按键是left或者right和按键当前状态是按下或者松开，来改变飞船的旋转角速度</p>
+<p>**set_thruster(thruster_state)：**根据up按键来改变飞船的冲刺状态，并且播放和暂停响应的声音效果</p>
+<p><strong>shoot():</strong> 飞船发子弹，初始化子弹，它的位置在飞船的炮孔位置，然后子弹的加速度等于，飞船的加速度，加上飞船角度在水平垂直分量的常量倍，这与飞船的加速思路一样的，子弹的角度和旋转角速度设置成0就好。</p>
+<p>飞船处理完了，剩下的就是陨石和子弹，给的template中用sprite来抽象表示他们。</p>
+<p><img src="https://tiny656.github.io/post-images/1564242171862.png" alt="Spaceship 7"><br>
+<img src="https://tiny656.github.io/post-images/1564242178117.png" alt="Spaceship 8"></p>
+<p>基本的属性和飞船差不多，pos, vel, angle, angle_vel, image, image_center, image_size, radius，多了lifespan, animated, age还有sound</p>
+<p>主要方法：</p>
+<p><strong>draw(canvas):</strong> 直接根据image的信息进行绘制</p>
+<p><strong>update(canvas):</strong> 更新角度和位置，与飞船类似。超出边界要取模</p>
+<p>其他的部分就是frame的draw事件模板里已经写好，key_up，key_down事件，上面也都提到处理方法。</p>
+<p>这周的任务也就这样完工了。</p>
+<p>完整的代码如下：</p>
+<pre><code># program template for Spaceship
+import simplegui
+import math
+import random
+
+# globals for user interface
+WIDTH = 800
+HEIGHT = 600
+score = 0
+lives = 3
+time = 0.5
+
+class ImageInfo:
+    def __init__(self, center, size, radius = 0, lifespan = None, animated = False):
+        self.center = center
+        self.size = size
+        self.radius = radius
+        if lifespan:
+            self.lifespan = lifespan
+        else:
+            self.lifespan = float('inf')
+        self.animated = animated
+
+    def get_center(self):
+        return self.center
+
+    def get_size(self):
+        return self.size
+
+    def get_radius(self):
+        return self.radius
+
+    def get_lifespan(self):
+        return self.lifespan
+
+    def get_animated(self):
+        return self.animated
+
+
+# art assets created by Kim Lathrop, may be freely re-used in non-commercial projects, please credit Kim
+
+# debris images - debris1_brown.png, debris2_brown.png, debris3_brown.png, debris4_brown.png
+#                 debris1_blue.png, debris2_blue.png, debris3_blue.png, debris4_blue.png, debris_blend.png
+debris_info = ImageInfo([320, 240], [640, 480])
+debris_image = simplegui.load_image(&quot;http://commondatastorage.googleapis.com/codeskulptor-assets/lathrop/debris2_blue.png&quot;)
+
+# nebula images - nebula_brown.png, nebula_blue.png
+nebula_info = ImageInfo([400, 300], [800, 600])
+nebula_image = simplegui.load_image(&quot;http://commondatastorage.googleapis.com/codeskulptor-assets/lathrop/nebula_blue.f2014.png&quot;)
+
+# splash image
+splash_info = ImageInfo([200, 150], [400, 300])
+splash_image = simplegui.load_image(&quot;http://commondatastorage.googleapis.com/codeskulptor-assets/lathrop/splash.png&quot;)
+
+# ship image
+ship_info = ImageInfo([45, 45], [90, 90], 35)
+ship_image = simplegui.load_image(&quot;http://commondatastorage.googleapis.com/codeskulptor-assets/lathrop/double_ship.png&quot;)
+
+# missile image - shot1.png, shot2.png, shot3.png
+missile_info = ImageInfo([5,5], [10, 10], 3, 50)
+missile_image = simplegui.load_image(&quot;http://commondatastorage.googleapis.com/codeskulptor-assets/lathrop/shot2.png&quot;)
+
+# asteroid images - asteroid_blue.png, asteroid_brown.png, asteroid_blend.png
+asteroid_info = ImageInfo([45, 45], [90, 90], 40)
+asteroid_image = simplegui.load_image(&quot;http://commondatastorage.googleapis.com/codeskulptor-assets/lathrop/asteroid_blue.png&quot;)
+
+# animated explosion - explosion_orange.png, explosion_blue.png, explosion_blue2.png, explosion_alpha.png
+explosion_info = ImageInfo([64, 64], [128, 128], 17, 24, True)
+explosion_image = simplegui.load_image(&quot;http://commondatastorage.googleapis.com/codeskulptor-assets/lathrop/explosion_alpha.png&quot;)
+
+# sound assets purchased from sounddogs.com, please do not redistribute
+soundtrack = simplegui.load_sound(&quot;http://commondatastorage.googleapis.com/codeskulptor-assets/sounddogs/soundtrack.mp3&quot;)
+missile_sound = simplegui.load_sound(&quot;http://commondatastorage.googleapis.com/codeskulptor-assets/sounddogs/missile.mp3&quot;)
+missile_sound.set_volume(.5)
+ship_thrust_sound = simplegui.load_sound(&quot;http://commondatastorage.googleapis.com/codeskulptor-assets/sounddogs/thrust.mp3&quot;)
+explosion_sound = simplegui.load_sound(&quot;http://commondatastorage.googleapis.com/codeskulptor-assets/sounddogs/explosion.mp3&quot;)
+
+# helper functions to handle transformations
+def angle_to_vector(ang):
+    return [math.cos(ang), math.sin(ang)]
+
+def dist(p,q):
+    return math.sqrt((p[0] - q[0]) ** 2+(p[1] - q[1]) ** 2)
+
+
+# Ship class
+class Ship:
+    def __init__(self, pos, vel, angle, image, info):
+        self.pos = [pos[0],pos[1]]
+        self.vel = [vel[0],vel[1]]
+        self.thrust = False
+        self.angle = angle
+        self.angle_vel = 0
+        self.image = image
+        self.image_center = info.get_center()
+        self.image_size = info.get_size()
+        self.radius = info.get_radius()
+
+    def draw(self,canvas):
+        if self.thrust:
+            center = (self.image_center[0]+self.image_size[0], self.image_center[1])
+            canvas.draw_image(self.image, center, self.image_size, self.pos, self.image_size, self.angle)
+        else:
+            canvas.draw_image(self.image, self.image_center, self.image_size, self.pos, self.image_size, self.angle)
+
+
+    def update(self):
+        self.angle += self.angle_vel
+        self.pos[0] = (self.pos[0] + self.vel[0]) % WIDTH
+        self.pos[1] = (self.pos[1] + self.vel[1]) % HEIGHT
+        c = 0.05
+        self.vel[0] *= (1 - c)
+        self.vel[1] *= (1 - c)
+        forward = angle_to_vector(self.angle)
+        if self.thrust:
+            self.vel[0] += forward[0] * 1.2
+            self.vel[1] += forward[1] * 1.2
+
+
+    def change_angle_vel(self, ori, key_state):
+        if ((ori == &quot;right&quot; and key_state == &quot;keyup&quot;) or
+            (ori == &quot;left&quot; and key_state == &quot;keydown&quot;)):
+            self.angle_vel -= 0.1
+        elif ((ori == &quot;right&quot; and key_state == &quot;keydown&quot;) or
+            (ori == &quot;left&quot; and key_state == &quot;keyup&quot;)):
+            self.angle_vel += 0.1
+
+    def set_thruster(self, thruster_state):
+        self.thrust = thruster_state
+        if self.thrust:
+            ship_thrust_sound.rewind()
+            ship_thrust_sound.play()
+        else:
+            ship_thrust_sound.rewind()
+
+    def shoot(self):
+        global a_missile
+        offset = self.image_size[0] / 2.0
+        forward = angle_to_vector(self.angle)
+        pos = [self.pos[0] + offset * forward[0], self.pos[1] + offset * forward[1]]
+        vel = [self.vel[0] + 4 * forward[0], self.vel[1] + 4 * forward[1]]
+        ang = 0
+        ang_vel = 0
+        a_missile = Sprite(pos, vel, ang, ang_vel, missile_image, missile_info, missile_sound)
+
+# Sprite class
+class Sprite:
+    def __init__(self, pos, vel, ang, ang_vel, image, info, sound = None):
+        self.pos = [pos[0],pos[1]]
+        self.vel = [vel[0],vel[1]]
+        self.angle = ang
+        self.angle_vel = ang_vel
+        self.image = image
+        self.image_center = info.get_center()
+        self.image_size = info.get_size()
+        self.radius = info.get_radius()
+        self.lifespan = info.get_lifespan()
+        self.animated = info.get_animated()
+        self.age = 0
+        if sound:
+            sound.rewind()
+            sound.play()
+
+    def draw(self, canvas):
+        canvas.draw_image(self.image, self.image_center, self.image_size, self.pos, self.image_size, self.angle)
+
+    def update(self):
+        self.angle += self.angle_vel
+        self.pos[0] = (self.pos[0] + self.vel[0]) % WIDTH
+        self.pos[1] = (self.pos[1] + self.vel[1]) % HEIGHT
+
+def draw(canvas):
+    global time
+
+    # animiate background
+    time += 1
+    wtime = (time / 4) % WIDTH
+    center = debris_info.get_center()
+    size = debris_info.get_size()
+    canvas.draw_image(nebula_image, nebula_info.get_center(), nebula_info.get_size(), [WIDTH / 2, HEIGHT / 2], [WIDTH, HEIGHT])
+    canvas.draw_image(debris_image, center, size, (wtime - WIDTH / 2, HEIGHT / 2), (WIDTH, HEIGHT))
+    canvas.draw_image(debris_image, center, size, (wtime + WIDTH / 2, HEIGHT / 2), (WIDTH, HEIGHT))
+
+    # draw ship and sprites
+    my_ship.draw(canvas)
+    a_rock.draw(canvas)
+    a_missile.draw(canvas)
+
+    # update ship and sprites
+    my_ship.update()
+    a_rock.update()
+    a_missile.update()
+
+    # draw lives
+    canvas.draw_text(&quot;Lives&quot;, [WIDTH / 12, HEIGHT / 12], 30, &quot;White&quot;)
+    canvas.draw_text(str(lives), [WIDTH / 12, HEIGHT / 12 + 40], 30, &quot;White&quot;)
+
+    # draw score
+    canvas.draw_text(&quot;Score&quot;, [10 * WIDTH / 12, HEIGHT/12], 30, &quot;White&quot;)
+    canvas.draw_text(str(score), [10 * WIDTH /12, HEIGHT/12 + 40], 30, &quot;White&quot;)
+
+# timer handler that spawns a rock
+def rock_spawner():
+    global a_rock
+    pos = [random.randint(0, WIDTH-1), random.randint(0, HEIGHT-1)]
+    vel = [random.randrange(1, 5, 1)*random.choice([1, -1]), random.randrange(1, 5, 1)*random.choice([1, -1])]
+    ang = 0
+    ang_vel = random.randrange(5, 10, 1) / 100.0 * random.choice([1, -1])
+    a_rock = Sprite(pos, vel, ang, ang_vel, asteroid_image, asteroid_info)
+
+def key_up(key):
+    if simplegui.KEY_MAP['left'] == key:
+        my_ship.change_angle_vel(&quot;left&quot;, &quot;keyup&quot;)
+    elif simplegui.KEY_MAP['right'] == key:
+        my_ship.change_angle_vel(&quot;right&quot;, &quot;keyup&quot;)
+    elif simplegui.KEY_MAP['up'] == key:
+        my_ship.set_thruster(False)
+
+def key_down(key):
+    if simplegui.KEY_MAP['left'] == key:
+        my_ship.change_angle_vel(&quot;left&quot;, &quot;keydown&quot;)
+    elif simplegui.KEY_MAP['right'] == key:
+        my_ship.change_angle_vel(&quot;right&quot;, &quot;keydown&quot;)
+    elif simplegui.KEY_MAP['up'] == key:
+        my_ship.set_thruster(True)
+    elif simplegui.KEY_MAP['space'] == key:
+        my_ship.shoot()
+
+# initialize frame
+frame = simplegui.create_frame(&quot;Asteroids&quot;, WIDTH, HEIGHT)
+
+# initialize ship and two sprites
+my_ship = Ship([WIDTH / 2, HEIGHT / 2], [0, 0], 0, ship_image, ship_info)
+a_rock = Sprite([WIDTH / 3, HEIGHT / 3], [1, 1], 0, 0, asteroid_image, asteroid_info)
+a_missile = Sprite([2 * WIDTH / 3, 2 * HEIGHT / 3], [-1, 1], 0, 0, missile_image, missile_info, missile_sound)
+
+# register handlers
+frame.set_draw_handler(draw)
+frame.set_keydown_handler(key_down)
+frame.set_keyup_handler(key_up)
+
+timer = simplegui.create_timer(1000.0, rock_spawner)
+
+# get things rolling
+timer.start()
+frame.start()
+</code></pre>
+<p>期待着最后一周，游戏完整的代码。就要完成Coursera的一门这么有意思的课，课程难度很小，乐趣十足。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Mini projects #6 ---- Blackjack]]></title>
+        <id>https://tiny656.github.io/post/mini-projects-6-blackjack</id>
+        <link href="https://tiny656.github.io/post/mini-projects-6-blackjack">
+        </link>
+        <updated>2014-10-30T15:29:56.000Z</updated>
+        <summary type="html"><![CDATA[<p>课程全名：An Introduction to Interactive Programming in Python，来自 Rice University</p>
+<p>授课教授：Joe Warren, Scott Rixner, John Greiner, Stephen Wong</p>
+<p>工具：http://www.codeskulptor.org/， simplegui 模块</p>
+<p>第6周讲述：</p>
+<ul>
+<li>OO面向对象编程。走向更高级。</li>
+</ul>
+]]></summary>
+        <content type="html"><![CDATA[<p>课程全名：An Introduction to Interactive Programming in Python，来自 Rice University</p>
+<p>授课教授：Joe Warren, Scott Rixner, John Greiner, Stephen Wong</p>
+<p>工具：http://www.codeskulptor.org/， simplegui 模块</p>
+<p>第6周讲述：</p>
+<ul>
+<li>OO面向对象编程。走向更高级。</li>
+</ul>
+<!--more-->
+<blockquote>
+<p>Python中一切皆是对象，通过对象的属性(变量、attribute)和行为(方法、method)来描述对象长什么样。<br>
+简单例子，具体的一个人是一个对象，他的年龄、身高、体重都是属性，他吃饭、走路、说话是他的行为。<br>
+python中相同对象的集合叫做一个类(class)。OO最核心的思想在于抽象。类是对象的抽象，对象是类的实例化。类是从对象中抽象出的共有部分，而对象才是具体的事物。<br>
+编程的过程中，是对具体的对象进行操作，实现相应功能。类的良好设计会事半功倍。</p>
+</blockquote>
+<pre><code>class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def __str__(self):
+        return &quot;I'm &quot; + self.name + &quot;, &quot; + self.age + &quot; years old&quot;
+
+    def speak(self):
+        print &quot;Hello, everyone&quot;
+
+p1 = Person(&quot;James&quot;, &quot;18&quot;)
+p1.speak()
+print p1
+</code></pre>
+<blockquote>
+<p>类里的每一个方法都必须有self参数(其他名字也都可以，self不是关键字)，self参数传递当前实例，相当于c++中的this指针，指出究竟是哪个对象调用的。<br>
+__init__作为构造函数，__str__用来在print 对象时候进行调用，这课上就讲了这么多。还有很多其他的__del__析构，__doc__类帮助信息等，就不详细记录了。</p>
+</blockquote>
+<ul>
+<li>while 和 for 的选择</li>
+</ul>
+<blockquote>
+<p>一般使用for i in range()，range()会生成一个list，<br>
+但是while循环可以避免这种list产生，其实用xrange()产生一个生成器也可以避免内存空间的消耗。</p>
+</blockquote>
+<ul>
+<li>Tiled images</li>
+</ul>
+<blockquote>
+<p>打印扑克牌的例子，下面的图也是够通俗易懂了，图片格式化成下面的形式，它就是一个4*6的数组，每次的位移就是CARD_SIZE.不赘述了。</p>
+</blockquote>
+<p><img src="https://tiny656.github.io/post-images/1564241984670.png" alt="Blackjack 1"></p>
+<p><strong>本周的游戏：</strong></p>
+<p>完成blackjack(21点)游戏，界面如下：</p>
+<p><img src="https://tiny656.github.io/post-images/1564242000268.png" alt="Blackjack 2"></p>
+<p>游戏规则：</p>
+<ol>
+<li>
+<p>dealer代表庄家，player代表你(玩家)</p>
+</li>
+<li>
+<p>Deal 开始新的一局，Hit表示继续要牌，Stand表示停止要牌</p>
+</li>
+<li>
+<p>没有王，JQK代表10点，数字牌代表数字点，A可以代表1点也可以代表11点，需要具体判断</p>
+</li>
+<li>
+<p>游戏流程是初始Dealer两张牌，一张牌Dealer自己知道，Player看不到，Player两张牌，Player处于活动状态，可以选择Hit或者Stand，也可以Deal新局，但这要扣分。如果Hit超过21点，则Play输了，没超过可以继续选择上述三种操作。如果觉得点数差不多了，那么可以Stand，这时轮到Dealer操作，在这个简化版的Blackjack中，Dealer如果点数小于17就Hit，最后如果Dealer的点数超21了，那么Player胜，没超21就和Play的点数比大小，如果Dealer点数大于等于Player点数，则Dealer胜，否则Player输。</p>
+</li>
+<li>
+<p>当前手牌的点数计算，这个老师竟然也在课件中给了，其他基本没什么难度了。</p>
+</li>
+</ol>
+<p><img src="https://tiny656.github.io/post-images/1564242015738.png" alt="Blackjack 3"></p>
+<p><strong>游戏框架：</strong></p>
+<p><strong>class Card:  定义扑克牌</strong></p>
+<p>suit,rank 属性分别代表花色和几号牌</p>
+<p>def get_suit(): 返回花色</p>
+<p>def get_rank(): 返回牌号</p>
+<p>def draw(canvas, pos): 在canvas上pos位置绘制card</p>
+<p><strong>class Hand(): 定义玩家的 &lt;手&gt;，处理玩家当前手上的牌</strong></p>
+<p>def add_card(card): 添加一张新牌到手上</p>
+<p>def get_value()： 返回当前手上所有牌的点数之和</p>
+<p>def draw(canvas, pos): 在canvas上pos位置绘制当前手上Card</p>
+<p><strong>class Deck(): 桌子，其实就是牌堆，负责处理所有牌，相当于发牌人</strong></p>
+<p>def shuffle(): 洗牌</p>
+<p>def deal_card(): 发牌</p>
+<p><strong>def deal(): 初始化新牌局</strong></p>
+<p><strong>def hit():继续要牌</strong></p>
+<p><strong>def stand(): 停止要牌</strong></p>
+<p><strong>def draw(): canvas绘制，主要是下面的几块，Dealer的第一张牌，在游戏in_player状态时候需要在绘制一个card_back的牌。</strong></p>
+<p><img src="https://tiny656.github.io/post-images/1564242034145.png" alt="Blackjack 4"></p>
+<p><strong>我把牌堆分成了两层来绘制，每层最多绘制5张。初始Deck 用 [Card(suit, rank) for suit in SUITS for rank in RANKS]列表表达式，可以方便生成所有的牌。</strong></p>
+<p><strong>还有一个利器，enumerate， 遍历的同时既可以取得元素又可以取得索引，相当方便。其余只要根据游戏规则制定好处理逻辑就可以出炉了。</strong></p>
+<pre><code>for i, card in enumerate(self.hand_card):
+    if i &lt; 5:
+        card.draw(canvas, (pos[0] + i*1.35*CARD_SIZE[0], pos[1]))
+    else:
+        card.draw(canvas, (pos[0] + (i%5)*1.35*CARD_SIZE[0], pos[1] + 1.2*CARD_SIZE[1]))
+</code></pre>
+<p><strong>具体看代码和注释</strong></p>
+<pre><code># Mini-project #6 - Blackjack
+
+import simplegui
+import random
+
+# load card sprite - 936x384 - source: jfitz.com
+CARD_SIZE = (72, 96)
+CARD_CENTER = (36, 48)
+card_images = simplegui.load_image(&quot;http://storage.googleapis.com/codeskulptor-assets/cards_jfitz.png&quot;)
+
+CARD_BACK_SIZE = (72, 96)
+CARD_BACK_CENTER = (36, 48)
+card_back = simplegui.load_image(&quot;http://storage.googleapis.com/codeskulptor-assets/card_jfitz_back.png&quot;)
+
+# initialize some useful global variables
+in_play = False
+outcome = &quot;&quot;
+score = 0
+tips = &quot;&quot;
+
+# define globals for cards
+SUITS = ('C', 'S', 'H', 'D')
+RANKS = ('A', '2', '3', '4', '5', '6', '7', '8', '9', 'T', 'J', 'Q', 'K')
+VALUES = {'A':1, '2':2, '3':3, '4':4, '5':5, '6':6, '7':7, '8':8, '9':9, 'T':10, 'J':10, 'Q':10, 'K':10}
+
+
+# define card class
+class Card:
+    def __init__(self, suit, rank):
+        if (suit in SUITS) and (rank in RANKS):
+            self.suit = suit
+            self.rank = rank
+        else:
+            self.suit = None
+            self.rank = None
+            print &quot;Invalid card: &quot;, suit, rank
+
+    def __str__(self):
+        return self.suit + self.rank
+
+    def get_suit(self):
+        return self.suit
+
+    def get_rank(self):
+        return self.rank
+
+    def draw(self, canvas, pos):
+        card_loc = (CARD_CENTER[0] + CARD_SIZE[0] * RANKS.index(self.rank),
+                    CARD_CENTER[1] + CARD_SIZE[1] * SUITS.index(self.suit))
+        canvas.draw_image(card_images, card_loc, CARD_SIZE, [pos[0] + CARD_CENTER[0], pos[1] + CARD_CENTER[1]], CARD_SIZE)
+
+# define hand class
+class Hand:
+    def __init__(self):
+        # create Hand object
+        self.hand_card = []
+
+    def __str__(self):
+        # return a string representation of a hand
+        ret_str = &quot;Hand contains&quot;
+        for card in self.hand_card:
+            ret_str += &quot; &quot; + card.get_suit() + card.get_rank()
+        return ret_str
+
+    def add_card(self, card):
+        self.hand_card.append(card)
+
+    def get_value(self):
+        # count aces as 1, if the hand has an ace, then add 10 to hand value if it doesn't bust
+        # compute the value of the hand, see Blackjack video
+        has_ace = False
+        hand_value = 0
+        for card in self.hand_card:
+            hand_value += VALUES[card.get_rank()]
+            if card.get_rank() == 'A':
+                has_ace = True
+
+        if has_ace is False:
+            return hand_value
+        else:
+            if hand_value + 10 &lt;= 21:
+                return hand_value + 10
+            else:
+                return hand_value + 1
+
+    def draw(self, canvas, pos):
+        # draw a hand on the canvas, use the draw method for cards
+        for i, card in enumerate(self.hand_card):
+            if i &lt; 5:
+                card.draw(canvas, (pos[0] + i*1.35*CARD_SIZE[0], pos[1]))
+            else:
+                card.draw(canvas, (pos[0] + (i%5)*1.35*CARD_SIZE[0], pos[1] + 1.2*CARD_SIZE[1]))
+
+# define deck class
+class Deck:
+    def __init__(self):
+        # create a Deck object
+        self.deck_card = [Card(suit, rank) for suit in SUITS for rank in RANKS]
+
+    def shuffle(self):
+        # shuffle the deck, use random.shuffle()
+        random.shuffle(self.deck_card)
+
+    def deal_card(self):
+        # deal a card object from the deck
+        if len(self.deck_card) &gt; 0:
+            return self.deck_card.pop(0)
+        else:
+            print 'deck_card is empty'
+            return None
+
+    def __str__(self):
+        # return a string representing the deck
+        ret_str = &quot;Deck contains&quot;
+        for card in self.deck_card:
+            ret_str += &quot; &quot; + card.get_suit() + card.get_rank()
+        return ret_str
+
+
+#define event handlers for buttons
+def deal():
+    global outcome, in_play, dealer, player, deck, tips, score
+    # penalty
+    if in_play is True:
+        score -= 1
+
+    # create dealer and player
+    dealer, player = Hand(), Hand()
+
+    # create deck
+    deck = Deck()
+    deck.shuffle()
+
+    # initiate variable
+    outcome = &quot;&quot;
+    tips = &quot;Hit or stand?&quot;
+    in_play = True
+
+    # deal 4 cards
+    player.add_card(deck.deal_card())
+    dealer.add_card(deck.deal_card())
+    player.add_card(deck.deal_card())
+    dealer.add_card(deck.deal_card())
+
+
+def hit():
+    # if the hand is in play, hit the player
+    global player, deck, in_play, outcome, tips, score
+    if in_play is True and player.get_value() &lt;= 21:
+        player.add_card(deck.deal_card())
+        # if busted, assign a message to outcome, update in_play and score
+        if player.get_value() &gt; 21:
+            outcome = &quot;You went bust and lose.&quot;
+            tips = &quot;New deal?&quot;
+            in_play = False
+            score -= 1
+
+def stand():
+    # if hand is in play, repeatedly hit dealer until his hand has value 17 or more
+    global in_play, dealer, player, outcome, tips, score
+    if in_play is True:
+        while dealer.get_value() &lt; 17:
+            dealer.add_card(deck.deal_card())
+        dealer_value = dealer.get_value()
+        # assign a message to outcome, update in_play and score
+        if  dealer_value &gt; 21:
+            outcome = &quot;Dealer went bust. You win.&quot;
+            score += 1
+        else:
+            player_value = player.get_value()
+            if player_value &lt;= dealer_value:
+                outcome = &quot;You lose.&quot;
+                score -= 1
+            else:
+                outcome = &quot;You win.&quot;
+                score += 1
+        tips = &quot;New deal?&quot;
+        in_play = False
+
+
+# draw handler
+def draw(canvas):
+    canvas.draw_text(&quot;Blackjack&quot;, (100,40), 40, &quot;Blue&quot;)
+    canvas.draw_text(&quot;Score &quot; + str(score), (400, 40), 30, &quot;Black&quot;)
+    canvas.draw_text(&quot;Dealer&quot;, (60, 80), 30, &quot;Black&quot;)
+    canvas.draw_text(outcome, (200, 80), 30, &quot;Red&quot;)
+    dealer.draw(canvas, (60, 100))
+    # in_play state draw a back card
+    if in_play is True:
+        card_loc = (CARD_BACK_CENTER[0] + CARD_BACK_SIZE[0], CARD_BACK_CENTER[1])
+        canvas.draw_image(card_back, card_loc, CARD_BACK_SIZE, [60 + CARD_BACK_CENTER[0], 100 + CARD_BACK_CENTER[1]], CARD_BACK_SIZE)
+    canvas.draw_text(outcome, (200, 80), 30, &quot;Red&quot;)
+    canvas.draw_text(&quot;Player&quot;, (60, 350), 30, &quot;Black&quot;)
+    canvas.draw_text(tips, (200, 350), 30, &quot;Black&quot;)
+    player.draw(canvas, (60, 370))
+    # author info
+    canvas.draw_text(&quot;tiny656&quot;, (480, 555), 18, &quot;Aqua&quot;)
+    canvas.draw_text(&quot;236798656@qq.com&quot;, (425, 580), 18, &quot;Aqua&quot;)
+
+# initialization frame
+frame = simplegui.create_frame(&quot;Blackjack&quot;, 600, 600)
+frame.set_canvas_background(&quot;Green&quot;)
+
+#create buttons and canvas callback
+frame.add_button(&quot;Deal&quot;, deal, 200)
+frame.add_button(&quot;Hit&quot;,  hit, 200)
+frame.add_button(&quot;Stand&quot;, stand, 200)
+frame.set_draw_handler(draw)
+
+
+# get things rolling
+deal()
+frame.start()
+
+# remember to review the gradic rubric
+</code></pre>
+<p>最后在附上课程主页在Youtube上讲OOP的一个链接http://www.youtube.com/watch?v=xzjHT6CVcAA ,需要FQ观看</p>
+<p>很有意思，对于理解OOP是很不错的参考。</p>
+<p>这些代码只是体力活，只是对于Python语法熟悉，外加了解一些OOP思想，真正的干货是一个产品实现思想和逻辑，正确、高效、简单，类的设计，数据结构设计，算法设计，代码风格，复杂度分析，再发散就是软件工程、安全、测试、交互、美工等？所以任重道远，需要不断积累经验和多去阅读和学习更多的知识。</p>
+<p>碎碎念，骑车、每天运动以及坚持背单词。谈谈习惯的形成，坚持的初期比较难，尤其是思想上容易妥协，会给自己找借口安慰，这种状况对我来说多发于起初的2-4周，可能也就放弃不做或者零零散散的去坚持几次，后来每天打卡，在睡前打卡，总结今天要做的事情有什么心得和体会，简短的记录，去感受通过这些行为，我产生的感觉以及发生的改变(思想和心理的体会)，这样下来，坚持就完全成了习惯。我觉得很重要一个环节就是，打卡时候一定要去体会做完这些给你的改变。</p>
+<p>背单词，想吐槽的，在扇贝上加了小组，打卡率太低，会被组长踢出，=.=, 3进3出以后，打卡率稳定到了93%，累计打卡的天数也有240多天，每天第一件事也是去背单词，也就只需要30min都不到，而且发现这样的积累真的是能起到很不错的效果。</p>
+<p>运动也是一样，HIIT和俯卧撑，自己摸索和看很多健身跑步相关的文章，体会运动带给自己的改变。很多道理都是相近，想要把Mini Project写好，得看视频、project介绍，自己体会理解，上网查资料，想要跑步，得去体会跑姿的影响，跑步的发力、了解跑鞋、，如何安排训练计划，以及热身和跑后的拉伸运动等，在我看来，体验这些的过程，让我觉得受益无穷。</p>
+<p>也有激进过，同时修3门Coursera的课程，发现时间完全吃不消，还是认真修一到两门，性价比更高，这个是自身trade-off的过程，自己要为自己定位。</p>
+<p>关于每天时间的安排，我觉得还是凌乱，很多细小琐碎的时间，可以整理起来用(就和每天抽30min背单词一样)。</p>
+<p>后面尝试着能拟出一个最适合我自己的计划安排，思考、阅读、旅游、运动……</p>
+<p>经验是个可怕的东西，只有尝试和经历过才会有刻骨铭心的感觉，而且在以后过程中阅历越丰富，处理事情的灵活度越高(万金油)。所以现在的心理感觉，就是处在对什么都充满好奇心的阶段，都想去尝试和探索，体会这个过程，耐心踏实的去做事情，感觉做什么，都会有不错的收获。</p>
+<p>功不唐捐，与君共勉。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Mini projects #5 ---- Memory]]></title>
+        <id>https://tiny656.github.io/post/mini-projects-5-memory</id>
+        <link href="https://tiny656.github.io/post/mini-projects-5-memory">
+        </link>
+        <updated>2014-10-21T15:29:14.000Z</updated>
+        <summary type="html"><![CDATA[<p>课程全名：An Introduction to Interactive Programming in Python，来自 Rice University</p>
+<p>授课教授：Joe Warren, Scott Rixner, John Greiner, Stephen Wong</p>
+<p>工具：http://www.codeskulptor.org/ , simplegui 模块</p>
+<p>第5周讲述</p>
+<ol>
+<li>simplegui模块中鼠标的控制方式</li>
+</ol>
+]]></summary>
+        <content type="html"><![CDATA[<p>课程全名：An Introduction to Interactive Programming in Python，来自 Rice University</p>
+<p>授课教授：Joe Warren, Scott Rixner, John Greiner, Stephen Wong</p>
+<p>工具：http://www.codeskulptor.org/ , simplegui 模块</p>
+<p>第5周讲述</p>
+<ol>
+<li>simplegui模块中鼠标的控制方式</li>
+</ol>
+<!--more-->
+<ol start="2">
+<li>
+<p>list的各种操作, append, pop, extend, index, remove, reverse, sort</p>
+</li>
+<li>
+<p>Iteration,迭代器，遍历对象方式 for x in lst:… 或者列表生成式 [exp for x in lst]</p>
+</li>
+</ol>
+<blockquote>
+<p>[exp for x in lst] # 迭代器，遍历x中的所有元素x执行exp的操作，返回一个计算完整的列表<br>
+(exp for x in lst) # 生成器，也是一种迭代器，返回一个迭代对象，不计算所有结果，只提供当前需要访问的next元素，所以生成器只能迭代一次。好处是节省内存</p>
+</blockquote>
+<ol start="4">
+<li>dictionaries， python中的字典dict, {}，键值对</li>
+</ol>
+<blockquote>
+<p>字典中只有immutable对象可以做key，value可以是任意的<br>
+例如：d = {(1,2):[1,2,3], True:{1:2}, &quot;123&quot;:(1,2), 4:5}<br>
+<strong>immutable 对象</strong>: string, int, float, tuple, bool，(值类型)<br>
+<strong>mutable 对象</strong>: list, dictionary, set，(自定义类型,引用类型)<br>
+其他的就是浅拷贝和深拷贝的问题：<br>
+当进行a=b赋值操作，如果是immutable对象，a作为b的一个拷贝创建，a和b独立。如果是mutable对象，a作为b的一个引用创建，a和b共享。<br>
+<strong>浅拷贝</strong>---构造一个新的复合对象，使用原来对象元素的引用，(对于immutable类型相当于拷贝)填充新对象。<br>
+<strong>深拷贝</strong>---构造一个新的复合对象，同时递归拷贝对象所包含的所有元素。<br>
+copy模块中<br>
+copy.copy(x) # return a shallow copy of x<br>
+copy.deepcopy(x) # return a deep copy of x</p>
+</blockquote>
+<ol start="5">
+<li>simplegui模块中图像的载入，load_image</li>
+</ol>
+<p><strong>本周的游戏：</strong></p>
+<p>完成一个数字记忆相关游戏，界面如下</p>
+<p><img src="https://tiny656.github.io/post-images/1564241944907.png" alt="Memory 1"></p>
+<p>游戏的规则：</p>
+<ol>
+<li>
+<p>共有16个数字，他们是成对的0-7共8组，随机分布在16个格子里。</p>
+</li>
+<li>
+<p>初始都是cover状态，通过鼠标点击卡牌可以uncover查看对应的数字。</p>
+</li>
+<li>
+<p>如果连续两次点击为相同数字，那么数字会保留uncover状态。</p>
+</li>
+<li>
+<p>如果连续两次的点击为不相同数字，当点击第三个数字，原先卡牌uncover状态将恢复成cover</p>
+</li>
+<li>
+<p>Turns记录每轮点击次数，并且重复点击已经点开的卡牌没有效果，reset重置游戏。</p>
+</li>
+</ol>
+<p>游戏框架：</p>
+<p><strong>def new_game() # 游戏初始化</strong></p>
+<ol>
+<li>
+<p>思考关于游戏逻辑，需要记录那些属性，至少有个list用来记录16个数字，命名为memory_list好了。还要有个list记录哪些牌需要翻开哪些牌是不翻开的，命名为exposed。需要初始化turns，turns为一个数值记录当前次数。需要一个list命名prev_card_id用来记录先前翻开的牌。还需要state变量，记录当前处于游戏的哪个状态，0表示处于初始状态，1表示已经翻开一张牌</p>
+</li>
+<li>
+<p>初始化memory_list，直接生成0-16然后对8取模，在进行shuffle</p>
+</li>
+</ol>
+<pre><code>memory_list = [i%8 for i in range(16)]
+random.shuffle(memory_list)
+</code></pre>
+<p><strong>def mouseclick(pos) # 鼠标交互事件</strong></p>
+<ol>
+<li>
+<p>鼠标点击，得到了什么？鼠标点击的坐标位置，那需要什么？点了哪张牌。so，for循环枚举每张牌的左右两条竖线(x方向信息)，判断点击牌序号存在card_id</p>
+</li>
+<li>
+<p>如果当前牌是uncover，或者点击极限位置没找到牌(可能么？)的那么就不管他，否则，进入游戏规则2、3、4的逻辑判断。</p>
+</li>
+</ol>
+<p>需要注意就是，在状态0时候，要先把prev_card_id里面的卡牌状态翻转成未翻开</p>
+<pre><code>if state == 0:
+    for i in prev_card_id:
+        exposed[i] = False
+    prev_card_id = [card_id]
+    exposed[card_id] = True
+    turns += 1
+    state = 1
+    label.set_text(&quot;Turns = &quot; + str(turns))
+else:
+    exposed[card_id] = True
+    state = 0
+    if memory_list[prev_card_id[0]] == memory_list[card_id]:
+        exposed[card_id] = True
+        prev_card_id = []
+    else:
+        prev_card_id.append(card_id)
+</code></pre>
+<p><strong>def draw(canvas) # 界面绘制事件</strong></p>
+<p>界面就负责绘制，800的宽度分成16份</p>
+<p>第i个的宽度分别是i*50, (i+1)*50</p>
+<ol>
+<li>
+<p>如果exposed[i]是True，翻开就绘制Text</p>
+</li>
+<li>
+<p>否则，未翻开就绘制polygon</p>
+</li>
+</ol>
+<pre><code>for i in range(len(exposed)):
+    if exposed[i]:
+        canvas.draw_text(str(memory_list[i]), (i*50+10, 100/1.75), 50, 'White')
+    else:
+        canvas.draw_polygon([(i*50, 0), ((i+1)*50, 0), ((i+1)*50, 100), ((i*50), 100)], 1, 'Red', 'Green')
+</code></pre>
+<p>完整代码如下：</p>
+<pre><code># implementation of card game - Memory
+
+import simplegui
+import random
+
+# helper function to initialize globals
+def new_game():
+    global exposed, prev_card_id, turns, memory_list, state
+    # init variables
+    exposed = [False]*16
+    turns = state = 0
+    label.set_text(&quot;Turns = &quot; + str(turns))
+    prev_card_id = []
+    memory_list = [i%8 for i in range(16)]
+    random.shuffle(memory_list)
+
+# define event handlers
+def mouseclick(pos):
+    global state, prev_card_id, exposed, turns
+    # find the clicked card's id
+    card_id = -1
+    for i in range(len(exposed)):
+        if pos[0] &gt;= i*50 and pos[0] &lt; (i+1)*50:
+            card_id = i
+
+    if (card_id != -1) and (exposed[card_id] is False):
+        # state logic processed
+        if state == 0:
+            for i in prev_card_id:
+                exposed[i] = False
+            prev_card_id = [card_id]
+            exposed[card_id] = True
+            turns += 1
+            state = 1
+            label.set_text(&quot;Turns = &quot; + str(turns))
+        else:
+            exposed[card_id] = True
+            state = 0
+            if memory_list[prev_card_id[0]] == memory_list[card_id]:
+                exposed[card_id] = True
+                prev_card_id = []
+            else:
+                prev_card_id.append(card_id)
+
+# cards are logically 50x100 pixels in size
+def draw(canvas):
+    for i in range(len(exposed)):
+        if exposed[i]:
+            canvas.draw_text(str(memory_list[i]), (i*50+10, 100/1.75), 50, 'White')
+        else:
+            canvas.draw_polygon([(i*50, 0), ((i+1)*50, 0), ((i+1)*50, 100), ((i*50), 100)], 1, 'Red', 'Green')
+
+# create frame and add a button and labels
+frame = simplegui.create_frame(&quot;Memory&quot;, 800, 100)
+frame.add_button(&quot;Reset&quot;, new_game, 200)
+label = frame.add_label(&quot;Turns = 0&quot;)
+
+# register event handlers
+frame.set_mouseclick_handler(mouseclick)
+frame.set_draw_handler(draw)
+
+# get things rolling
+new_game()
+frame.start()
+
+# Always remember to review the grading rubric
+</code></pre>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Mini projects #4 ---- Pong]]></title>
+        <id>https://tiny656.github.io/post/mini-projects-4-pong</id>
+        <link href="https://tiny656.github.io/post/mini-projects-4-pong">
+        </link>
+        <updated>2014-10-17T15:28:27.000Z</updated>
+        <summary type="html"><![CDATA[<p>课程全名：An Introduction to Interactive Programming in Python，来自 Rice University</p>
+<p>授课教授：Joe Warren, Scott Rixner, John Greiner, Stephen Wong</p>
+<p>工具：http://www.codeskulptor.org/  , 主要是simplegui 模块</p>
+<p>第四次作业，完成一个弹球的游戏，游戏的界面如下，规则也很简单，球不断在两边的paddle之间撞击后速度会不断加快，直到有一名玩家无法将球回击，则另一名玩家得分。</p>
+<p><img src="https://tiny656.github.io/post-images/1564241868332.png" alt="Pong 1"></p>
+]]></summary>
+        <content type="html"><![CDATA[<p>课程全名：An Introduction to Interactive Programming in Python，来自 Rice University</p>
+<p>授课教授：Joe Warren, Scott Rixner, John Greiner, Stephen Wong</p>
+<p>工具：http://www.codeskulptor.org/  , 主要是simplegui 模块</p>
+<p>第四次作业，完成一个弹球的游戏，游戏的界面如下，规则也很简单，球不断在两边的paddle之间撞击后速度会不断加快，直到有一名玩家无法将球回击，则另一名玩家得分。</p>
+<p><img src="https://tiny656.github.io/post-images/1564241868332.png" alt="Pong 1"></p>
+<!--more-->
+<p>之前得了解一下<strong>控制物体移动的方式</strong>。</p>
+<p>假设物体与点p相对应，<strong>第一种方式是直接通过控制点p的坐标来实现移动</strong>。</p>
+<p>在draw_handler中不用进行更新，只用绘制他的position就可以</p>
+<p>坐标的变化放在key_handler中进行修改，比如</p>
+<pre><code>key_handler:
+    Left Arrow –&gt; p[0] –= c
+    Right Arrow –&gt; p[0] += c
+    Up Arrow –&gt; p[1] –= c
+    Down Arrow –&gt; p[1] += c
+</code></pre>
+<p>代码如下：</p>
+<pre><code>import simplegui
+
+WIDTH = 500
+HEIGHT = 300
+p = [WIDTH/2, HEIGHT/2]
+
+def draw(canvas):
+    canvas.draw_circle(p, 30, 1, &quot;White&quot;, &quot;White&quot;)
+
+def key_down(key):
+    c = 4
+    if key == simplegui.KEY_MAP['up']:
+        p[1] -= c
+    elif key == simplegui.KEY_MAP['down']:
+        p[1] +=c
+    elif key == simplegui.KEY_MAP['left']:
+        p[0] -= c
+    elif key == simplegui.KEY_MAP['right']:
+        p[0] += c
+
+# Create a frame and assign callbacks to event handlers
+frame = simplegui.create_frame(&quot;Position Control&quot;, WIDTH, HEIGHT)
+frame.set_draw_handler(draw)
+frame.set_keydown_handler(key_down)
+
+# Start the frame animation
+frame.start()
+</code></pre>
+<p><strong>第二种方式通过控制点p的速率(velocity)变化来实现移动</strong></p>
+<p>draw_handler中进行坐标的更新和绘制</p>
+<p>在key_handler中进行速率的调整</p>
+<pre><code>draw_handler:
+    p[0] += v[0]
+    p[1] += v[1]
+
+key_handler:
+    Left Arrow –&gt; v[0] –= c
+    Right Arrow –&gt; v[0] += c
+    Up Arrow –&gt; v[1] –= c
+    Down Arrow –&gt; v[1] += c
+</code></pre>
+<p>代码如下：</p>
+<pre><code>import simplegui
+
+WIDTH = 500
+HEIGHT = 300
+v = [0, 0]
+p = [WIDTH/2, HEIGHT/2]
+
+def draw(canvas):
+    p[0] += v[0]
+    p[1] += v[1]
+    canvas.draw_circle(p, 30, 1, &quot;White&quot;, &quot;White&quot;)
+
+def key_down(key):
+    c = 1
+    if key == simplegui.KEY_MAP['up']:
+        v[1] -= c
+    elif key == simplegui.KEY_MAP['down']:
+        v[1] +=c
+    elif key == simplegui.KEY_MAP['left']:
+        v[0] -= c
+    elif key == simplegui.KEY_MAP['right']:
+        v[0] += c
+
+# Create a frame and assign callbacks to event handlers
+frame = simplegui.create_frame(&quot;Position Control&quot;, WIDTH, HEIGHT)
+frame.set_draw_handler(draw)
+frame.set_keydown_handler(key_down)
+
+# Start the frame animation
+frame.start()
+</code></pre>
+<p>这里再提一下碰撞的处理，上下碰撞，只用把v[1]的方向取反，左右碰撞，把v[0]的方向取反。</p>
+<p>主要就是边界位置的判断，对于一个假定中心为p，半径为r的求来说：</p>
+<pre><code>碰撞如下：
+Left Wall:
+p[0] &lt;= r
+
+Right Wall:
+p[0] &gt;= (width-1)-r
+
+Top Wall:
+p[1] &lt;= r
+
+Bottom Wall:
+p[1] &gt;= (height-1)-r
+</code></pre>
+<p>下面两张图来自老师的课件，关于定义</p>
+<p><img src="https://tiny656.github.io/post-images/1564241889077.png" alt="Pong 2"></p>
+<p><img src="https://tiny656.github.io/post-images/1564241895385.png" alt="Pong 3"></p>
+<p>回归到这个游戏，基本要用到的知识也就这么多，移动paddle处理方式稍微特殊一点，keydown_handler进行velocity的正方向增加，那么keyup_handler进行velocity的负方向增加，这样就可以实现，按下按键后paddle持续移动，释放按键后paddle停止移动。</p>
+<p>对于小球，初始随机给一个velocity，只要不是垂直或者水平，然后处理碰撞，在进行paddle碰撞后，要给予小球10%velocity上的增量。</p>
+<p>完整的代码如下:</p>
+<pre><code># Implementation of classic arcade game Pong
+
+import simplegui
+import random
+
+# initialize globals - pos and vel encode vertical info for paddles
+WIDTH = 600
+HEIGHT = 400
+BALL_RADIUS = 20
+PAD_WIDTH = 8
+PAD_HEIGHT = 80
+HALF_PAD_WIDTH = PAD_WIDTH / 2
+HALF_PAD_HEIGHT = PAD_HEIGHT / 2
+LEFT = False
+RIGHT = True
+
+# initialize ball_pos and ball_vel for new bal in middle of table
+# if direction is RIGHT, the ball's velocity is upper right, else upper left
+def spawn_ball(direction):
+    global ball_pos, ball_vel # these are vectors stored as lists
+    ball_pos = [WIDTH/2, HEIGHT/2]
+    ball_dir = 1 if direction == RIGHT else -1
+    ball_vel = [ball_dir * random.randrange(2, 4), -random.randrange(1, 3)]
+
+# define event handlers
+def new_game():
+    global paddle1_pos, paddle2_pos, paddle1_vel, paddle2_vel  # these are numbers
+    global score1, score2  # these are ints
+    spawn_ball(random.choice([LEFT, RIGHT]))
+    paddle1_pos, paddle2_pos = HEIGHT / 2, HEIGHT / 2
+    paddle1_vel, paddle2_vel = 0, 0
+    score1, score2 = 0, 0
+
+
+def draw(canvas):
+    global score1, score2, paddle1_pos, paddle2_pos, ball_pos, ball_vel
+
+    # draw mid line and gutters
+    canvas.draw_line([WIDTH / 2, 0],[WIDTH / 2, HEIGHT], 1, &quot;White&quot;)
+    canvas.draw_line([PAD_WIDTH, 0],[PAD_WIDTH, HEIGHT], 1, &quot;White&quot;)
+    canvas.draw_line([WIDTH - PAD_WIDTH, 0],[WIDTH - PAD_WIDTH, HEIGHT], 1, &quot;White&quot;)
+
+    # update ball
+    new_ball_posX = ball_pos[0] + ball_vel[0]
+    new_ball_posY = ball_pos[1] + ball_vel[1]
+    if new_ball_posY &lt;= BALL_RADIUS:
+        ball_pos[1] = BALL_RADIUS
+        ball_vel[1] *= -1
+    elif new_ball_posY &gt;= HEIGHT - 1 - BALL_RADIUS:
+        ball_pos[1] = HEIGHT - 1 - BALL_RADIUS
+        ball_vel[1] *= -1
+    else:
+        ball_pos[1] = new_ball_posY
+
+    # hit the left gutter
+    if new_ball_posX &lt;= PAD_WIDTH + BALL_RADIUS:
+        ball_pos[0] = PAD_WIDTH + BALL_RADIUS
+        if (ball_pos[1] &gt;= paddle1_pos - HALF_PAD_HEIGHT
+            and ball_pos[1] &lt;= paddle1_pos + HALF_PAD_HEIGHT):
+            ball_vel[0] = -(ball_vel[0] + 0.1 * ball_vel[0])
+            ball_vel[1] = ball_vel[1] + 0.1 * ball_vel[1]
+        else:
+            score2 = score2 + 1
+            spawn_ball(RIGHT)
+
+    # hit the right gutter
+    elif new_ball_posX &gt;= WIDTH - PAD_WIDTH - BALL_RADIUS:
+        ball_pos[0] = WIDTH - PAD_WIDTH - BALL_RADIUS
+        if (ball_pos[1] &gt;= paddle2_pos - HALF_PAD_HEIGHT
+            and ball_pos[1] &lt;= paddle2_pos + HALF_PAD_HEIGHT):
+            ball_vel[0] = -(ball_vel[0] + 0.1 * ball_vel[0])
+            ball_vel[1] = ball_vel[1] + 0.1 * ball_vel[1]
+        else:
+            score1 = score1 + 1
+            spawn_ball(LEFT)
+    else:
+        ball_pos[0] = new_ball_posX
+
+    # draw ball
+    canvas.draw_circle(ball_pos, BALL_RADIUS, 1, &quot;White&quot;, &quot;White&quot;)
+
+    # update paddle's vertical position, keep paddle on the screen
+    new_paddle1_pos = paddle1_pos + paddle1_vel
+    if new_paddle1_pos &lt;= HALF_PAD_HEIGHT:
+        paddle1_pos = HALF_PAD_HEIGHT
+    elif new_paddle1_pos &gt;= HEIGHT-HALF_PAD_HEIGHT:
+        paddle1_pos = HEIGHT-HALF_PAD_HEIGHT
+    else:
+        paddle1_pos = new_paddle1_pos
+
+    new_paddle2_pos = paddle2_pos + paddle2_vel
+    if new_paddle2_pos &lt;= HALF_PAD_HEIGHT:
+        paddle2_pos = HALF_PAD_HEIGHT
+    elif new_paddle2_pos &gt;= HEIGHT-HALF_PAD_HEIGHT:
+        paddle2_pos = HEIGHT-HALF_PAD_HEIGHT
+    else:
+        paddle2_pos = new_paddle2_pos
+
+    # draw paddles
+    canvas.draw_polygon([[0, paddle1_pos-HALF_PAD_HEIGHT],
+            [PAD_WIDTH-1, paddle1_pos-HALF_PAD_HEIGHT],
+            [PAD_WIDTH-1, paddle1_pos+HALF_PAD_HEIGHT],
+            [0, paddle1_pos+HALF_PAD_HEIGHT]], 1, &quot;White&quot;, &quot;White&quot;)
+    canvas.draw_polygon([[WIDTH-PAD_WIDTH+1, paddle2_pos-HALF_PAD_HEIGHT],
+            [WIDTH, paddle2_pos-HALF_PAD_HEIGHT],
+            [WIDTH, paddle2_pos+HALF_PAD_HEIGHT],
+            [WIDTH-PAD_WIDTH+1, paddle2_pos+HALF_PAD_HEIGHT]], 1, &quot;White&quot;, &quot;White&quot;)
+    # draw scores
+    canvas.draw_text(str(score1), (WIDTH/4, HEIGHT/5), 50, &quot;Red&quot;)
+    canvas.draw_text(str(score2), (WIDTH/4*3, HEIGHT/5), 50, &quot;Red&quot;)
+    canvas.draw_text(&quot;Author: Tiny656&quot;, (WIDTH/5*3, HEIGHT/20*18), 18, &quot;Green&quot;)
+    canvas.draw_text(&quot;Mail: 236798656@qq.com&quot;, (WIDTH/5*3, HEIGHT/20*19), 18, &quot;Green&quot;)
+
+
+def keydown(key):
+    global paddle1_vel, paddle2_vel
+    acc = 3
+    if key == simplegui.KEY_MAP['w']:
+        paddle1_vel -= acc
+    elif key == simplegui.KEY_MAP['s']:
+        paddle1_vel += acc
+    if key == simplegui.KEY_MAP['up']:
+        paddle2_vel -= acc
+    elif key == simplegui.KEY_MAP['down']:
+        paddle2_vel += acc
+
+def keyup(key):
+    global paddle1_vel, paddle2_vel
+    acc = 3
+    if key == simplegui.KEY_MAP['w']:
+        paddle1_vel += acc
+    elif key == simplegui.KEY_MAP['s']:
+        paddle1_vel -= acc
+    if key == simplegui.KEY_MAP['up']:
+        paddle2_vel += acc
+    elif key == simplegui.KEY_MAP['down']:
+        paddle2_vel -= acc
+
+def reset():
+    new_game()
+
+
+# create frame
+frame = simplegui.create_frame(&quot;Pong&quot;, WIDTH, HEIGHT)
+frame.set_draw_handler(draw)
+frame.set_keydown_handler(keydown)
+frame.set_keyup_handler(keyup)
+frame.add_button(&quot;Reset&quot;, reset, 200)
+
+# start frame
+new_game()
+frame.start()
+</code></pre>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Mini projects #3 ---- Stopwatch: The Game]]></title>
+        <id>https://tiny656.github.io/post/mini-projects-3-stopwatch-the-game</id>
+        <link href="https://tiny656.github.io/post/mini-projects-3-stopwatch-the-game">
+        </link>
+        <updated>2014-10-06T15:26:51.000Z</updated>
+        <summary type="html"><![CDATA[<p>课程全名：An Introduction to Interactive Programming in Python，来自 Rice University</p>
+<p>授课教授：Joe Warren, Scott Rixner, John Greiner, Stephen Wong</p>
+<p>工具：http://www.codeskulptor.org/  , 主要是simplegui 模块</p>
+<p>这是第三次作业，前面两次主要是熟悉Python动手做起来都很简单，就不记录了。</p>
+<p>作业需要完成一个关于手表的游戏，估计很多人也都玩过。初中和高中考试做完卷子，但离收卷还有很久，就折腾手上的电子表用来掐秒，锻炼反应力。这里要实现的游戏是一个道理，就是酱紫。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>课程全名：An Introduction to Interactive Programming in Python，来自 Rice University</p>
+<p>授课教授：Joe Warren, Scott Rixner, John Greiner, Stephen Wong</p>
+<p>工具：http://www.codeskulptor.org/  , 主要是simplegui 模块</p>
+<p>这是第三次作业，前面两次主要是熟悉Python动手做起来都很简单，就不记录了。</p>
+<p>作业需要完成一个关于手表的游戏，估计很多人也都玩过。初中和高中考试做完卷子，但离收卷还有很久，就折腾手上的电子表用来掐秒，锻炼反应力。这里要实现的游戏是一个道理，就是酱紫。</p>
+<!--more-->
+<p>这个Mini project开始采用事件驱动(event-driven)的交互方式，所以先明确一些问题。</p>
+<ol>
+<li>
+<p>界面canvas的drawing速率大概是 60 frams/sec</p>
+</li>
+<li>
+<p>每一个应用程序需要注册一个特殊的事件句柄叫做 draw handler</p>
+</li>
+<li>
+<p>在simplegui 模块中，创建和注册draw handler最后的绘制是在canvas中</p>
+</li>
+<li>
+<p>绘制的操作有很多种，例如线、圆、多边形等，这些都在simplegui模块里面定义，具体查看doc</p>
+</li>
+</ol>
+<p>canvas的布局如下，原点在左上角，第一个坐标是宽度，第二个坐标是高度</p>
+<p><img src="https://tiny656.github.io/post-images/1564241806991.png" alt="Stopwatch The Game 1"></p>
+<p>Stopwatch完成的结果如下：</p>
+<p><img src="https://tiny656.github.io/post-images/1564241834553.png" alt="Stopwatch The Game 2"></p>
+<p>Start开始游戏，Stop暂停，Reset重置。右上角记录 成功停在整数秒次数/尝试次数</p>
+<p>需要的元素:</p>
+<p>frame:主界面</p>
+<p>start button, stop button, reset button.</p>
+<p>timer: 计时</p>
+<p>逻辑设计：</p>
+<p>start button事件: 开始计时</p>
+<pre><code>def start_handler():
+    global is_running
+    if is_running is False:
+        timer.start()
+        is_running = True
+</code></pre>
+<p>stop button事件：停止计时，更新右上角记录</p>
+<pre><code>def stop_handler():
+    global num_stop, num_succ_stop, is_running
+    if is_running is True:
+        timer.stop()
+        num_stop += 1
+        if tick % 10 == 0 and tick != 0:
+            num_succ_stop += 1
+        is_running = False
+</code></pre>
+<p>reset button事件：停止计时，重置相关参数</p>
+<pre><code>def reset_handler():
+    global tick, num_stop, num_succ_stop, is_running
+    timer.stop()
+    num_succ_stop, num_stop, tick = 0, 0, 0
+    is_running = False
+</code></pre>
+<p>timer 事件：负责计时不断增加，每次0.1s</p>
+<pre><code>def timer_handler():
+    global tick
+    tick += 1
+</code></pre>
+<p>draw事件：界面元素绘制</p>
+<pre><code>def draw_handler(canvas):
+    canvas.draw_text(format(tick), [100, 100], 30, &quot;Green&quot;)
+    canvas.draw_text(str(num_succ_stop) + &quot;/&quot; + str(num_stop), [250, 20], 20, &quot;Green&quot;)
+
+</code></pre>
+<p>定义了一个辅助的方法format用来转换当前时间t为00:00.0格式</p>
+<pre><code>def format(t):
+    D = str(t % 10)
+    BC = t / 10 % 60
+    if BC &lt; 10:
+        BC = '0'+str(BC)
+    else:
+        BC = str(BC)
+    A = str(t / 10 / 60)
+    return A + &quot;:&quot; + BC + &quot;.&quot; + D
+</code></pre>
+<p>整体完整代码如下：</p>
+<pre><code># template for &quot;Stopwatch: The Game&quot;
+
+import simplegui
+
+# define global variables
+tick = 0
+num_stop = 0
+num_succ_stop = 0
+is_running = False
+
+# define helper function format that converts time
+# in tenths of seconds into formatted string A:BC.D
+def format(t):
+    D = str(t % 10)
+    BC = t / 10 % 60
+    if BC &lt; 10:
+        BC = '0'+str(BC)
+    else:
+        BC = str(BC)
+    A = str(t / 10 / 60)
+    return A + &quot;:&quot; + BC + &quot;.&quot; + D
+
+# define event handlers for buttons; &quot;Start&quot;, &quot;Stop&quot;, &quot;Reset&quot;
+def start_handler():
+    global is_running
+    if is_running is False:
+        timer.start()
+        is_running = True
+
+def stop_handler():
+    global num_stop, num_succ_stop, is_running
+    if is_running is True:
+        timer.stop()
+        num_stop += 1
+        if tick % 10 == 0 and tick != 0:
+            num_succ_stop += 1
+        is_running = False
+
+def reset_handler():
+    global tick, num_stop, num_succ_stop, is_running
+    timer.stop()
+    num_succ_stop, num_stop, tick = 0, 0, 0
+    is_running = False
+
+
+# define event handler for timer with 0.1 sec interval
+def timer_handler():
+    global tick
+    tick += 1
+
+# define draw handler
+def draw_handler(canvas):
+    canvas.draw_text(format(tick), [100, 100], 30, &quot;Green&quot;)
+    canvas.draw_text(str(num_succ_stop) + &quot;/&quot; + str(num_stop), [250, 20], 20, &quot;Green&quot;)
+
+# create frame
+frame = simplegui.create_frame('Stopwatch: The Game', 300, 200)
+
+# register event handlers
+start_btn = frame.add_button('Start', start_handler, 200)
+stop_btn = frame.add_button('Stop', stop_handler, 200)
+reset_btn = frame.add_button('Reset', reset_handler, 200)
+frame.set_draw_handler(draw_handler)
+timer = simplegui.create_timer(100, timer_handler)
+
+# start frame
+frame.start()
+
+# Please remember to review the grading rubric
+</code></pre>
+<p>其中is_running用来记录当前timer是否在运行，防止重复点击stop出现计数错误的问题。</p>
+<p>整体逻辑也比较简单，课程挺有意思，声音听着超棒，锻炼听力挺不错。每个老师相当的负责和认真。感叹自己本科那时初学C的时候，授课的差距是那么大，也感慨现在有这么多好的资源可以利用。学无止境。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Programming Assignment 5: Kd-Trees]]></title>
+        <id>https://tiny656.github.io/post/programming-assignment-5-kd-trees</id>
+        <link href="https://tiny656.github.io/post/programming-assignment-5-kd-trees">
+        </link>
+        <updated>2014-07-06T15:23:19.000Z</updated>
+        <summary type="html"><![CDATA[<p>用2d-tree数据结构实现在2维矩形区域内的高效的range search 和 nearest neighbor search。2d-tree有许多的应用，在天体分类、计算机动画、神经网络加速、数据挖掘、图像检索。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>用2d-tree数据结构实现在2维矩形区域内的高效的range search 和 nearest neighbor search。2d-tree有许多的应用，在天体分类、计算机动画、神经网络加速、数据挖掘、图像检索。</p>
+<!--more-->
+<p>range search： 返回所有在query rectangle里的所有点</p>
+<p>nearest neighbor search: 返回query point的最近点</p>
+<p>下图显示这两种search操作</p>
+<p><img src="https://tiny656.github.io/post-images/1564241044699.jpg" alt="Kd-Trees_1"></p>
+<p><strong>Geometric Primitives.</strong> 在assignment给定了几何图元应该如何表示，如下图</p>
+<p><img src="https://tiny656.github.io/post-images/1564241067340.jpg" alt="Kd_Trees_2"></p>
+<p>其中关于Point和Rectangle的表示已经定义在了Point2D.java和RectHV.java中，API都已经提供了，这个都不用自己实现。</p>
+<p>Point2D的API主要是点的坐标、平方距离、欧几里得距离、点的比较、绘制等，</p>
+<p>RectHV主要是一个2维的包围盒，记录矩形的左下角和右上角点的信息，主要API是contains(Point2D)判断点是否在矩形内，intersects(RectHV)是否与另一个矩形相交，以及矩形到点的平方距离和距离，绘制等。源码都可以找到来进行分析。</p>
+<p><strong>下面就是要完成的两个任务：Brute-force 实现 和 2d-tree 实现。</strong></p>
+<p>需要实现的API是一样的，这里以PointSET为例子，2d-tree也一样：</p>
+<pre><code>public class PointSET {
+       public PointSET()                               // construct an empty set of points
+       public boolean isEmpty()                        // is the set empty?
+       public int size()                               // number of points in the set
+       public void insert(Point2D p)                   // add the point p to the set (if it is not already in the set)
+       public boolean contains(Point2D p)              // does the set contain the point p?
+       public void draw()                              // draw all of the points to standard draw
+       public Iterable&lt;Point2D&gt; range(RectHV rect)     // all points in the set that are inside the rectangle
+       public Point2D nearest(Point2D p)               // a nearest neighbor in the set to p; null if set is empty
+}
+</code></pre>
+<p><strong>Brute-force:</strong> 暴力的实现需要insert()和contains()是在O(logn)的复杂度，nearest()和range()是O(N)的复杂度。</p>
+<p>这里用algs4.jar的SET来实现，代码很简单。</p>
+<p>range(RectHV): 遍历SET中所有Point与当前RectHV进行包含关系判断</p>
+<p>nearest(Point2D)：遍历SET中的所有Point与当前Point进行距离判断，不断更新最小距离和最小距离的点，在进行距离判断的时候，用平方距离，开方会影响计算速度。</p>
+<pre><code>public class PointSET {
+    private SET&lt;Point2D&gt; set;
+
+    // construct an empty set of points
+    public PointSET() {
+        set = new SET&lt;Point2D&gt;();
+    }
+
+    // is the set empty?
+    public boolean isEmpty() {
+        return set.isEmpty();
+    }
+
+    // number of points in the set
+    public int size() {
+        return set.size();
+    }
+
+    // add the point p to the set (if it is not already in the set)
+    public void insert(Point2D p) {
+        set.add(p);
+    }
+
+    // does the set contain the point p?
+    public boolean contains(Point2D p) {
+        return set.contains(p);
+    }
+
+    // draw all of the points to standard draw
+    public void draw() {
+        for (Point2D p : set) {
+            StdDraw.point(p.x(), p.y());
+        }
+    }
+
+    // all points in the set that are inside the rectangle
+    public Iterable&lt;Point2D&gt; range(RectHV rect) {
+        Queue&lt;Point2D&gt; q = new Queue&lt;Point2D&gt;();
+        for (Point2D p : set) {
+            if (rect.contains(p))
+                q.enqueue(p);
+        }
+        return q;
+    }
+
+    // a nearest neighbor in the set to p; null if set is empty
+    public Point2D nearest(Point2D p) {
+        double mindis = Double.MAX_VALUE;
+        Point2D ret = null;
+        for (Point2D s : set) {
+            double dis = s.distanceSquaredTo(p);
+            if (dis &lt; mindis) {
+                mindis = dis;
+                ret = s;
+            }
+        }
+        return ret;
+    }
+}
+</code></pre>
+<p>2d-tree：这里是使用BST为结构对节点进行组织，每个节点记录下面的相关属性，这个在Possible Progress Step中有提示。通过assignment中的描述和图可以对它有很清晰的认识。</p>
+<p><img src="https://tiny656.github.io/post-images/1564241097547.jpg" alt="Kd-Trees_3"></p>
+<p>Node节点定义如下：</p>
+<p>p记录当前点，rect记录当前点的“包围盒”(轴平行矩阵)，lb记录左边或者下边的区域节点，rt记录右边或者上边的区域节点。</p>
+<pre><code>private static class Node {
+    private Point2D p; // the point
+    // the axis-aligned rectangle corresponding to this node
+    // the max rectangle include this node, aabb
+    private RectHV rect;
+    private Node lb; // the left/bottom subtree
+    private Node rt; // the right/top subtree
+    public Node(Point2D p, RectHV rect) {
+        this.p = p;
+        this.rect = rect;
+        lb = null;
+        rt = null;
+    }
+}
+</code></pre>
+<p>2d-Tree的具体实现只要参考BST的写法就很好实现，insert的时候原本写的是new RectHV，不断进行递归进行构造，但是new的太多，fail test了。后面在insert中直接把RectHV的4个坐标作为参数在Insert中进行递归。</p>
+<p>还有一个比较重要的问题是，在insert，get，draw中，要把方向orientation作为参数，用来标示当前应该是左右分还是上下分，draw，insert和get都参照BST的写法，递归实现是十分简洁的。</p>
+<p>range()和nearest()都采用BFS广度搜索的方法，遍历这个2d-tree，进行相交和包含的判断，维护有效的节点信息。nearest()也记得使用平方距离，开方影响运行时间。</p>
+<p>代码实现如下：</p>
+<pre><code>public class KdTree {
+
+    private Node root;
+    private int N;
+    private static class Node {
+        private Point2D p; // the point
+        // the axis-aligned rectangle corresponding to this node
+        // the max rectangle include this node, aabb
+        private RectHV rect;
+        private Node lb; // the left/bottom subtree
+        private Node rt; // the right/top subtree
+        public Node(Point2D p, RectHV rect) {
+            this.p = p;
+            this.rect = rect;
+            lb = null;
+            rt = null;
+        }
+    }
+
+    private final RectHV CANVAS = new RectHV(0, 0, 1, 1);
+
+    // construct an empty set of points
+    public KdTree() {
+        root = null;
+        N = 0;
+    }
+
+    // is the set empty?
+    public boolean isEmpty() {
+        return N == 0;
+    }
+
+    // number of points in the set
+    public int size() {
+        return N;
+    }
+
+    /**************************************
+      * less
+      * compare two Point2D with orientation
+      *************************************/
+    private int compareTo(Point2D v, Point2D w, int ori) {
+        if (v.equals(w)) return 0; // same point
+        else {
+            if (ori == 0) {
+                // vertical line
+                if (v.x() &lt; w.x()) return -1;
+                else return 1;
+            } else {
+                // horizontal line
+                if (v.y() &lt; w.y()) return -1;
+                else return 1;
+            }
+        }
+    }
+
+    /***********************************************
+     * Insert
+     **********************************************/
+
+    private Node insert(Node x, Point2D p,
+                        double xmin, double ymin, double xmax, double ymax,
+                        int ori) {
+        if (x == null) {
+            N++;
+            return new Node(p, new RectHV(xmin, ymin, xmax, ymax));
+        }
+        int cmp = compareTo(p, x.p, ori);
+        double x0 = xmin, y0 = ymin, x1 = xmax, y1 = ymax;
+        if (cmp &lt; 0) {
+            if (ori == 0) x1 = x.p.x();
+            else y1 = x.p.y();
+            x.lb = insert(x.lb, p, x0, y0, x1, y1, 1-ori);
+        }
+        else if (cmp &gt; 0) {
+            if (ori == 0) x0 = x.p.x();
+            else y0 = x.p.y();
+            x.rt = insert(x.rt, p, x0, y0, x1, y1, 1-ori);
+        }
+        return x;
+    }
+
+    // add the point p to the set (if it is not already in the set)
+    public void insert(Point2D p) {
+        // 0 for vertical, 1 for horizontal
+        root = insert(root, p,
+                      CANVAS.xmin(), CANVAS.ymin(),
+                      CANVAS.xmax(), CANVAS.ymax(), 0);
+    }
+
+    /*******************************************
+      * contains
+      *****************************************/
+    private boolean get(Node x, Point2D p, int ori) {
+        if (x == null) return false;
+        int cmp = compareTo(p, x.p, ori);
+        if (cmp &lt; 0) return get(x.lb, p, 1-ori);
+        else if (cmp &gt; 0) return get(x.rt, p, 1-ori);
+        return true;
+    }
+
+    // does the set contain the point p?
+    public boolean contains(Point2D p) {
+        // 0 for vertical, 1 for horizontal
+        return get(root, p, 0);
+    }
+
+    /***************************************
+      * Draw()
+      *************************************/
+    private void draw(Node x, int ori) {
+        if (x == null) return;
+        // draw point
+        StdDraw.setPenColor(StdDraw.BLACK);
+        StdDraw.setPenRadius(.01);
+        StdDraw.point(x.p.x(), x.p.y());
+        // draw line
+        if (ori == 0) {
+            // vertical
+             StdDraw.setPenColor(StdDraw.RED);
+             StdDraw.setPenRadius();
+             StdDraw.line(x.p.x(), x.rect.ymin(), x.p.x(), x.rect.ymax());
+        } else {
+            // horizontal
+            StdDraw.setPenColor(StdDraw.BLUE);
+            StdDraw.setPenRadius();
+            StdDraw.line(x.rect.xmin(), x.p.y(), x.rect.xmax(), x.p.y());
+        }
+        draw(x.lb, 1-ori);
+        draw(x.rt, 1-ori);
+    }
+
+    // draw all of the points to standard draw
+    public void draw() {
+        StdDraw.setScale(0, 1);
+        StdDraw.setPenColor(StdDraw.BLACK);
+        StdDraw.setPenRadius();
+        CANVAS.draw();
+        draw(root, 0);
+    }
+
+    // all points in the set that are inside the rectangle
+    public Iterable&lt;Point2D&gt; range(RectHV rect) {
+        Queue&lt;Point2D&gt; points = new Queue&lt;Point2D&gt;();
+        Queue&lt;Node&gt; queue = new Queue&lt;Node&gt;();
+        if (root == null) return points;
+        queue.enqueue(root);
+        while (!queue.isEmpty()) {
+            Node x = queue.dequeue();
+            if (x == null) continue;
+            if (rect.contains(x.p)) points.enqueue(x.p);
+            if (x.lb != null &amp;&amp; rect.intersects(x.lb.rect)) queue.enqueue(x.lb);
+            if (x.rt != null &amp;&amp; rect.intersects(x.rt.rect)) queue.enqueue(x.rt);
+        }
+        return points;
+    }
+
+    // a nearest neighbor in the set to p; null if set is empty
+    public Point2D nearest(Point2D p) {
+        if (root == null) return null;
+        Point2D retp = null;
+        double mindis = Double.MAX_VALUE;
+        Queue&lt;Node&gt; queue = new Queue&lt;Node&gt;();
+        queue.enqueue(root);
+        while (!queue.isEmpty()) {
+            Node x = queue.dequeue();
+            double dis = p.distanceSquaredTo(x.p);
+            if (dis &lt; mindis) {
+                retp = x.p;
+                mindis = dis;
+            }
+            if (x.lb != null &amp;&amp; x.lb.rect.distanceSquaredTo(p) &lt; mindis)
+                queue.enqueue(x.lb);
+            if (x.rt != null &amp;&amp; x.rt.rect.distanceSquaredTo(p) &lt; mindis)
+                queue.enqueue(x.rt);
+        }
+        return retp;
+    }
+
+}
+</code></pre>
+<p><strong>总结:</strong> Last words， 这应该是第一门坚持上完的公开课吧，原来Andrew Ng的ML上了一半后，由于事情太多就把课给荒废了(现在又重新开始新一轮了，fighting！吐舌笑脸)。</p>
+<p>可能这几个Assignment写的都不咋地，但记录回顾一下，还是觉得很有收获。特别感谢Prof.Sedgewick和Coursera平台，给予了一段精彩的旅程。后面的Part II到时候继续跟上。</p>
+<p>不得不感叹，国外的MOOC平台做的相当的完美，提供了这么多好的资源，国内估计也有类似的吧，没去具体了解过。一定程度上真是把大学搬进了家里，不过感觉仅凭MOOC上几周课程来对领域或者部分的知识，作为一个较为（较为深入？）了解比较恰当，如果要熟练运用和掌握，还需要很长的路要走，Study hungry! Study foolish!</p>
 ]]></content>
     </entry>
 </feed>

@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>Mini projects #7 ---- Spaceship | Gridea</title>
+<meta name="description" content="温故而知新">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://tiny656.github.io/favicon.ico?v=1564242683469">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="stylesheet" href="https://tiny656.github.io/styles/main.css">
+
+
+  
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/disqusjs@1.1/dist/disqusjs.css" />
+  
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://tiny656.github.io">
+        <img src="https://tiny656.github.io/images/avatar.png?v=1564242683469" class="site-logo">
+        <h1 class="site-title">Gridea</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      温故而知新
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://tiny656.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">Mini projects #7 ---- Spaceship</h2>
+            <div class="post-date">2014-11-06</div>
+            
+            <div class="post-content">
+              <p>课程全名：An Introduction to Interactive Programming in Python，来自 Rice University</p>
+<p>授课教授：Joe Warren, Scott Rixner, John Greiner, Stephen Wong</p>
+<p>工具：http://www.codeskulptor.org/, simplegui 模块</p>
+<p>最后两周就要结束了~~~</p>
+<p>第七周：</p>
+<p>先上图，这周完成Spaceship游戏的一部分。</p>
+<p><img src="https://tiny656.github.io/post-images/1564242073263.png" alt="Spaceship 1"></p>
+<!--more-->
+<p>在这图里面有什么？飞船，陨石，子弹，背景图….</p>
+<p>用OO的对象来看，他们都对应一幅图像，那么抽象一个类ImageInfo来操作这些图像信息，它包括图像的center(中心位置)，size(图像大小)，radius(半径)，lifespan(时间周期)，animated(动画)。可能有些属性比较陌生，有些针对到具体的对象才有用。</p>
+<pre><code>class ImageInfo:
+    def __init__(self, center, size, radius = 0, lifespan = None, animated = False):
+        self.center = center
+        self.size = size
+        self.radius = radius
+        if lifespan:
+            self.lifespan = lifespan
+        else:
+            self.lifespan = float('inf')
+        self.animated = animated
+
+    def get_center(self):
+        return self.center
+
+    def get_size(self):
+        return self.size
+
+    def get_radius(self):
+        return self.radius
+
+    def get_lifespan(self):
+        return self.lifespan
+
+    def get_animated(self):
+        return self.animated
+</code></pre>
+<p>有了图像的表示，那么我们还需要飞船，用Ship来表示</p>
+<p>Ship有什么属性和方法呢？</p>
+<p><strong>pos</strong>: 位置</p>
+<p><strong>vel</strong>：加速度</p>
+<p><strong>thrust</strong>：冲刺状态</p>
+<p><strong>angle</strong>：飞船旋转的角度</p>
+<p><strong>angle_vel</strong>：飞船旋转角速度</p>
+<p><strong>image</strong>：飞船图像</p>
+<p><strong>image_cener</strong>：飞船图像的中心位置</p>
+<p><strong>image_size</strong>：飞船图像的大小</p>
+<p><strong>image_radius</strong>：飞船半径？(这周作业没用到，不知道干嘛的)</p>
+<p>飞船的方法：</p>
+<p><strong>draw(canvas):</strong> 绘制飞船，要求绘制根据是否在冲刺状态，绘制图像不同。所给的飞船image是tiled图像，所以绘制时候计算一下偏移就好</p>
+<p><img src="https://tiny656.github.io/post-images/1564242093040.png" alt="Spaceship 2"></p>
+<p>**update()：**更新当前飞船位置以及角度。基本所有涉及到简单数学计算的公式，课上以及相关ppt都给出来，都比较简单，直接拿来用。对于角度的更新和Pong那周一样，用左右按键按下增加旋转角速度，放开减少旋转角速度，每次更新的时候就只用把飞船的角度加上旋转角速度。</p>
+<p><img src="https://tiny656.github.io/post-images/1564242108604.png" alt="Spaceship 3"></p>
+<p>船的位置更新同理，使用位置加上加速度，但是要考虑飞出边界，所以对WIDTH和HEIGHT分别取模。</p>
+<p><img src="https://tiny656.github.io/post-images/1564242126380.png" alt="Spaceship 4"></p>
+<p>这边与Pong不同的是加速度的计算，Pong只有上下方向，但这里飞船可以旋转指向各个方向，所以加速度修改飞船向着它转角的方向，原理还是一样，把转角方向向水平和垂直方向做投影乘以常量，然后加到原有的加速度上。</p>
+<p><img src="https://tiny656.github.io/post-images/1564242141313.png" alt="Spaceship 5"></p>
+<p>最后剩下的一个问题就是，外太空有&lt;阻力&gt;，所以飞船会不断减速直到速度为0，那么不断按照一定的比例缩小飞船的加速度，直到加速度为0，飞船的位置就不更新了。</p>
+<p><img src="https://tiny656.github.io/post-images/1564242157022.png" alt="Spaceship 6"></p>
+<p>update()的代码如下:</p>
+<pre><code>def update(self):
+    self.angle += self.angle_vel
+    self.pos[0] = (self.pos[0] + self.vel[0]) % WIDTH
+    self.pos[1] = (self.pos[1] + self.vel[1]) % HEIGHT
+    c = 0.05
+    self.vel[0] *= (1 - c)
+    self.vel[1] *= (1 - c)
+    forward = angle_to_vector(self.angle)
+    if self.thrust:
+        self.vel[0] += forward[0] * 1.2
+        self.vel[1] += forward[1] * 1.2
+</code></pre>
+<p>**change_angle_vel(ori, key_state)：**根据按键是left或者right和按键当前状态是按下或者松开，来改变飞船的旋转角速度</p>
+<p>**set_thruster(thruster_state)：**根据up按键来改变飞船的冲刺状态，并且播放和暂停响应的声音效果</p>
+<p><strong>shoot():</strong> 飞船发子弹，初始化子弹，它的位置在飞船的炮孔位置，然后子弹的加速度等于，飞船的加速度，加上飞船角度在水平垂直分量的常量倍，这与飞船的加速思路一样的，子弹的角度和旋转角速度设置成0就好。</p>
+<p>飞船处理完了，剩下的就是陨石和子弹，给的template中用sprite来抽象表示他们。</p>
+<p><img src="https://tiny656.github.io/post-images/1564242171862.png" alt="Spaceship 7"><br>
+<img src="https://tiny656.github.io/post-images/1564242178117.png" alt="Spaceship 8"></p>
+<p>基本的属性和飞船差不多，pos, vel, angle, angle_vel, image, image_center, image_size, radius，多了lifespan, animated, age还有sound</p>
+<p>主要方法：</p>
+<p><strong>draw(canvas):</strong> 直接根据image的信息进行绘制</p>
+<p><strong>update(canvas):</strong> 更新角度和位置，与飞船类似。超出边界要取模</p>
+<p>其他的部分就是frame的draw事件模板里已经写好，key_up，key_down事件，上面也都提到处理方法。</p>
+<p>这周的任务也就这样完工了。</p>
+<p>完整的代码如下：</p>
+<pre><code># program template for Spaceship
+import simplegui
+import math
+import random
+
+# globals for user interface
+WIDTH = 800
+HEIGHT = 600
+score = 0
+lives = 3
+time = 0.5
+
+class ImageInfo:
+    def __init__(self, center, size, radius = 0, lifespan = None, animated = False):
+        self.center = center
+        self.size = size
+        self.radius = radius
+        if lifespan:
+            self.lifespan = lifespan
+        else:
+            self.lifespan = float('inf')
+        self.animated = animated
+
+    def get_center(self):
+        return self.center
+
+    def get_size(self):
+        return self.size
+
+    def get_radius(self):
+        return self.radius
+
+    def get_lifespan(self):
+        return self.lifespan
+
+    def get_animated(self):
+        return self.animated
+
+
+# art assets created by Kim Lathrop, may be freely re-used in non-commercial projects, please credit Kim
+
+# debris images - debris1_brown.png, debris2_brown.png, debris3_brown.png, debris4_brown.png
+#                 debris1_blue.png, debris2_blue.png, debris3_blue.png, debris4_blue.png, debris_blend.png
+debris_info = ImageInfo([320, 240], [640, 480])
+debris_image = simplegui.load_image(&quot;http://commondatastorage.googleapis.com/codeskulptor-assets/lathrop/debris2_blue.png&quot;)
+
+# nebula images - nebula_brown.png, nebula_blue.png
+nebula_info = ImageInfo([400, 300], [800, 600])
+nebula_image = simplegui.load_image(&quot;http://commondatastorage.googleapis.com/codeskulptor-assets/lathrop/nebula_blue.f2014.png&quot;)
+
+# splash image
+splash_info = ImageInfo([200, 150], [400, 300])
+splash_image = simplegui.load_image(&quot;http://commondatastorage.googleapis.com/codeskulptor-assets/lathrop/splash.png&quot;)
+
+# ship image
+ship_info = ImageInfo([45, 45], [90, 90], 35)
+ship_image = simplegui.load_image(&quot;http://commondatastorage.googleapis.com/codeskulptor-assets/lathrop/double_ship.png&quot;)
+
+# missile image - shot1.png, shot2.png, shot3.png
+missile_info = ImageInfo([5,5], [10, 10], 3, 50)
+missile_image = simplegui.load_image(&quot;http://commondatastorage.googleapis.com/codeskulptor-assets/lathrop/shot2.png&quot;)
+
+# asteroid images - asteroid_blue.png, asteroid_brown.png, asteroid_blend.png
+asteroid_info = ImageInfo([45, 45], [90, 90], 40)
+asteroid_image = simplegui.load_image(&quot;http://commondatastorage.googleapis.com/codeskulptor-assets/lathrop/asteroid_blue.png&quot;)
+
+# animated explosion - explosion_orange.png, explosion_blue.png, explosion_blue2.png, explosion_alpha.png
+explosion_info = ImageInfo([64, 64], [128, 128], 17, 24, True)
+explosion_image = simplegui.load_image(&quot;http://commondatastorage.googleapis.com/codeskulptor-assets/lathrop/explosion_alpha.png&quot;)
+
+# sound assets purchased from sounddogs.com, please do not redistribute
+soundtrack = simplegui.load_sound(&quot;http://commondatastorage.googleapis.com/codeskulptor-assets/sounddogs/soundtrack.mp3&quot;)
+missile_sound = simplegui.load_sound(&quot;http://commondatastorage.googleapis.com/codeskulptor-assets/sounddogs/missile.mp3&quot;)
+missile_sound.set_volume(.5)
+ship_thrust_sound = simplegui.load_sound(&quot;http://commondatastorage.googleapis.com/codeskulptor-assets/sounddogs/thrust.mp3&quot;)
+explosion_sound = simplegui.load_sound(&quot;http://commondatastorage.googleapis.com/codeskulptor-assets/sounddogs/explosion.mp3&quot;)
+
+# helper functions to handle transformations
+def angle_to_vector(ang):
+    return [math.cos(ang), math.sin(ang)]
+
+def dist(p,q):
+    return math.sqrt((p[0] - q[0]) ** 2+(p[1] - q[1]) ** 2)
+
+
+# Ship class
+class Ship:
+    def __init__(self, pos, vel, angle, image, info):
+        self.pos = [pos[0],pos[1]]
+        self.vel = [vel[0],vel[1]]
+        self.thrust = False
+        self.angle = angle
+        self.angle_vel = 0
+        self.image = image
+        self.image_center = info.get_center()
+        self.image_size = info.get_size()
+        self.radius = info.get_radius()
+
+    def draw(self,canvas):
+        if self.thrust:
+            center = (self.image_center[0]+self.image_size[0], self.image_center[1])
+            canvas.draw_image(self.image, center, self.image_size, self.pos, self.image_size, self.angle)
+        else:
+            canvas.draw_image(self.image, self.image_center, self.image_size, self.pos, self.image_size, self.angle)
+
+
+    def update(self):
+        self.angle += self.angle_vel
+        self.pos[0] = (self.pos[0] + self.vel[0]) % WIDTH
+        self.pos[1] = (self.pos[1] + self.vel[1]) % HEIGHT
+        c = 0.05
+        self.vel[0] *= (1 - c)
+        self.vel[1] *= (1 - c)
+        forward = angle_to_vector(self.angle)
+        if self.thrust:
+            self.vel[0] += forward[0] * 1.2
+            self.vel[1] += forward[1] * 1.2
+
+
+    def change_angle_vel(self, ori, key_state):
+        if ((ori == &quot;right&quot; and key_state == &quot;keyup&quot;) or
+            (ori == &quot;left&quot; and key_state == &quot;keydown&quot;)):
+            self.angle_vel -= 0.1
+        elif ((ori == &quot;right&quot; and key_state == &quot;keydown&quot;) or
+            (ori == &quot;left&quot; and key_state == &quot;keyup&quot;)):
+            self.angle_vel += 0.1
+
+    def set_thruster(self, thruster_state):
+        self.thrust = thruster_state
+        if self.thrust:
+            ship_thrust_sound.rewind()
+            ship_thrust_sound.play()
+        else:
+            ship_thrust_sound.rewind()
+
+    def shoot(self):
+        global a_missile
+        offset = self.image_size[0] / 2.0
+        forward = angle_to_vector(self.angle)
+        pos = [self.pos[0] + offset * forward[0], self.pos[1] + offset * forward[1]]
+        vel = [self.vel[0] + 4 * forward[0], self.vel[1] + 4 * forward[1]]
+        ang = 0
+        ang_vel = 0
+        a_missile = Sprite(pos, vel, ang, ang_vel, missile_image, missile_info, missile_sound)
+
+# Sprite class
+class Sprite:
+    def __init__(self, pos, vel, ang, ang_vel, image, info, sound = None):
+        self.pos = [pos[0],pos[1]]
+        self.vel = [vel[0],vel[1]]
+        self.angle = ang
+        self.angle_vel = ang_vel
+        self.image = image
+        self.image_center = info.get_center()
+        self.image_size = info.get_size()
+        self.radius = info.get_radius()
+        self.lifespan = info.get_lifespan()
+        self.animated = info.get_animated()
+        self.age = 0
+        if sound:
+            sound.rewind()
+            sound.play()
+
+    def draw(self, canvas):
+        canvas.draw_image(self.image, self.image_center, self.image_size, self.pos, self.image_size, self.angle)
+
+    def update(self):
+        self.angle += self.angle_vel
+        self.pos[0] = (self.pos[0] + self.vel[0]) % WIDTH
+        self.pos[1] = (self.pos[1] + self.vel[1]) % HEIGHT
+
+def draw(canvas):
+    global time
+
+    # animiate background
+    time += 1
+    wtime = (time / 4) % WIDTH
+    center = debris_info.get_center()
+    size = debris_info.get_size()
+    canvas.draw_image(nebula_image, nebula_info.get_center(), nebula_info.get_size(), [WIDTH / 2, HEIGHT / 2], [WIDTH, HEIGHT])
+    canvas.draw_image(debris_image, center, size, (wtime - WIDTH / 2, HEIGHT / 2), (WIDTH, HEIGHT))
+    canvas.draw_image(debris_image, center, size, (wtime + WIDTH / 2, HEIGHT / 2), (WIDTH, HEIGHT))
+
+    # draw ship and sprites
+    my_ship.draw(canvas)
+    a_rock.draw(canvas)
+    a_missile.draw(canvas)
+
+    # update ship and sprites
+    my_ship.update()
+    a_rock.update()
+    a_missile.update()
+
+    # draw lives
+    canvas.draw_text(&quot;Lives&quot;, [WIDTH / 12, HEIGHT / 12], 30, &quot;White&quot;)
+    canvas.draw_text(str(lives), [WIDTH / 12, HEIGHT / 12 + 40], 30, &quot;White&quot;)
+
+    # draw score
+    canvas.draw_text(&quot;Score&quot;, [10 * WIDTH / 12, HEIGHT/12], 30, &quot;White&quot;)
+    canvas.draw_text(str(score), [10 * WIDTH /12, HEIGHT/12 + 40], 30, &quot;White&quot;)
+
+# timer handler that spawns a rock
+def rock_spawner():
+    global a_rock
+    pos = [random.randint(0, WIDTH-1), random.randint(0, HEIGHT-1)]
+    vel = [random.randrange(1, 5, 1)*random.choice([1, -1]), random.randrange(1, 5, 1)*random.choice([1, -1])]
+    ang = 0
+    ang_vel = random.randrange(5, 10, 1) / 100.0 * random.choice([1, -1])
+    a_rock = Sprite(pos, vel, ang, ang_vel, asteroid_image, asteroid_info)
+
+def key_up(key):
+    if simplegui.KEY_MAP['left'] == key:
+        my_ship.change_angle_vel(&quot;left&quot;, &quot;keyup&quot;)
+    elif simplegui.KEY_MAP['right'] == key:
+        my_ship.change_angle_vel(&quot;right&quot;, &quot;keyup&quot;)
+    elif simplegui.KEY_MAP['up'] == key:
+        my_ship.set_thruster(False)
+
+def key_down(key):
+    if simplegui.KEY_MAP['left'] == key:
+        my_ship.change_angle_vel(&quot;left&quot;, &quot;keydown&quot;)
+    elif simplegui.KEY_MAP['right'] == key:
+        my_ship.change_angle_vel(&quot;right&quot;, &quot;keydown&quot;)
+    elif simplegui.KEY_MAP['up'] == key:
+        my_ship.set_thruster(True)
+    elif simplegui.KEY_MAP['space'] == key:
+        my_ship.shoot()
+
+# initialize frame
+frame = simplegui.create_frame(&quot;Asteroids&quot;, WIDTH, HEIGHT)
+
+# initialize ship and two sprites
+my_ship = Ship([WIDTH / 2, HEIGHT / 2], [0, 0], 0, ship_image, ship_info)
+a_rock = Sprite([WIDTH / 3, HEIGHT / 3], [1, 1], 0, 0, asteroid_image, asteroid_info)
+a_missile = Sprite([2 * WIDTH / 3, 2 * HEIGHT / 3], [-1, 1], 0, 0, missile_image, missile_info, missile_sound)
+
+# register handlers
+frame.set_draw_handler(draw)
+frame.set_keydown_handler(key_down)
+frame.set_keyup_handler(key_up)
+
+timer = simplegui.create_timer(1000.0, rock_spawner)
+
+# get things rolling
+timer.start()
+frame.start()
+</code></pre>
+<p>期待着最后一周，游戏完整的代码。就要完成Coursera的一门这么有意思的课，课程难度很小，乐趣十足。</p>
+
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://tiny656.github.io/tag/fAC4IfIQ3" class="tag">
+                    Python
+                  </a>
+                
+                  <a href="https://tiny656.github.io/tag/0HiI0D0Zs" class="tag">
+                    Coursera
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://tiny656.github.io/post/mini-projects-6-blackjack">
+                  <h3 class="post-title">
+                    Mini projects #6 ---- Blackjack
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+              
+
+              
+                <div id="disqus_thread" data-aos="fade-in"></div>
+              
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<script type="application/javascript">
+
+AOS.init();
+
+hljs.initHighlightingOnLoad()
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+  
+
+  
+    <script src="https://unpkg.com/disqusjs@1.1/dist/disqus.js"></script>
+    <script>
+
+    var options = {
+      shortname: 'tiny656',
+      apikey: 'KPROXOCtTYtTmQ5bfpCsNOgeDwKNaqYYL8fpjSKmHR9k9rsImDKH6OILEtON2fpw',
+    }
+    if ('https://disqus.skk.moe/disqus/') {
+      options.api = 'https://disqus.skk.moe/disqus/'
+    }
+    var dsqjs = new DisqusJS(options)
+
+    </script>
+  
+
+
+
+
+  </body>
+</html>

@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>Programming Assignment 1: Percolation | Gridea</title>
+<meta name="description" content="温故而知新">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://tiny656.github.io/favicon.ico?v=1564242683469">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="stylesheet" href="https://tiny656.github.io/styles/main.css">
+
+
+  
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/disqusjs@1.1/dist/disqusjs.css" />
+  
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://tiny656.github.io">
+        <img src="https://tiny656.github.io/images/avatar.png?v=1564242683469" class="site-logo">
+        <h1 class="site-title">Gridea</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      温故而知新
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://tiny656.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">Programming Assignment 1: Percolation</h2>
+            <div class="post-date">2014-07-02</div>
+            
+            <div class="post-content">
+              <p>通过蒙特卡洛模拟方法来估计渗流阈值。</p>
+<p><strong>Percolation.</strong> 给一个有随机分布的绝缘和金属材料的组成的复合系统。例如我们想知道哪些部分必须是金属材料才能让这个复合系统是一个电导体。或者在一个多孔的地形，在表面有水或者油，在什么情况下水或者油能够从最表面渗透到最底层。科学家把这种过程的模型叫做Percolation。</p>
+<!--more-->
+<p><strong>The model.</strong> 在Assignment中，用一个<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>N</mi><mo>×</mo><mi>N</mi></mrow><annotation encoding="application/x-tex">N \times N</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.76666em;vertical-align:-0.08333em;"></span><span class="mord mathdefault" style="margin-right:0.10903em;">N</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.10903em;">N</span></span></span></span>的格子表示percolation系统，每一个格子是打开或者关闭，打开是白色关闭是黑色。如果一个格子是full，首先他必须是打开额，然后表示从最顶上通过相连(4方向)的打开的格子可以渗透到这个位置。当一个系统是percolates，表示能从最顶层渗透到最底层，也就是说，最底层存在打开的格子是full。</p>
+<p><img src="file://C:/GitRepos/tiny656.github.io/source/image/Percolation_1.png" alt="Percolation_1"></p>
+<p><strong>The Problem.</strong> 研究人员对一下的问题感兴趣，如果每一个格子是独立的，并且被打开的概率为p，那么系统percolates的概率是多少？p=0，percolates概率为0，p=100，percolates的概率为100。下图是<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>20</mn><mo>×</mo><mn>20</mn></mrow><annotation encoding="application/x-tex">20 \times 20</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">2</span><span class="mord">0</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">2</span><span class="mord">0</span></span></span></span>和<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>100</mn><mo>×</mo><mn>100</mn></mrow><annotation encoding="application/x-tex">100 \times 100</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">1</span><span class="mord">0</span><span class="mord">0</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span><span class="mord">0</span><span class="mord">0</span></span></span></span>格子的概率p的分布：</p>
+<p><img src="file://C:/GitRepos/tiny656.github.io/source/image/Percolation_2.png" alt="Percolation_2"></p>
+<p>当N足够大时, 有一个阈值P*, 使得当<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>p</mi><mo>&lt;</mo><msup><mi>p</mi><mo>∗</mo></msup></mrow><annotation encoding="application/x-tex">p &lt; {p}^{\ast }</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7335400000000001em;vertical-align:-0.19444em;"></span><span class="mord mathdefault">p</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">&lt;</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.8831359999999999em;vertical-align:-0.19444em;"></span><span class="mord"><span class="mord"><span class="mord mathdefault">p</span></span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.688696em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">∗</span></span></span></span></span></span></span></span></span></span></span></span>时候，任意的N*N网格，几乎不能被渗透, 并且当<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>p</mi><mo>&gt;</mo><msup><mi>p</mi><mo>∗</mo></msup></mrow><annotation encoding="application/x-tex">p &gt; {p}^{\ast}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7335400000000001em;vertical-align:-0.19444em;"></span><span class="mord mathdefault">p</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">&gt;</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.8831359999999999em;vertical-align:-0.19444em;"></span><span class="mord"><span class="mord"><span class="mord mathdefault">p</span></span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.688696em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">∗</span></span></span></span></span></span></span></span></span></span></span></span>, 基本能够被渗透。<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mi>p</mi><mo>∗</mo></msup></mrow><annotation encoding="application/x-tex">{p}^{\ast}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8831359999999999em;vertical-align:-0.19444em;"></span><span class="mord"><span class="mord"><span class="mord mathdefault">p</span></span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.688696em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">∗</span></span></span></span></span></span></span></span></span></span></span></span>没有准确的数值解。任务是写一个计算估计<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mi>p</mi><mo>∗</mo></msup></mrow><annotation encoding="application/x-tex">{p}^{\ast}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8831359999999999em;vertical-align:-0.19444em;"></span><span class="mord"><span class="mord"><span class="mord mathdefault">p</span></span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.688696em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">∗</span></span></span></span></span></span></span></span></span></span></span></span>的算法。</p>
+<p><strong>Percolation data type.</strong></p>
+<pre><code>public class Percolation {
+   public Percolation(int N)              // create N-by-N grid, with all sites blocked
+   public void open(int i, int j)   // open site (row i, column j) if it is not already
+   public boolean isOpen(int i, int j)    // is site (row i, column j) open?
+   public boolean isFull(int i, int j)    // is site (row i, column j) full?
+   public boolean percolates()            // does the system percolate?
+}
+</code></pre>
+<p>其中网格的左上角为(1, 1)，右下角为(N, N)。</p>
+<p>使用boolean[] matrix来标记网格的打开和关闭。</p>
+<p>isOpen表示当前网格是否是打开，直接返回matrix当前位置的值即可。</p>
+<p>思考open，isFull，percolates的使用并查集如何实现和复杂度。</p>
+<p>open要做什么？思路比较简单，将一个关闭的网格位置打开，并且和周围4方向上已经打开的格子连通在一起。</p>
+<p>isFull判断当前点是否能够渗透到，最简单的想法，枚举第一层每个打开的格子，并查集查询判断与当前格子是否在一个集合中，如果在那么就是成功的。复杂度枚举最差N, 再加上每次需要进行一次1个Find()的判断。</p>
+<p>percolates判断系统是否能够被渗透，最简单的想法，枚举第一层和最后一层打开的格子，判断是否在一个集合中，如果在那么渗透成功，复杂度<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mi>N</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">{N}^{2}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8141079999999999em;vertical-align:0em;"></span><span class="mord"><span class="mord"><span class="mord mathdefault" style="margin-right:0.10903em;">N</span></span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span></span></span>，再加上并查集Find()判断。</p>
+<p>最简单的想法太暴力，复杂度太高，那么我们开始优化</p>
+<ol>
+<li>
+<p>加入虚拟节点，首尾加入两个虚拟节点，首虚拟节点与第一层所有打开的元素相关联，尾虚拟节点和最后一层所有打开的节点相关联，那么对于isFull操作，如果首虚拟节点与当前点在一个集合，那么成功，对于percolates操作如果首尾虚拟节点在一个集合中，那么系统是渗透成功的。这样所有的这些操作中都不会有枚举的for循环出现了，但是也会出现一个问题，backwash，因为有一些格子虽然从上面不能渗透到，但和尾虚拟节点连接后，他们也和首虚拟节点在一个集合了。</p>
+</li>
+<li>
+<p>如何避免backwash？想了个比较方法，又加入了一个并查集，现在两个并查集，一个只负责维护首虚拟节点，当进行isFull判断是否只考虑这个并查集，另一个并查集进行首尾虚拟节点的维护，用在percolates的判断中，这样backwash的问题也解决了，但是牺牲了空间。</p>
+</li>
+</ol>
+<p>下面是实现代码：</p>
+<pre><code>public class Percolation {
+
+    private boolean[] matrix;
+    private int row, col;
+    private WeightedQuickUnionUF wquUF;
+    private WeightedQuickUnionUF wquUFTop;
+    private boolean alreadyPercolates;
+
+    public Percolation(int N) {
+        if (N &lt; 1) throw new IllegalArgumentException(&quot;Illeagal Argument&quot;);
+        wquUF = new WeightedQuickUnionUF(N*N+2);
+        wquUFTop = new WeightedQuickUnionUF(N*N+1);
+        alreadyPercolates = false;
+        row = N;
+        col = N;
+        matrix = new boolean[N*N+1];
+    }
+
+    private void validate(int i, int j) {
+        if (i &lt; 1 || i &gt; row)
+            throw new IndexOutOfBoundsException(&quot;row index i out of bounds&quot;);
+        if (j &lt; 1 || j &gt; col)
+            throw new IndexOutOfBoundsException(&quot;col index j out of bounds&quot;);
+    }
+
+    public void open(int i, int j) {
+        validate(i, j);
+        int curIdx = (i-1)*col + j;
+        matrix[curIdx] = true;
+        if (i == 1) {
+            wquUF.union(curIdx, 0);
+            wquUFTop.union(curIdx, 0);
+        }
+        if (i == row) {
+            wquUF.union(curIdx, row*col+1);
+        }
+
+        int[] dx = {1, -1, 0, 0};
+        int[] dy = {0, 0, 1, -1};
+        for (int dir = 0; dir &lt; 4; dir++) {
+            int posX = i + dx[dir];
+            int posY = j + dy[dir];
+            if (posX &lt;= row &amp;&amp; posX &gt;= 1
+                    &amp;&amp; posY &lt;= row &amp;&amp; posY &gt;= 1
+                    &amp;&amp; isOpen(posX, posY)) {
+                wquUF.union(curIdx, (posX-1)*col+posY);
+                wquUFTop.union(curIdx, (posX-1)*col+posY);
+            }
+        }
+    }
+
+    public boolean isOpen(int i, int j) {
+        validate(i, j);
+        return matrix[(i-1)*col + j];
+    }
+
+    public boolean isFull(int i, int j) {
+        validate(i, j);
+        int curIdx = (i-1)*col+j;
+        if (wquUFTop.find(curIdx) == wquUFTop.find(0)) return true;
+        return false;
+    }
+
+    public boolean percolates() {
+        if (alreadyPercolates) return true;
+        if (wquUF.find(0) == wquUF.find(row*col+1)) {
+            alreadyPercolates = true;
+            return true;
+        }
+        return false;
+    }
+
+    public static void main(String[] args) {
+        Percolation perc = new Percolation(2);
+        perc.open(1, 1);
+        perc.open(1, 2);
+        perc.open(2, 1);
+        System.out.println(perc.percolates());
+    }
+}
+</code></pre>
+<p><strong>Monte Carlo simulation.</strong> 估计percolation的阈值，初始化时候格子都是关闭的，随机寻找一个关闭的位置打开，直到系统可以渗透为止，打开的格子比上总格子数就是阈值。</p>
+<p><img src="file://C:/GitRepos/tiny656.github.io/source/image/Percolation_3.jpeg" alt="Percolation_3"></p>
+<p>这一部分就是一些数值计算比较简单，不赘述了。</p>
+<pre><code>public class PercolationStats {
+    private double[] x;
+    private int expTimes;
+
+    public PercolationStats(int N, int T) {
+        if (N &lt;= 0 || T &lt;= 0)
+            throw new IllegalArgumentException(&quot;Illeagal Argument&quot;);
+        x = new double[T+1];
+        expTimes = T;
+        for (int i = 1; i &lt;= T; ++i) {
+            Percolation perc = new Percolation(N);
+            boolean[] isEmptySiteLine = new boolean[N+1];
+            int numOfLine = 0;
+            while (true) {
+                int posX, posY;
+                do {
+                    posX = StdRandom.uniform(N)+1;
+                    posY = StdRandom.uniform(N)+1;
+                } while (perc.isOpen(posX, posY));
+                perc.open(posX, posY);
+                x[i] += 1;
+                if (!isEmptySiteLine[posX]) {
+                    isEmptySiteLine[posX] = true;
+                    numOfLine++;
+                }
+                if (numOfLine == N) {
+                    if (perc.percolates())
+                        break;
+                }
+            }
+            x[i] = x[i] / (double) (N*N);
+        }
+    }
+
+    public double mean() {
+        double mu = 0.0;
+        for (int i = 1; i &lt;= expTimes; ++i) {
+            mu += x[i];
+        }
+        return mu / (double) expTimes;
+    }
+
+    public double stddev() {
+        if (expTimes == 1)
+            return Double.NaN;
+        double sigma = 0.0;
+        double mu = mean();
+        for (int i = 1; i &lt;= expTimes; ++i) {
+            sigma += (x[i]-mu)*(x[i]-mu);
+        }
+        return Math.sqrt(sigma / (double) (expTimes-1));
+    }
+
+    public double confidenceLo() {
+        double mu = mean();
+        double sigma = stddev();
+        return mu - 1.96*sigma / Math.sqrt(expTimes);
+    }
+
+    public double confidenceHi() {
+        double mu = mean();
+        double sigma = stddev();
+        return mu + 1.96*sigma / Math.sqrt(expTimes);
+    }
+
+    public static void main(String[] args) {
+        int N = Integer.parseInt(args[0]);
+        int T = Integer.parseInt(args[1]);
+        PercolationStats percStats = new PercolationStats(N, T);
+        StdOut.printf(&quot;mean = %f\n&quot;, percStats.mean());
+        StdOut.printf(&quot;stddev = %f\n&quot;, percStats.stddev());
+        StdOut.printf(&quot;95%% confidence interval = %f, %f\n&quot;,
+                      percStats.confidenceLo(), percStats.confidenceHi());
+    }
+}
+</code></pre>
+
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://tiny656.github.io/tag/0HiI0D0Zs" class="tag">
+                    Coursera
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://tiny656.github.io/post/hello-gridea">
+                  <h3 class="post-title">
+                    Hello Gridea
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+              
+
+              
+                <div id="disqus_thread" data-aos="fade-in"></div>
+              
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<script type="application/javascript">
+
+AOS.init();
+
+hljs.initHighlightingOnLoad()
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+  
+
+  
+    <script src="https://unpkg.com/disqusjs@1.1/dist/disqus.js"></script>
+    <script>
+
+    var options = {
+      shortname: 'tiny656',
+      apikey: 'KPROXOCtTYtTmQ5bfpCsNOgeDwKNaqYYL8fpjSKmHR9k9rsImDKH6OILEtON2fpw',
+    }
+    if ('https://disqus.skk.moe/disqus/') {
+      options.api = 'https://disqus.skk.moe/disqus/'
+    }
+    var dsqjs = new DisqusJS(options)
+
+    </script>
+  
+
+
+
+
+  </body>
+</html>
