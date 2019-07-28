@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>静态链表(Static Link List) | tiny656</title>
+<meta name="description" content="those good things melt the years away.">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://tiny656.github.io/favicon.ico?v=1564328494765">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="stylesheet" href="https://tiny656.github.io/styles/main.css">
+
+
+  
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/disqusjs@1.1/dist/disqusjs.css" />
+  
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://tiny656.github.io">
+        <img src="https://tiny656.github.io/images/avatar.png?v=1564328494765" class="site-logo">
+        <h1 class="site-title">tiny656</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      those good things melt the years away.
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://tiny656.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">静态链表(Static Link List)</h2>
+            <div class="post-date">2014-04-07</div>
+            
+            <div class="post-content">
+              <h2 id="static-link-list-静态链表">Static Link List 静态链表</h2>
+<p>开辟一块数组空间用来在非指针的程序中维护数组链表。</p>
+<!--more-->
+<p>定义：</p>
+<p><code>StaicLinkList</code>共有<code>MAX</code>个元素，每个元素的节点是由数据域<code>Data</code>和游标域<code>Cur</code>组成。</p>
+<p>其中,</p>
+<p>第一个元素节点<code>SaticLinkList[0]</code>用来记录备用链表的头节点</p>
+<p>最后一个节点<code>SaticLinkList[maxn-1]</code>用来记录链表的头节点</p>
+<p>如果第一个元素节点的<code>Cur</code>为0，即<code>SaticLinkList[0].cur==0</code>，则链表为空。</p>
+<p>备用链表节点指向的即是未使用的节点空间。</p>
+<p>初始化时，链表的头节点<code>SaticLinkList[maxn-1]</code>置空，其余节点组成备用的循环链表，备用链表的最后一个元素置空。</p>
+<h2 id="node节点定义">Node节点定义</h2>
+<pre><code class="language-cpp">/*静态链表节点元素*/
+template&lt;class ElemType&gt;
+class Node {
+public :
+    ElemType data ;
+    int cur ;
+};
+</code></pre>
+<h2 id="静态链表定义">静态链表定义</h2>
+<pre><code class="language-cpp">/*静态链表*/
+template&lt;class ElemType&gt;
+class StaticLinkList {
+public:
+    void Init(); //初始化链表
+    bool Insert(int pos, ElemType e); //在链表的第pos个位置插入元素
+    bool Insert(ElemType e); //在链表的末尾插入元素
+    bool Delete(int pos); //删除第pos个位置的元素
+    int  Length(); //获取链表的长度
+    bool Empty(); //判断链表是否为空
+    void Traverse(); //遍历链表
+    bool GetElement(int pos, ElemType &amp;e); //获取第pos位置的元素
+private :
+    //链表
+    Node&lt;ElemType&gt; SLinkList [maxn];
+    int len;
+    //处理备用链表用，分配和回收节点
+    int Malloc(); //分配备用链表中的一个空位置
+    void Free(int pos); //将位置为pos的空闲节点释放
+};
+</code></pre>
+<h2 id="初始化链表链表头结点为空其余元素连接组成备用链表">初始化链表，链表头结点为空，其余元素连接组成备用链表。</h2>
+<pre><code class="language-cpp">/*初始化静态链表*/
+template&lt;class ElemType&gt;
+void StaticLinkList&lt;ElemType&gt;::Init() {
+    cout &lt;&lt; &quot;----Init the Link List----&quot; &lt;&lt; endl;
+
+    //初始化备用链表
+    for (int i = 0; i &lt; maxn-1; i++)
+        SLinkList[i]. cur = i+1;
+        SLinkList[maxn-2].cur = 0; //作为备用链表的末尾保护，指向0空 或 可以认为指向循环备用链表的头结点
+        SLinkList[maxn-1].cur = 0; //链表头结点为空
+        this-&gt;len = 0;  //链表长度为0
+}
+</code></pre>
+<h2 id="插入元素">插入元素</h2>
+<h3 id="在pos位置插入元素">在pos位置插入元素</h3>
+<pre><code class="language-cpp">/*在第Pos个位置插入元素*/
+template&lt;class ElemType&gt;
+bool StaticLinkList&lt;ElemType&gt;::Insert(int pos, ElemType e) {
+    cout &lt;&lt; &quot;----Insert Element in pos---- -&gt; &quot; &lt;&lt; pos &lt;&lt; &quot; : &quot; &lt;&lt; e &lt;&lt; endl;
+
+    if (pos &lt; 1 || pos &gt; this-&gt;Length()+1)
+        cout &lt;&lt; &quot;----Failed : Input Pos Error----&quot; &lt;&lt; endl ;
+
+    int cur_idx = maxn-1;
+    int mac_idx = this-&gt;Malloc();
+
+    if (mac_idx != 0) {
+        SLinkList[mac_idx].data = e;
+
+        //寻找第pos个元素
+        for (int i = 1; i &lt;= pos-1; i++)
+            cur_idx = SLinkList[cur_idx].cur;
+
+            SLinkList[mac_idx].cur = SLinkList[cur_idx].cur; //第pos个元素的cur指向 cur_idx之后的元素
+            SLinkList[cur_idx].cur = mac_idx; //cur_idx指向当前插入对象
+            this-&gt;len++;
+            return true;
+    } else return false;
+}
+</code></pre>
+<h3 id="插入元素到最后">插入元素到最后</h3>
+<pre><code class="language-cpp">/*在链表的末尾插入元素*/
+template&lt;class ElemType&gt;
+bool StaticLinkList&lt;ElemType&gt;::Insert(ElemType e) {
+    cout &lt;&lt; &quot;----Insert Element in back---- -&gt; &quot; &lt;&lt; e &lt;&lt; endl;
+
+    int cur_idx = maxn - 1;
+    int mac_idx = this-&gt;Malloc();
+
+    if (mac_idx != 0) {
+        SLinkList[mac_idx].data = e;
+
+        //寻找第pos个元素
+        for (int i = 1; i &lt;= this-&gt;Length(); i++)
+            cur_idx = SLinkList[cur_idx].cur;
+
+        SLinkList[mac_idx].cur = SLinkList[cur_idx].cur; //第pos个元素的cur指向 cur_idx之后的元素
+        SLinkList[cur_idx].cur = mac_idx; //cur_idx指向当前插入对象
+        this-&gt;len++;
+        return true;
+    } else return false;
+}
+</code></pre>
+<h2 id="删除pos位置的元素">删除pos位置的元素</h2>
+<pre><code class="language-cpp">/*删除第pos个位置的元素*/
+template&lt;class ElemType&gt;
+bool StaticLinkList&lt;ElemType&gt;::Delete(int pos) {
+    cout &lt;&lt; &quot;----Delete List from pos---- -&gt; &quot; &lt;&lt; pos &lt;&lt; endl;
+
+    if (pos &lt; 1 || pos &gt; this-&gt;Length()) {
+        cout &lt;&lt; &quot;----Failed : Input Pos Error----&quot; &lt;&lt; endl;
+        return false;
+    }
+
+    int cur_idx = maxn - 1;
+
+    for (int i = 1; i &lt;= pos - 1; i++)
+        cur_idx = SLinkList[cur_idx].cur;
+
+    int aim_idx = SLinkList[cur_idx].cur;
+    SLinkList[cur_idx].cur = SLinkList[pos].cur;
+    this-&gt;len--;
+    Free(aim_idx);
+    return true;
+}
+</code></pre>
+<h2 id="获取链表的长度">获取链表的长度</h2>
+<pre><code class="language-cpp">/*获取静态链表的长度*/
+template&lt;class ElemType&gt;
+int StaticLinkList&lt;ElemType&gt;::Length() {
+    //cout &lt;&lt; &quot;----Get Link List Length----&quot; &lt;&lt; endl;
+    return len;
+    /*
+    int cur_idx = SLinkList[maxn - 1].cur;
+    int cnt = 0;
+    //统计所有元素，直到cur为0
+    while (cur_idx != 0) {
+        cur_idx = SLinkList[cur_idx].cur;
+        cnt++;
+    }
+    return cnt;
+    */
+}
+</code></pre>
+<h2 id="判断链表是否为空">判断链表是否为空</h2>
+<pre><code class="language-cpp">/*判断链表是否为空*/
+template &lt;class ElemType&gt;
+bool StaticLinkList&lt;ElemType&gt;::Empty() {
+    return SLinkList[maxn-1].cur == 0 ;
+}
+</code></pre>
+<h2 id="遍历链表">遍历链表</h2>
+<pre><code class="language-cpp">/*遍历静态链表*/
+template&lt;class ElemType&gt;
+void StaticLinkList&lt;ElemType&gt;::Traverse() {
+    cout &lt;&lt; &quot;----Traverse Link List----&quot; &lt;&lt; endl;
+    int cur_idx = SLinkList[maxn - 1].cur;
+    int idx = 1;
+
+    //输出Node的数据
+    while (cur_idx != 0) {
+        cout &lt;&lt; &quot;Node &quot; &lt;&lt; (idx++) &lt;&lt; &quot; : &quot; &lt;&lt; SLinkList[cur_idx].data &lt;&lt; endl;
+        cur_idx = SLinkList[cur_idx].cur;
+    }
+}
+</code></pre>
+<h2 id="获取第pos位置的元素">获取第pos位置的元素</h2>
+<pre><code class="language-cpp">/*获取第pos位置的元素*/
+template&lt;class ElemType&gt;
+bool StaticLinkList&lt;ElemType&gt;::GetElement(int pos, ElemType &amp;e) {
+    if (pos &lt; 1 || pos &gt; this-&gt;Length() + 1) {
+        cout &lt;&lt; &quot;----Failed : Input Pos Error----&quot; &lt;&lt; endl;
+        return false;
+    }
+
+    int cur_idx = maxn - 1;
+
+    for (int i = 1; i &lt;= pos; i++)
+        cur_idx = SLinkList[cur_idx].cur;
+
+    e = SLinkList[cur_idx].data;
+    return true;
+}
+</code></pre>
+<h2 id="分配备用链表中的一个位置用于插入元素">分配备用链表中的一个位置用于插入元素</h2>
+<pre><code class="language-cpp">/*分配备用链表的一个节点*/
+template&lt;class ElemType&gt;
+int StaticLinkList&lt;ElemType&gt;::Malloc() {
+    int cur_idx = SLinkList[0].cur;
+    if (cur_idx != 0) {
+        SLinkList[0].cur = SLinkList[cur_idx].cur;
+        return cur_idx;
+    } else {
+        cout &lt;&lt; &quot;----Failed : Spare Link List is Empty----&quot; &lt;&lt; endl;
+        exit(0);
+    }
+}
+</code></pre>
+<h2 id="释放链表中的pos位置并插入到备用链表中">释放链表中的pos位置，并插入到备用链表中</h2>
+<pre><code class="language-cpp">/*释放pos位置空闲节点*/
+template&lt;class ElemType&gt;
+void StaticLinkList&lt;ElemType&gt;::Free(int pos) {
+    SLinkList[pos].cur = SLinkList[0].cur; /*把第一个元素的cur值赋给要删除的分量cur */
+    SLinkList[0].cur = pos; /* 把要删除的分量下标赋值给第一个元素的cur */
+}
+</code></pre>
+<h2 id="测试">测试</h2>
+<pre><code class="language-cpp">int main() {
+    StaticLinkList&lt;int&gt; sll;
+    sll.Init();
+    int e;
+    for (int i = 1; i &lt; 10; i++)
+        sll.Insert(i, i);
+    for (int i = 1; i &lt; 10; i++) {
+        sll.GetElement(i, e);
+        cout &lt;&lt; e &lt;&lt; endl;
+    }
+    sll.Traverse();
+    sll.Delete(3);
+    sll.Traverse();
+    cout &lt;&lt; &quot;List Length : &quot; &lt;&lt; sll.Length() &lt;&lt; endl;
+
+    return 0;
+}
+</code></pre>
+
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://tiny656.github.io/tag/qt77konh0" class="tag">
+                    Data Structure
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://tiny656.github.io/post/hello-gridea">
+                  <h3 class="post-title">
+                    Hello Gridea
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+              
+
+              
+                <div id="disqus_thread" data-aos="fade-in"></div>
+              
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<script type="application/javascript">
+
+AOS.init();
+
+hljs.initHighlightingOnLoad()
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+  
+
+  
+    <script src="https://unpkg.com/disqusjs@1.1/dist/disqus.js"></script>
+    <script>
+
+    var options = {
+      shortname: 'tiny656',
+      apikey: 'KPROXOCtTYtTmQ5bfpCsNOgeDwKNaqYYL8fpjSKmHR9k9rsImDKH6OILEtON2fpw',
+    }
+    if ('https://disqus.skk.moe/disqus/') {
+      options.api = 'https://disqus.skk.moe/disqus/'
+    }
+    var dsqjs = new DisqusJS(options)
+
+    </script>
+  
+
+
+
+
+  </body>
+</html>
