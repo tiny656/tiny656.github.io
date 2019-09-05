@@ -7,9 +7,10 @@
 <meta name="description" content="those good things melt the years away.">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="shortcut icon" href="https://tiny656.github.io/favicon.ico?v=1567692602561">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://tiny656.github.io/favicon.ico?v=1567690711710">
+<link rel="stylesheet" href="https://unpkg.com/papercss@1.6.1/dist/paper.min.css" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://tiny656.github.io/styles/main.css">
 
@@ -20,95 +21,89 @@
     <link rel="stylesheet" href="https://unpkg.com/disqusjs@1.1/dist/disqusjs.css" />
   
 
-
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+
 
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-147162965-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-147162965-1');
-</script>
-
-
   </head>
   <body>
-    <div id="app" class="main">
-
-      <div class="sidebar" :class="{ 'full-height': menuVisible }">
-  <div class="top-container" data-aos="fade-right">
-    <div class="top-header-container">
-      <a class="site-title-container" href="https://tiny656.github.io">
-        <img src="https://tiny656.github.io/images/avatar.png?v=1567690711710" class="site-logo">
-        <h1 class="site-title">tiny656</h1>
-      </a>
-      <div class="menu-btn" @click="menuVisible = !menuVisible">
-        <div class="line"></div>
-      </div>
-    </div>
-    <div>
-      
+  
+    <nav class="navbar border fixed split-nav">
+  <div class="nav-brand">
+    <h3><a href="https://tiny656.github.io">tiny656</a></h3>
+  </div>
+  <div class="collapsible">
+    <input id="collapsible1" type="checkbox" name="collapsible1">
+    <button>
+      <label for="collapsible1">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </label>
+    </button>
+    <div class="collapsible-body">
+      <ul class="inline">
         
-          <a href="/" class="site-nav">
-            首页
-          </a>
+          <li>
+            
+              <a href="/" class="menu">
+                首页
+              </a>
+            
+          </li>
         
-      
+          <li>
+            
+              <a href="/archives" class="menu">
+                归档
+              </a>
+            
+          </li>
         
-          <a href="/archives" class="site-nav">
-            归档
-          </a>
+          <li>
+            
+              <a href="/tags" class="menu">
+                标签
+              </a>
+            
+          </li>
         
-      
+          <li>
+            
+              <a href="/post/about" class="menu">
+                关于
+              </a>
+            
+          </li>
         
-          <a href="/tags" class="site-nav">
-            标签
-          </a>
-        
-      
-        
-          <a href="/post/about" class="site-nav">
-            关于
-          </a>
-        
-      
+      </ul>
     </div>
   </div>
-  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
-    <div class="social-container">
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    </div>
-    <div class="site-description">
-      those good things melt the years away.
-    </div>
-    <div class="site-footer">
-      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://tiny656.github.io/atom.xml" target="_blank">RSS</a>
-    </div>
-  </div>
-</div>
+</nav>
 
-
-      <div class="main-container">
-        <div class="content-container" data-aos="fade-up">
-          <div class="post-detail">
-            <h2 class="post-title">Programming Assignment 3: Pattern Recognition</h2>
-            <div class="post-date">2014-07-04</div>
+    <div id="top" class="row site">
+      <div class="sm-12 md-8 col">
+        <div class="paper">
+          <article class="article">
+            <h1>Programming Assignment 3: Pattern Recognition</h1>
+            <p class="article-meta">
+              2014-07-04
+              
+                <a href="https://tiny656.github.io/tag/qt77konh0" class="badge secondary">
+                  Data Structure
+                </a>
+              
+                <a href="https://tiny656.github.io/tag/0HiI0D0Zs" class="badge warning">
+                  Coursera
+                </a>
+              
+                <a href="https://tiny656.github.io/tag/YcQ7F_Qrc" class="badge secondary">
+                  Algorithm
+                </a>
+              
+            </p>
             
             <div class="post-content">
               <p>这周的这个问题是在给定一系列的点中寻找多点共线的模式。</p>
@@ -168,46 +163,177 @@ for (int ip = 0; ip &lt; N; ip++) {
 <p>总的来说这三次的Assignment都不是特别难，但是做的时候一定要认真认真认真啊，解决问题的第一步就是要认真阅读题目说明和checklist，弄明白未知是什么？条件是什么？已知是什么？思考怎么来实现？是否有可以使用的例子？每次的不认真造成怒交n次才能换回个100分，真是惨不忍睹。记下来，鞭策自己，不断总结提高。</p>
 
             </div>
-            
-              <div class="tag-container">
-                
-                  <a href="https://tiny656.github.io/tag/qt77konh0" class="tag">
-                    Data Structure
-                  </a>
-                
-                  <a href="https://tiny656.github.io/tag/0HiI0D0Zs" class="tag">
-                    Coursera
-                  </a>
-                
-                  <a href="https://tiny656.github.io/tag/YcQ7F_Qrc" class="tag">
-                    Algorithm
-                  </a>
-                
-              </div>
-            
-            
-              <div class="next-post">
-                <div class="next">下一篇</div>
-                <a href="https://tiny656.github.io/post/programming-assignment-2-randomized-queues-and-deques">
-                  <h3 class="post-title">
-                    Programming Assignment 2: Randomized Queues and Deques
-                  </h3>
-                </a>
-              </div>
-            
-
-            
-              
-
-              
-                <div id="disqus_thread" data-aos="fade-in"></div>
-              
-            
-
-          </div>
-
+          </article>
         </div>
+        <div class="paper" data-aos="fade-in">
+          
+            <div class="next-post">
+              <div class="next">
+                下一篇
+              </div>
+              <a href="https://tiny656.github.io/post/programming-assignment-2-randomized-queues-and-deques">
+                <h3 class="post-title">
+                  Programming Assignment 2: Randomized Queues and Deques
+                </h3>
+              </a>
+            </div>
+          
+        </div>
+        
+          
+
+          
+            <div class="paper" data-aos="fade-in">
+              <div id="disqus_thread"></div>
+            </div>
+          
+        
       </div>
+
+      <div class="sm-12 md-4 col sidebar">
+  <div class="paper info-container">
+    <img src="https://tiny656.github.io/images/avatar.png?v=1567692602561" class="no-responsive avatar">
+    <div class="text-muted">those good things melt the years away.</div>
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+  </div>
+  <div class="paper">
+    <div class="sidebar-title">
+      最新文章
+    </div>
+    <div class="row">
+      <ul>
+        
+          
+            <li>
+              <a href="https://tiny656.github.io/post/guo-xing-ps4-bei-fen-huan-yuan-guo-ji-fu-zhang-hao">国行PS4备份还原国际服账号</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://tiny656.github.io/post/15-zhong-mo-16-yi-shi">15终末，16伊始</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://tiny656.github.io/post/cheng-pin-zhi-xing">诚品之行</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://tiny656.github.io/post/lightoj-beginners-problems-bu-fen-ti-jie">LightOJ Beginners Problems部分题解</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://tiny656.github.io/post/mini-projects-8-ricerocks">Mini projects #8 ---- RiceRocks</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://tiny656.github.io/post/mini-projects-7-spaceship">Mini projects #7 ---- Spaceship</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://tiny656.github.io/post/mini-projects-6-blackjack">Mini projects #6 ---- Blackjack</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://tiny656.github.io/post/mini-projects-5-memory">Mini projects #5 ---- Memory</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://tiny656.github.io/post/mini-projects-4-pong">Mini projects #4 ---- Pong</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://tiny656.github.io/post/mini-projects-3-stopwatch-the-game">Mini projects #3 ---- Stopwatch: The Game</a>
+            </li>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      </ul>
+    </div>
+  </div>
+  <div class="paper">
+    <div class="sidebar-title">
+      标签列表
+    </div>
+    <div class="row">
+      
+        <a href="https://tiny656.github.io/tag/Z4WzvwYBy" class="badge success">
+          Life
+        </a>
+      
+        <a href="https://tiny656.github.io/tag/YcQ7F_Qrc" class="badge ">
+          Algorithm
+        </a>
+      
+        <a href="https://tiny656.github.io/tag/fAC4IfIQ3" class="badge secondary">
+          Python
+        </a>
+      
+        <a href="https://tiny656.github.io/tag/0HiI0D0Zs" class="badge secondary">
+          Coursera
+        </a>
+      
+        <a href="https://tiny656.github.io/tag/qt77konh0" class="badge ">
+          Data Structure
+        </a>
+      
+        <a href="https://tiny656.github.io/tag/gridea" class="badge warning">
+          Gridea
+        </a>
+      
+    </div>
+  </div>
+  <div class="paper">
+    Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://tiny656.github.io/atom.xml" target="_blank">RSS</a>
+  </div>
+</div>
+
+
     </div>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -217,13 +343,6 @@ for (int ip = 0; ip &lt; N; ip++) {
 AOS.init();
 
 hljs.initHighlightingOnLoad()
-
-var app = new Vue({
-  el: '#app',
-  data: {
-    menuVisible: false,
-  },
-})
 
 </script>
 

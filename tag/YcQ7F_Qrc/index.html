@@ -7,74 +7,285 @@
 <meta name="description" content="those good things melt the years away.">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="shortcut icon" href="https://tiny656.github.io/favicon.ico?v=1567692602561">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://tiny656.github.io/favicon.ico?v=1567690711710">
+<link rel="stylesheet" href="https://unpkg.com/papercss@1.6.1/dist/paper.min.css" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://tiny656.github.io/styles/main.css">
 
 
-
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+
 
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-147162965-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-147162965-1');
-</script>
-
-
   </head>
   <body>
-    <div id="app" class="main">
-
-      <div class="sidebar" :class="{ 'full-height': menuVisible }">
-  <div class="top-container" data-aos="fade-right">
-    <div class="top-header-container">
-      <a class="site-title-container" href="https://tiny656.github.io">
-        <img src="https://tiny656.github.io/images/avatar.png?v=1567690711710" class="site-logo">
-        <h1 class="site-title">tiny656</h1>
-      </a>
-      <div class="menu-btn" @click="menuVisible = !menuVisible">
-        <div class="line"></div>
-      </div>
-    </div>
-    <div>
-      
+    <nav class="navbar border fixed split-nav">
+  <div class="nav-brand">
+    <h3><a href="https://tiny656.github.io">tiny656</a></h3>
+  </div>
+  <div class="collapsible">
+    <input id="collapsible1" type="checkbox" name="collapsible1">
+    <button>
+      <label for="collapsible1">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </label>
+    </button>
+    <div class="collapsible-body">
+      <ul class="inline">
         
-          <a href="/" class="site-nav">
-            首页
-          </a>
+          <li>
+            
+              <a href="/" class="menu">
+                首页
+              </a>
+            
+          </li>
         
-      
+          <li>
+            
+              <a href="/archives" class="menu">
+                归档
+              </a>
+            
+          </li>
         
-          <a href="/archives" class="site-nav">
-            归档
-          </a>
+          <li>
+            
+              <a href="/tags" class="menu">
+                标签
+              </a>
+            
+          </li>
         
-      
+          <li>
+            
+              <a href="/post/about" class="menu">
+                关于
+              </a>
+            
+          </li>
         
-          <a href="/tags" class="site-nav">
-            标签
-          </a>
-        
-      
-        
-          <a href="/post/about" class="site-nav">
-            关于
-          </a>
-        
-      
+      </ul>
     </div>
   </div>
-  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+</nav>
+
+    <div id="top" class="row site">
+      <div class="sm-12 md-8 col">
+        <div class="paper">
+          <h2 class="current-tag">标签: Algorithm</h2>
+          
+  <article class="article">
+    <h2 class="article-title">
+      <a href="https://tiny656.github.io/post/lightoj-beginners-problems-bu-fen-ti-jie">LightOJ Beginners Problems部分题解</a>
+    </h2>
+    <p class="article-meta">
+      2015-05-02
+      
+        <a href="https://tiny656.github.io/tag/YcQ7F_Qrc" class="badge warning">
+          Algorithm
+        </a>
+      
+    </p>
+    <p class="text-lead">
+      <p>对于第一次尝试用OJ来编写代码解题的Beginner，这是一个很不错的题目分类。当认真做完这一部分的题目会有很大收获。</p>
+
+    </p>
+    <div class="row">
+      <a href="https://tiny656.github.io/post/lightoj-beginners-problems-bu-fen-ti-jie" class="readmore-link">
+        <button>
+          Read More
+        </button>
+      </a>
+    </div>
+  </article>
+
+  <article class="article">
+    <h2 class="article-title">
+      <a href="https://tiny656.github.io/post/programming-assignment-5-kd-trees">Programming Assignment 5: Kd-Trees</a>
+    </h2>
+    <p class="article-meta">
+      2014-07-06
+      
+        <a href="https://tiny656.github.io/tag/qt77konh0" class="badge secondary">
+          Data Structure
+        </a>
+      
+        <a href="https://tiny656.github.io/tag/0HiI0D0Zs" class="badge warning">
+          Coursera
+        </a>
+      
+        <a href="https://tiny656.github.io/tag/YcQ7F_Qrc" class="badge secondary">
+          Algorithm
+        </a>
+      
+    </p>
+    <p class="text-lead">
+      <p>用2d-tree数据结构实现在2维矩形区域内的高效的range search 和 nearest neighbor search。2d-tree有许多的应用，在天体分类、计算机动画、神经网络加速、数据挖掘、图像检索。</p>
+
+    </p>
+    <div class="row">
+      <a href="https://tiny656.github.io/post/programming-assignment-5-kd-trees" class="readmore-link">
+        <button>
+          Read More
+        </button>
+      </a>
+    </div>
+  </article>
+
+  <article class="article">
+    <h2 class="article-title">
+      <a href="https://tiny656.github.io/post/programming-assignment-4-8-puzzle">Programming Assignment 4: 8 Puzzle</a>
+    </h2>
+    <p class="article-meta">
+      2014-07-05
+      
+        <a href="https://tiny656.github.io/tag/qt77konh0" class="badge warning">
+          Data Structure
+        </a>
+      
+        <a href="https://tiny656.github.io/tag/0HiI0D0Zs" class="badge success">
+          Coursera
+        </a>
+      
+        <a href="https://tiny656.github.io/tag/YcQ7F_Qrc" class="badge secondary">
+          Algorithm
+        </a>
+      
+    </p>
+    <p class="text-lead">
+      <p><strong>The Problem.</strong> 求解8数码问题。用最少的移动次数能使8数码还原.<br>
+<img src="https://tiny656.github.io/post-images/1564240933034.jpg" alt=""></p>
+
+    </p>
+    <div class="row">
+      <a href="https://tiny656.github.io/post/programming-assignment-4-8-puzzle" class="readmore-link">
+        <button>
+          Read More
+        </button>
+      </a>
+    </div>
+  </article>
+
+  <article class="article">
+    <h2 class="article-title">
+      <a href="https://tiny656.github.io/post/programming-assignment-3-pattern-recognition">Programming Assignment 3: Pattern Recognition</a>
+    </h2>
+    <p class="article-meta">
+      2014-07-04
+      
+        <a href="https://tiny656.github.io/tag/qt77konh0" class="badge warning">
+          Data Structure
+        </a>
+      
+        <a href="https://tiny656.github.io/tag/0HiI0D0Zs" class="badge ">
+          Coursera
+        </a>
+      
+        <a href="https://tiny656.github.io/tag/YcQ7F_Qrc" class="badge ">
+          Algorithm
+        </a>
+      
+    </p>
+    <p class="text-lead">
+      <p>这周的这个问题是在给定一系列的点中寻找多点共线的模式。</p>
+<p>计算机视觉重要的两个部分：特征检测(Feature Dectection)和模式识别(Pattern Recognition)。特征检测提取出图片的重要特征，模式识别发掘出这些特征中的模式。这里探究的点共线的问题在现实生活中也有很多应用，比如统计数据分析。</p>
+
+    </p>
+    <div class="row">
+      <a href="https://tiny656.github.io/post/programming-assignment-3-pattern-recognition" class="readmore-link">
+        <button>
+          Read More
+        </button>
+      </a>
+    </div>
+  </article>
+
+  <article class="article">
+    <h2 class="article-title">
+      <a href="https://tiny656.github.io/post/programming-assignment-2-randomized-queues-and-deques">Programming Assignment 2: Randomized Queues and Deques</a>
+    </h2>
+    <p class="article-meta">
+      2014-07-03
+      
+        <a href="https://tiny656.github.io/tag/qt77konh0" class="badge ">
+          Data Structure
+        </a>
+      
+        <a href="https://tiny656.github.io/tag/0HiI0D0Zs" class="badge warning">
+          Coursera
+        </a>
+      
+        <a href="https://tiny656.github.io/tag/YcQ7F_Qrc" class="badge ">
+          Algorithm
+        </a>
+      
+    </p>
+    <p class="text-lead">
+      <p>实现一个泛型的双端队列和随机化队列，用数组和链表的方式实现基本数据结构，主要介绍了泛型和迭代器。</p>
+
+    </p>
+    <div class="row">
+      <a href="https://tiny656.github.io/post/programming-assignment-2-randomized-queues-and-deques" class="readmore-link">
+        <button>
+          Read More
+        </button>
+      </a>
+    </div>
+  </article>
+
+  <article class="article">
+    <h2 class="article-title">
+      <a href="https://tiny656.github.io/post/programming-assignment-1-percolation">Programming Assignment 1: Percolation</a>
+    </h2>
+    <p class="article-meta">
+      2014-07-02
+      
+        <a href="https://tiny656.github.io/tag/qt77konh0" class="badge secondary">
+          Data Structure
+        </a>
+      
+        <a href="https://tiny656.github.io/tag/0HiI0D0Zs" class="badge secondary">
+          Coursera
+        </a>
+      
+        <a href="https://tiny656.github.io/tag/YcQ7F_Qrc" class="badge ">
+          Algorithm
+        </a>
+      
+    </p>
+    <p class="text-lead">
+      <p>通过蒙特卡洛模拟方法来估计渗流阈值。</p>
+<p><strong>Percolation.</strong> 给一个有随机分布的绝缘和金属材料的组成的复合系统。例如我们想知道哪些部分必须是金属材料才能让这个复合系统是一个电导体。或者在一个多孔的地形，在表面有水或者油，在什么情况下水或者油能够从最表面渗透到最底层。科学家把这种过程的模型叫做Percolation。</p>
+
+    </p>
+    <div class="row">
+      <a href="https://tiny656.github.io/post/programming-assignment-1-percolation" class="readmore-link">
+        <button>
+          Read More
+        </button>
+      </a>
+    </div>
+  </article>
+
+
+        </div>
+        <div class="row flex-edges">
+  
+  
+</div>
+
+      </div>
+      <div class="sm-12 md-4 col sidebar">
+  <div class="paper info-container">
+    <img src="https://tiny656.github.io/images/avatar.png?v=1567692602561" class="no-responsive avatar">
+    <div class="text-muted">those good things melt the years away.</div>
     <div class="social-container">
       
         
@@ -88,127 +299,132 @@
         
       
     </div>
-    <div class="site-description">
-      those good things melt the years away.
+  </div>
+  <div class="paper">
+    <div class="sidebar-title">
+      最新文章
     </div>
-    <div class="site-footer">
-      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://tiny656.github.io/atom.xml" target="_blank">RSS</a>
+    <div class="row">
+      <ul>
+        
+          
+            <li>
+              <a href="https://tiny656.github.io/post/guo-xing-ps4-bei-fen-huan-yuan-guo-ji-fu-zhang-hao">国行PS4备份还原国际服账号</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://tiny656.github.io/post/15-zhong-mo-16-yi-shi">15终末，16伊始</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://tiny656.github.io/post/cheng-pin-zhi-xing">诚品之行</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://tiny656.github.io/post/lightoj-beginners-problems-bu-fen-ti-jie">LightOJ Beginners Problems部分题解</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://tiny656.github.io/post/mini-projects-8-ricerocks">Mini projects #8 ---- RiceRocks</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://tiny656.github.io/post/mini-projects-7-spaceship">Mini projects #7 ---- Spaceship</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://tiny656.github.io/post/mini-projects-6-blackjack">Mini projects #6 ---- Blackjack</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://tiny656.github.io/post/mini-projects-5-memory">Mini projects #5 ---- Memory</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://tiny656.github.io/post/mini-projects-4-pong">Mini projects #4 ---- Pong</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://tiny656.github.io/post/mini-projects-3-stopwatch-the-game">Mini projects #3 ---- Stopwatch: The Game</a>
+            </li>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      </ul>
     </div>
+  </div>
+  <div class="paper">
+    <div class="sidebar-title">
+      标签列表
+    </div>
+    <div class="row">
+      
+        <a href="https://tiny656.github.io/tag/Z4WzvwYBy" class="badge warning">
+          Life
+        </a>
+      
+        <a href="https://tiny656.github.io/tag/YcQ7F_Qrc" class="badge success">
+          Algorithm
+        </a>
+      
+        <a href="https://tiny656.github.io/tag/fAC4IfIQ3" class="badge secondary">
+          Python
+        </a>
+      
+        <a href="https://tiny656.github.io/tag/0HiI0D0Zs" class="badge secondary">
+          Coursera
+        </a>
+      
+        <a href="https://tiny656.github.io/tag/qt77konh0" class="badge ">
+          Data Structure
+        </a>
+      
+        <a href="https://tiny656.github.io/tag/gridea" class="badge secondary">
+          Gridea
+        </a>
+      
+    </div>
+  </div>
+  <div class="paper">
+    Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://tiny656.github.io/atom.xml" target="_blank">RSS</a>
   </div>
 </div>
 
-
-      <div class="main-container">
-        <div class="content-container" data-aos="fade-up">
-          <h2 class="current-tag">标签: Algorithm</h2>
-          
-            <article class="post-item">
-              <div class="left">
-                <a href="https://tiny656.github.io/post/lightoj-beginners-problems-bu-fen-ti-jie">
-                  <h2 class="post-title">LightOJ Beginners Problems部分题解</h2>
-                </a>
-                <div class="post-date">
-                  2015-05-02
-                </div>
-                <div class="post-abstract">
-                  <p>对于第一次尝试用OJ来编写代码解题的Beginner，这是一个很不错的题目分类。当认真做完这一部分的题目会有很大收获。</p>
-
-                </div>
-              </div>
-              
-            </article>
-          
-            <article class="post-item">
-              <div class="left">
-                <a href="https://tiny656.github.io/post/programming-assignment-5-kd-trees">
-                  <h2 class="post-title">Programming Assignment 5: Kd-Trees</h2>
-                </a>
-                <div class="post-date">
-                  2014-07-06
-                </div>
-                <div class="post-abstract">
-                  <p>用2d-tree数据结构实现在2维矩形区域内的高效的range search 和 nearest neighbor search。2d-tree有许多的应用，在天体分类、计算机动画、神经网络加速、数据挖掘、图像检索。</p>
-
-                </div>
-              </div>
-              
-            </article>
-          
-            <article class="post-item">
-              <div class="left">
-                <a href="https://tiny656.github.io/post/programming-assignment-4-8-puzzle">
-                  <h2 class="post-title">Programming Assignment 4: 8 Puzzle</h2>
-                </a>
-                <div class="post-date">
-                  2014-07-05
-                </div>
-                <div class="post-abstract">
-                  <p><strong>The Problem.</strong> 求解8数码问题。用最少的移动次数能使8数码还原.<br>
-<img src="https://tiny656.github.io/post-images/1564240933034.jpg" alt=""></p>
-
-                </div>
-              </div>
-              
-            </article>
-          
-            <article class="post-item">
-              <div class="left">
-                <a href="https://tiny656.github.io/post/programming-assignment-3-pattern-recognition">
-                  <h2 class="post-title">Programming Assignment 3: Pattern Recognition</h2>
-                </a>
-                <div class="post-date">
-                  2014-07-04
-                </div>
-                <div class="post-abstract">
-                  <p>这周的这个问题是在给定一系列的点中寻找多点共线的模式。</p>
-<p>计算机视觉重要的两个部分：特征检测(Feature Dectection)和模式识别(Pattern Recognition)。特征检测提取出图片的重要特征，模式识别发掘出这些特征中的模式。这里探究的点共线的问题在现实生活中也有很多应用，比如统计数据分析。</p>
-
-                </div>
-              </div>
-              
-            </article>
-          
-            <article class="post-item">
-              <div class="left">
-                <a href="https://tiny656.github.io/post/programming-assignment-2-randomized-queues-and-deques">
-                  <h2 class="post-title">Programming Assignment 2: Randomized Queues and Deques</h2>
-                </a>
-                <div class="post-date">
-                  2014-07-03
-                </div>
-                <div class="post-abstract">
-                  <p>实现一个泛型的双端队列和随机化队列，用数组和链表的方式实现基本数据结构，主要介绍了泛型和迭代器。</p>
-
-                </div>
-              </div>
-              
-            </article>
-          
-            <article class="post-item">
-              <div class="left">
-                <a href="https://tiny656.github.io/post/programming-assignment-1-percolation">
-                  <h2 class="post-title">Programming Assignment 1: Percolation</h2>
-                </a>
-                <div class="post-date">
-                  2014-07-02
-                </div>
-                <div class="post-abstract">
-                  <p>通过蒙特卡洛模拟方法来估计渗流阈值。</p>
-<p><strong>Percolation.</strong> 给一个有随机分布的绝缘和金属材料的组成的复合系统。例如我们想知道哪些部分必须是金属材料才能让这个复合系统是一个电导体。或者在一个多孔的地形，在表面有水或者油，在什么情况下水或者油能够从最表面渗透到最底层。科学家把这种过程的模型叫做Percolation。</p>
-
-                </div>
-              </div>
-              
-            </article>
-          
-
-          <div class="pagination-container">
-  
-  
-</div>
-
-        </div>
-      </div>
     </div>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -218,13 +434,6 @@
 AOS.init();
 
 hljs.initHighlightingOnLoad()
-
-var app = new Vue({
-  el: '#app',
-  data: {
-    menuVisible: false,
-  },
-})
 
 </script>
 
