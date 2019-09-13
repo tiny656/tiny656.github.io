@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://tiny656.github.io</id>
     <title>tiny656</title>
-    <updated>2019-09-05T14:10:07.699Z</updated>
+    <updated>2019-09-13T13:25:34.481Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://tiny656.github.io"/>
     <link rel="self" href="https://tiny656.github.io/atom.xml"/>
@@ -10,6 +10,72 @@
     <logo>https://tiny656.github.io/images/avatar.png</logo>
     <icon>https://tiny656.github.io/favicon.ico</icon>
     <rights>All rights reserved 2019, tiny656</rights>
+    <entry>
+        <title type="html"><![CDATA[Github Actions自动更新README.md]]></title>
+        <id>https://tiny656.github.io/post/github-actions-zi-dong-geng-xin-readmemd</id>
+        <link href="https://tiny656.github.io/post/github-actions-zi-dong-geng-xin-readmemd">
+        </link>
+        <updated>2019-09-13T12:44:27.000Z</updated>
+        <summary type="html"><![CDATA[<p><a href="https://github.com/features/actions">Actions</a>是Github新的CI/CD服务，Actions最特别的地方是可以互相共享、引用，这样可以组合玩出很多种不一样的idea，非常强大和好用。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p><a href="https://github.com/features/actions">Actions</a>是Github新的CI/CD服务，Actions最特别的地方是可以互相共享、引用，这样可以组合玩出很多种不一样的idea，非常强大和好用。</p>
+<!-- more -->
+<p>关于Actions的介绍和使用，可以参考<a href="https://help.github.com/en/articles/configuring-a-workflow">Configuring-a-workflow</a>和<a href="http://www.ruanyifeng.com/blog/2019/09/getting-started-with-github-actions.html">GitHub Actions 入门教程-阮一峰</a></p>
+<p>托管在Github上的项目<a href="https://github.com/tiny656/PAT">PAT</a>，原先使用<a href="https://travis-ci.org/">Travis CI</a>实现代码的<code>git push</code>后，自动通过执行<code>python</code>脚本生成<code>README.md</code>更新到Repo中的持续构建功能，今天把它迁移到Actions上来。</p>
+<p>先附上<code>GenerateREADME.yml</code>的代码</p>
+<pre><code class="language-yaml">
+name: GenerateREADME
+on: 
+  push:
+    branches:
+      - master
+      
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      run: git clone https://github.com/tiny656/PAT.git .
+        
+    - name: Setup python
+      uses: actions/setup-python@v1
+      with:
+        python-version: '3.x'
+        architecture: 'x64'
+        
+    - name: Generate README
+      run: python GenerateREADME.py
+
+    - name: Push
+      env:
+        GH_TOKEN: ${{ secrets.GITHUB_ACTIONS_TOKEN }}
+        GH_REF: github.com/tiny656/PAT.git
+      run: |
+        git config user.name &quot;tiny656&quot;   #修改成自己的github用户名
+        git config user.email &quot;tiny656@hotmail.com&quot;   #修改成自己的GitHub邮箱
+        git add README.md
+        git diff-index --quiet HEAD || git commit -m &quot;update README.md by Github Actions&quot; --allow-empty &amp;&amp; git push --force --quiet &quot;https://${GH_TOKEN}@${GH_REF}&quot; master:master
+
+</code></pre>
+<ol>
+<li>定义只有<code>push</code>操作发生在<code>master</code>分支才会触发workflow的执行</li>
+<li>只定义了一个<code>build-and-deploy</code> Job 运行在<code>ubuntu-latest</code>的环境下，Job包括三个step
+<ul>
+<li>Checkout master 分支</li>
+<li>Setup Python 和 run <code>GenerateREADME.py</code>生成README.md</li>
+<li>git push README.md到Repo</li>
+</ul>
+</li>
+<li><code>GITHUB_ACTIONS_TOKEN</code>定义在Repo的Settings里</li>
+<li>因为当push <code>README.md</code>到Repo时候也会触发<code>GenerateREADME</code>Workflow，这样就变成了无限循环下去
+<ul>
+<li>尝试用Actions支持的paths关键字, <code>- '*', -'!README.md</code>，加上以后整个workflow都不在触发了，<strong>失败</strong></li>
+<li>尝试在执行完<code>GenerateREADME.py</code>后，准备push到Repo前进行检查，如果<code>README.md</code>没有发生变化就不进行commit和push的操作，这样相比还是会多一次workflow的触发，不过解开了无限循环</li>
+</ul>
+</li>
+</ol>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[国行PS4备份还原国际服账号]]></title>
         <id>https://tiny656.github.io/post/guo-xing-ps4-bei-fen-huan-yuan-guo-ji-fu-zhang-hao</id>
@@ -1918,170 +1984,6 @@ frame.add_button(&quot;Reset&quot;, reset, 200)
 new_game()
 frame.start()
 </code></pre>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Mini projects #3 ---- Stopwatch: The Game]]></title>
-        <id>https://tiny656.github.io/post/mini-projects-3-stopwatch-the-game</id>
-        <link href="https://tiny656.github.io/post/mini-projects-3-stopwatch-the-game">
-        </link>
-        <updated>2014-10-06T15:26:51.000Z</updated>
-        <summary type="html"><![CDATA[<p>课程全名：An Introduction to Interactive Programming in Python，来自 Rice University</p>
-<p>授课教授：Joe Warren, Scott Rixner, John Greiner, Stephen Wong</p>
-<p>工具：http://www.codeskulptor.org/  , 主要是simplegui 模块</p>
-<p>这是第三次作业，前面两次主要是熟悉Python动手做起来都很简单，就不记录了。</p>
-<p>作业需要完成一个关于手表的游戏，估计很多人也都玩过。初中和高中考试做完卷子，但离收卷还有很久，就折腾手上的电子表用来掐秒，锻炼反应力。这里要实现的游戏是一个道理，就是酱紫。</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>课程全名：An Introduction to Interactive Programming in Python，来自 Rice University</p>
-<p>授课教授：Joe Warren, Scott Rixner, John Greiner, Stephen Wong</p>
-<p>工具：http://www.codeskulptor.org/  , 主要是simplegui 模块</p>
-<p>这是第三次作业，前面两次主要是熟悉Python动手做起来都很简单，就不记录了。</p>
-<p>作业需要完成一个关于手表的游戏，估计很多人也都玩过。初中和高中考试做完卷子，但离收卷还有很久，就折腾手上的电子表用来掐秒，锻炼反应力。这里要实现的游戏是一个道理，就是酱紫。</p>
-<!--more-->
-<p>这个Mini project开始采用事件驱动(event-driven)的交互方式，所以先明确一些问题。</p>
-<ol>
-<li>
-<p>界面canvas的drawing速率大概是 60 frams/sec</p>
-</li>
-<li>
-<p>每一个应用程序需要注册一个特殊的事件句柄叫做 draw handler</p>
-</li>
-<li>
-<p>在simplegui 模块中，创建和注册draw handler最后的绘制是在canvas中</p>
-</li>
-<li>
-<p>绘制的操作有很多种，例如线、圆、多边形等，这些都在simplegui模块里面定义，具体查看doc</p>
-</li>
-</ol>
-<p>canvas的布局如下，原点在左上角，第一个坐标是宽度，第二个坐标是高度</p>
-<p><img src="https://tiny656.github.io/post-images/1564241806991.png" alt="Stopwatch The Game 1"></p>
-<p>Stopwatch完成的结果如下：</p>
-<p><img src="https://tiny656.github.io/post-images/1564241834553.png" alt="Stopwatch The Game 2"></p>
-<p>Start开始游戏，Stop暂停，Reset重置。右上角记录 成功停在整数秒次数/尝试次数</p>
-<p>需要的元素:</p>
-<p>frame:主界面</p>
-<p>start button, stop button, reset button.</p>
-<p>timer: 计时</p>
-<p>逻辑设计：</p>
-<p>start button事件: 开始计时</p>
-<pre><code>def start_handler():
-    global is_running
-    if is_running is False:
-        timer.start()
-        is_running = True
-</code></pre>
-<p>stop button事件：停止计时，更新右上角记录</p>
-<pre><code>def stop_handler():
-    global num_stop, num_succ_stop, is_running
-    if is_running is True:
-        timer.stop()
-        num_stop += 1
-        if tick % 10 == 0 and tick != 0:
-            num_succ_stop += 1
-        is_running = False
-</code></pre>
-<p>reset button事件：停止计时，重置相关参数</p>
-<pre><code>def reset_handler():
-    global tick, num_stop, num_succ_stop, is_running
-    timer.stop()
-    num_succ_stop, num_stop, tick = 0, 0, 0
-    is_running = False
-</code></pre>
-<p>timer 事件：负责计时不断增加，每次0.1s</p>
-<pre><code>def timer_handler():
-    global tick
-    tick += 1
-</code></pre>
-<p>draw事件：界面元素绘制</p>
-<pre><code>def draw_handler(canvas):
-    canvas.draw_text(format(tick), [100, 100], 30, &quot;Green&quot;)
-    canvas.draw_text(str(num_succ_stop) + &quot;/&quot; + str(num_stop), [250, 20], 20, &quot;Green&quot;)
-
-</code></pre>
-<p>定义了一个辅助的方法format用来转换当前时间t为00:00.0格式</p>
-<pre><code>def format(t):
-    D = str(t % 10)
-    BC = t / 10 % 60
-    if BC &lt; 10:
-        BC = '0'+str(BC)
-    else:
-        BC = str(BC)
-    A = str(t / 10 / 60)
-    return A + &quot;:&quot; + BC + &quot;.&quot; + D
-</code></pre>
-<p>整体完整代码如下：</p>
-<pre><code># template for &quot;Stopwatch: The Game&quot;
-
-import simplegui
-
-# define global variables
-tick = 0
-num_stop = 0
-num_succ_stop = 0
-is_running = False
-
-# define helper function format that converts time
-# in tenths of seconds into formatted string A:BC.D
-def format(t):
-    D = str(t % 10)
-    BC = t / 10 % 60
-    if BC &lt; 10:
-        BC = '0'+str(BC)
-    else:
-        BC = str(BC)
-    A = str(t / 10 / 60)
-    return A + &quot;:&quot; + BC + &quot;.&quot; + D
-
-# define event handlers for buttons; &quot;Start&quot;, &quot;Stop&quot;, &quot;Reset&quot;
-def start_handler():
-    global is_running
-    if is_running is False:
-        timer.start()
-        is_running = True
-
-def stop_handler():
-    global num_stop, num_succ_stop, is_running
-    if is_running is True:
-        timer.stop()
-        num_stop += 1
-        if tick % 10 == 0 and tick != 0:
-            num_succ_stop += 1
-        is_running = False
-
-def reset_handler():
-    global tick, num_stop, num_succ_stop, is_running
-    timer.stop()
-    num_succ_stop, num_stop, tick = 0, 0, 0
-    is_running = False
-
-
-# define event handler for timer with 0.1 sec interval
-def timer_handler():
-    global tick
-    tick += 1
-
-# define draw handler
-def draw_handler(canvas):
-    canvas.draw_text(format(tick), [100, 100], 30, &quot;Green&quot;)
-    canvas.draw_text(str(num_succ_stop) + &quot;/&quot; + str(num_stop), [250, 20], 20, &quot;Green&quot;)
-
-# create frame
-frame = simplegui.create_frame('Stopwatch: The Game', 300, 200)
-
-# register event handlers
-start_btn = frame.add_button('Start', start_handler, 200)
-stop_btn = frame.add_button('Stop', stop_handler, 200)
-reset_btn = frame.add_button('Reset', reset_handler, 200)
-frame.set_draw_handler(draw_handler)
-timer = simplegui.create_timer(100, timer_handler)
-
-# start frame
-frame.start()
-
-# Please remember to review the grading rubric
-</code></pre>
-<p>其中is_running用来记录当前timer是否在运行，防止重复点击stop出现计数错误的问题。</p>
-<p>整体逻辑也比较简单，课程挺有意思，声音听着超棒，锻炼听力挺不错。每个老师相当的负责和认真。感叹自己本科那时初学C的时候，授课的差距是那么大，也感慨现在有这么多好的资源可以利用。学无止境。</p>
 ]]></content>
     </entry>
 </feed>
