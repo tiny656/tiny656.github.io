@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://tiny656.github.io</id>
     <title>tiny656</title>
-    <updated>2019-09-14T02:29:19.732Z</updated>
+    <updated>2019-09-14T02:51:40.515Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://tiny656.github.io"/>
     <link rel="self" href="https://tiny656.github.io/atom.xml"/>
@@ -10,6 +10,18 @@
     <logo>https://tiny656.github.io/images/avatar.png</logo>
     <icon>https://tiny656.github.io/favicon.ico</icon>
     <rights>All rights reserved 2019, tiny656</rights>
+    <entry>
+        <title type="html"><![CDATA[修改Cmd/Powershell的默认Code Page]]></title>
+        <id>https://tiny656.github.io/post/xiu-gai-cmdpowershell-de-mo-ren-code-page</id>
+        <link href="https://tiny656.github.io/post/xiu-gai-cmdpowershell-de-mo-ren-code-page">
+        </link>
+        <updated>2019-09-14T02:42:14.000Z</updated>
+        <content type="html"><![CDATA[<p>在Win10英文系统里，Cmd/Powershell默认的Code Page是437，可以通过<code>chcp</code>命令查看，因为字符不支持，输入中文以后会出现一大<code>????</code>和乱码。</p>
+<p>更改Current Code Page为65001(UTF-8)可以更好的支持中文，具体修改方法如下：<br>
+Language Setttings → Administrative language settings → Administrative Tab → Change system locale...<br>
+把<strong>Beta: Use Unicode UTF-8 for worldwide language support</strong>打上勾</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Github Actions自动更新README.md]]></title>
         <id>https://tiny656.github.io/post/github-actions-zi-dong-geng-xin-readmemd</id>
@@ -1705,284 +1717,6 @@ new_game()
 frame.start()
 
 # Always remember to review the grading rubric
-</code></pre>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Mini projects #4 ---- Pong]]></title>
-        <id>https://tiny656.github.io/post/mini-projects-4-pong</id>
-        <link href="https://tiny656.github.io/post/mini-projects-4-pong">
-        </link>
-        <updated>2014-10-17T15:28:27.000Z</updated>
-        <summary type="html"><![CDATA[<p>课程全名：An Introduction to Interactive Programming in Python，来自 Rice University</p>
-<p>授课教授：Joe Warren, Scott Rixner, John Greiner, Stephen Wong</p>
-<p>工具：http://www.codeskulptor.org/  , 主要是simplegui 模块</p>
-<p>第四次作业，完成一个弹球的游戏，游戏的界面如下，规则也很简单，球不断在两边的paddle之间撞击后速度会不断加快，直到有一名玩家无法将球回击，则另一名玩家得分。</p>
-<p><img src="https://tiny656.github.io/post-images/1564241868332.png" alt="Pong 1"></p>
-]]></summary>
-        <content type="html"><![CDATA[<p>课程全名：An Introduction to Interactive Programming in Python，来自 Rice University</p>
-<p>授课教授：Joe Warren, Scott Rixner, John Greiner, Stephen Wong</p>
-<p>工具：http://www.codeskulptor.org/  , 主要是simplegui 模块</p>
-<p>第四次作业，完成一个弹球的游戏，游戏的界面如下，规则也很简单，球不断在两边的paddle之间撞击后速度会不断加快，直到有一名玩家无法将球回击，则另一名玩家得分。</p>
-<p><img src="https://tiny656.github.io/post-images/1564241868332.png" alt="Pong 1"></p>
-<!--more-->
-<p>之前得了解一下<strong>控制物体移动的方式</strong>。</p>
-<p>假设物体与点p相对应，<strong>第一种方式是直接通过控制点p的坐标来实现移动</strong>。</p>
-<p>在draw_handler中不用进行更新，只用绘制他的position就可以</p>
-<p>坐标的变化放在key_handler中进行修改，比如</p>
-<pre><code>key_handler:
-    Left Arrow –&gt; p[0] –= c
-    Right Arrow –&gt; p[0] += c
-    Up Arrow –&gt; p[1] –= c
-    Down Arrow –&gt; p[1] += c
-</code></pre>
-<p>代码如下：</p>
-<pre><code>import simplegui
-
-WIDTH = 500
-HEIGHT = 300
-p = [WIDTH/2, HEIGHT/2]
-
-def draw(canvas):
-    canvas.draw_circle(p, 30, 1, &quot;White&quot;, &quot;White&quot;)
-
-def key_down(key):
-    c = 4
-    if key == simplegui.KEY_MAP['up']:
-        p[1] -= c
-    elif key == simplegui.KEY_MAP['down']:
-        p[1] +=c
-    elif key == simplegui.KEY_MAP['left']:
-        p[0] -= c
-    elif key == simplegui.KEY_MAP['right']:
-        p[0] += c
-
-# Create a frame and assign callbacks to event handlers
-frame = simplegui.create_frame(&quot;Position Control&quot;, WIDTH, HEIGHT)
-frame.set_draw_handler(draw)
-frame.set_keydown_handler(key_down)
-
-# Start the frame animation
-frame.start()
-</code></pre>
-<p><strong>第二种方式通过控制点p的速率(velocity)变化来实现移动</strong></p>
-<p>draw_handler中进行坐标的更新和绘制</p>
-<p>在key_handler中进行速率的调整</p>
-<pre><code>draw_handler:
-    p[0] += v[0]
-    p[1] += v[1]
-
-key_handler:
-    Left Arrow –&gt; v[0] –= c
-    Right Arrow –&gt; v[0] += c
-    Up Arrow –&gt; v[1] –= c
-    Down Arrow –&gt; v[1] += c
-</code></pre>
-<p>代码如下：</p>
-<pre><code>import simplegui
-
-WIDTH = 500
-HEIGHT = 300
-v = [0, 0]
-p = [WIDTH/2, HEIGHT/2]
-
-def draw(canvas):
-    p[0] += v[0]
-    p[1] += v[1]
-    canvas.draw_circle(p, 30, 1, &quot;White&quot;, &quot;White&quot;)
-
-def key_down(key):
-    c = 1
-    if key == simplegui.KEY_MAP['up']:
-        v[1] -= c
-    elif key == simplegui.KEY_MAP['down']:
-        v[1] +=c
-    elif key == simplegui.KEY_MAP['left']:
-        v[0] -= c
-    elif key == simplegui.KEY_MAP['right']:
-        v[0] += c
-
-# Create a frame and assign callbacks to event handlers
-frame = simplegui.create_frame(&quot;Position Control&quot;, WIDTH, HEIGHT)
-frame.set_draw_handler(draw)
-frame.set_keydown_handler(key_down)
-
-# Start the frame animation
-frame.start()
-</code></pre>
-<p>这里再提一下碰撞的处理，上下碰撞，只用把v[1]的方向取反，左右碰撞，把v[0]的方向取反。</p>
-<p>主要就是边界位置的判断，对于一个假定中心为p，半径为r的求来说：</p>
-<pre><code>碰撞如下：
-Left Wall:
-p[0] &lt;= r
-
-Right Wall:
-p[0] &gt;= (width-1)-r
-
-Top Wall:
-p[1] &lt;= r
-
-Bottom Wall:
-p[1] &gt;= (height-1)-r
-</code></pre>
-<p>下面两张图来自老师的课件，关于定义</p>
-<p><img src="https://tiny656.github.io/post-images/1564241889077.png" alt="Pong 2"></p>
-<p><img src="https://tiny656.github.io/post-images/1564241895385.png" alt="Pong 3"></p>
-<p>回归到这个游戏，基本要用到的知识也就这么多，移动paddle处理方式稍微特殊一点，keydown_handler进行velocity的正方向增加，那么keyup_handler进行velocity的负方向增加，这样就可以实现，按下按键后paddle持续移动，释放按键后paddle停止移动。</p>
-<p>对于小球，初始随机给一个velocity，只要不是垂直或者水平，然后处理碰撞，在进行paddle碰撞后，要给予小球10%velocity上的增量。</p>
-<p>完整的代码如下:</p>
-<pre><code># Implementation of classic arcade game Pong
-
-import simplegui
-import random
-
-# initialize globals - pos and vel encode vertical info for paddles
-WIDTH = 600
-HEIGHT = 400
-BALL_RADIUS = 20
-PAD_WIDTH = 8
-PAD_HEIGHT = 80
-HALF_PAD_WIDTH = PAD_WIDTH / 2
-HALF_PAD_HEIGHT = PAD_HEIGHT / 2
-LEFT = False
-RIGHT = True
-
-# initialize ball_pos and ball_vel for new bal in middle of table
-# if direction is RIGHT, the ball's velocity is upper right, else upper left
-def spawn_ball(direction):
-    global ball_pos, ball_vel # these are vectors stored as lists
-    ball_pos = [WIDTH/2, HEIGHT/2]
-    ball_dir = 1 if direction == RIGHT else -1
-    ball_vel = [ball_dir * random.randrange(2, 4), -random.randrange(1, 3)]
-
-# define event handlers
-def new_game():
-    global paddle1_pos, paddle2_pos, paddle1_vel, paddle2_vel  # these are numbers
-    global score1, score2  # these are ints
-    spawn_ball(random.choice([LEFT, RIGHT]))
-    paddle1_pos, paddle2_pos = HEIGHT / 2, HEIGHT / 2
-    paddle1_vel, paddle2_vel = 0, 0
-    score1, score2 = 0, 0
-
-
-def draw(canvas):
-    global score1, score2, paddle1_pos, paddle2_pos, ball_pos, ball_vel
-
-    # draw mid line and gutters
-    canvas.draw_line([WIDTH / 2, 0],[WIDTH / 2, HEIGHT], 1, &quot;White&quot;)
-    canvas.draw_line([PAD_WIDTH, 0],[PAD_WIDTH, HEIGHT], 1, &quot;White&quot;)
-    canvas.draw_line([WIDTH - PAD_WIDTH, 0],[WIDTH - PAD_WIDTH, HEIGHT], 1, &quot;White&quot;)
-
-    # update ball
-    new_ball_posX = ball_pos[0] + ball_vel[0]
-    new_ball_posY = ball_pos[1] + ball_vel[1]
-    if new_ball_posY &lt;= BALL_RADIUS:
-        ball_pos[1] = BALL_RADIUS
-        ball_vel[1] *= -1
-    elif new_ball_posY &gt;= HEIGHT - 1 - BALL_RADIUS:
-        ball_pos[1] = HEIGHT - 1 - BALL_RADIUS
-        ball_vel[1] *= -1
-    else:
-        ball_pos[1] = new_ball_posY
-
-    # hit the left gutter
-    if new_ball_posX &lt;= PAD_WIDTH + BALL_RADIUS:
-        ball_pos[0] = PAD_WIDTH + BALL_RADIUS
-        if (ball_pos[1] &gt;= paddle1_pos - HALF_PAD_HEIGHT
-            and ball_pos[1] &lt;= paddle1_pos + HALF_PAD_HEIGHT):
-            ball_vel[0] = -(ball_vel[0] + 0.1 * ball_vel[0])
-            ball_vel[1] = ball_vel[1] + 0.1 * ball_vel[1]
-        else:
-            score2 = score2 + 1
-            spawn_ball(RIGHT)
-
-    # hit the right gutter
-    elif new_ball_posX &gt;= WIDTH - PAD_WIDTH - BALL_RADIUS:
-        ball_pos[0] = WIDTH - PAD_WIDTH - BALL_RADIUS
-        if (ball_pos[1] &gt;= paddle2_pos - HALF_PAD_HEIGHT
-            and ball_pos[1] &lt;= paddle2_pos + HALF_PAD_HEIGHT):
-            ball_vel[0] = -(ball_vel[0] + 0.1 * ball_vel[0])
-            ball_vel[1] = ball_vel[1] + 0.1 * ball_vel[1]
-        else:
-            score1 = score1 + 1
-            spawn_ball(LEFT)
-    else:
-        ball_pos[0] = new_ball_posX
-
-    # draw ball
-    canvas.draw_circle(ball_pos, BALL_RADIUS, 1, &quot;White&quot;, &quot;White&quot;)
-
-    # update paddle's vertical position, keep paddle on the screen
-    new_paddle1_pos = paddle1_pos + paddle1_vel
-    if new_paddle1_pos &lt;= HALF_PAD_HEIGHT:
-        paddle1_pos = HALF_PAD_HEIGHT
-    elif new_paddle1_pos &gt;= HEIGHT-HALF_PAD_HEIGHT:
-        paddle1_pos = HEIGHT-HALF_PAD_HEIGHT
-    else:
-        paddle1_pos = new_paddle1_pos
-
-    new_paddle2_pos = paddle2_pos + paddle2_vel
-    if new_paddle2_pos &lt;= HALF_PAD_HEIGHT:
-        paddle2_pos = HALF_PAD_HEIGHT
-    elif new_paddle2_pos &gt;= HEIGHT-HALF_PAD_HEIGHT:
-        paddle2_pos = HEIGHT-HALF_PAD_HEIGHT
-    else:
-        paddle2_pos = new_paddle2_pos
-
-    # draw paddles
-    canvas.draw_polygon([[0, paddle1_pos-HALF_PAD_HEIGHT],
-            [PAD_WIDTH-1, paddle1_pos-HALF_PAD_HEIGHT],
-            [PAD_WIDTH-1, paddle1_pos+HALF_PAD_HEIGHT],
-            [0, paddle1_pos+HALF_PAD_HEIGHT]], 1, &quot;White&quot;, &quot;White&quot;)
-    canvas.draw_polygon([[WIDTH-PAD_WIDTH+1, paddle2_pos-HALF_PAD_HEIGHT],
-            [WIDTH, paddle2_pos-HALF_PAD_HEIGHT],
-            [WIDTH, paddle2_pos+HALF_PAD_HEIGHT],
-            [WIDTH-PAD_WIDTH+1, paddle2_pos+HALF_PAD_HEIGHT]], 1, &quot;White&quot;, &quot;White&quot;)
-    # draw scores
-    canvas.draw_text(str(score1), (WIDTH/4, HEIGHT/5), 50, &quot;Red&quot;)
-    canvas.draw_text(str(score2), (WIDTH/4*3, HEIGHT/5), 50, &quot;Red&quot;)
-    canvas.draw_text(&quot;Author: Tiny656&quot;, (WIDTH/5*3, HEIGHT/20*18), 18, &quot;Green&quot;)
-    canvas.draw_text(&quot;Mail: 236798656@qq.com&quot;, (WIDTH/5*3, HEIGHT/20*19), 18, &quot;Green&quot;)
-
-
-def keydown(key):
-    global paddle1_vel, paddle2_vel
-    acc = 3
-    if key == simplegui.KEY_MAP['w']:
-        paddle1_vel -= acc
-    elif key == simplegui.KEY_MAP['s']:
-        paddle1_vel += acc
-    if key == simplegui.KEY_MAP['up']:
-        paddle2_vel -= acc
-    elif key == simplegui.KEY_MAP['down']:
-        paddle2_vel += acc
-
-def keyup(key):
-    global paddle1_vel, paddle2_vel
-    acc = 3
-    if key == simplegui.KEY_MAP['w']:
-        paddle1_vel += acc
-    elif key == simplegui.KEY_MAP['s']:
-        paddle1_vel -= acc
-    if key == simplegui.KEY_MAP['up']:
-        paddle2_vel += acc
-    elif key == simplegui.KEY_MAP['down']:
-        paddle2_vel -= acc
-
-def reset():
-    new_game()
-
-
-# create frame
-frame = simplegui.create_frame(&quot;Pong&quot;, WIDTH, HEIGHT)
-frame.set_draw_handler(draw)
-frame.set_keydown_handler(keydown)
-frame.set_keyup_handler(keyup)
-frame.add_button(&quot;Reset&quot;, reset, 200)
-
-# start frame
-new_game()
-frame.start()
 </code></pre>
 ]]></content>
     </entry>

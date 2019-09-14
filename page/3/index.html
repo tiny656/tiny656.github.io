@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>Github Actions自动更新README.md | tiny656</title>
+<title>tiny656</title>
 <meta name="description" content="those good things melt the years away.">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -14,12 +14,6 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://tiny656.github.io/styles/main.css">
 
-
-  
-
-  
-    <link rel="stylesheet" href="https://unpkg.com/disqusjs@1.1/dist/disqusjs.css" />
-  
 
 <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
 
@@ -38,7 +32,6 @@
 
   </head>
   <body>
-  
     <nav class="navbar border fixed split-nav">
   <div class="nav-brand">
     <h3><a href="https://tiny656.github.io">tiny656</a></h3>
@@ -92,110 +85,51 @@
   </div>
 </nav>
 
+
     <div id="top" class="row site">
       <div class="sm-12 md-8 col">
         <div class="paper">
-          <article class="article">
-            <h1>Github Actions自动更新README.md</h1>
-            <p class="article-meta">
-              2019-09-13
-              
-                <a href="https://tiny656.github.io/tag/CUgSGThf_" class="badge secondary">
-                  Github
-                </a>
-              
-                <a href="https://tiny656.github.io/tag/U5j7_8Q751" class="badge success">
-                  Actions
-                </a>
-              
-            </p>
-            
-            <div class="post-content">
-              <p><a href="https://github.com/features/actions">Actions</a>是Github新的CI/CD服务，Actions最特别的地方是可以互相共享、引用，这样可以组合玩出很多种不一样的idea，非常强大和好用。</p>
-<!-- more -->
-<p>关于Actions的介绍和使用，可以参考<a href="https://help.github.com/en/articles/configuring-a-workflow">Configuring-a-workflow</a>和<a href="http://www.ruanyifeng.com/blog/2019/09/getting-started-with-github-actions.html">GitHub Actions 入门教程-阮一峰</a></p>
-<p>托管在Github上的项目<a href="https://github.com/tiny656/PAT">PAT</a>，原先使用<a href="https://travis-ci.org/">Travis CI</a>实现代码的<code>git push</code>后，自动通过执行<code>python</code>脚本生成<code>README.md</code>更新到Repo中的持续构建功能，今天把它迁移到Actions上来。</p>
-<p>先附上<code>GenerateREADME.yml</code>的代码</p>
-<pre><code class="language-yaml">
-name: GenerateREADME
-on: 
-  push:
-    branches:
-      - master
+          
+  <article class="article">
+    <h2 class="article-title">
+      <a href="https://tiny656.github.io/post/hello-gridea">Hello Gridea</a>
+    </h2>
+    <p class="article-meta">
+      1991-01-01
       
-jobs:
-  build-and-deploy:
-    runs-on: ubuntu-latest
-    steps:
-    - name: Checkout
-      run: git clone https://github.com/tiny656/PAT.git .
-        
-    - name: Setup python
-      uses: actions/setup-python@v1
-      with:
-        python-version: '3.x'
-        architecture: 'x64'
-        
-    - name: Generate README
-      run: python GenerateREADME.py
+        <a href="https://tiny656.github.io/tag/gridea" class="badge secondary">
+          Gridea
+        </a>
+      
+    </p>
+    <p class="text-lead">
+      <p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
+✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
 
-    - name: Push
-      env:
-        GH_TOKEN: ${{ secrets.GITHUB_ACTIONS_TOKEN }}
-        GH_REF: github.com/tiny656/PAT.git
-      run: |
-        git config user.name &quot;tiny656&quot;   #修改成自己的github用户名
-        git config user.email &quot;tiny656@hotmail.com&quot;   #修改成自己的GitHub邮箱
-        git add README.md
-        git diff-index --quiet HEAD || git commit -m &quot;update README.md by Github Actions&quot; --allow-empty &amp;&amp; git push --force --quiet &quot;https://${GH_TOKEN}@${GH_REF}&quot; master:master
+    </p>
+    <div class="row">
+      <a href="https://tiny656.github.io/post/hello-gridea" class="readmore-link">
+        <button>
+          Read More
+        </button>
+      </a>
+    </div>
+  </article>
 
-</code></pre>
-<ol>
-<li>定义只有<code>push</code>操作发生在<code>master</code>分支才会触发workflow的执行</li>
-<li>只定义了一个<code>build-and-deploy</code> Job 运行在<code>ubuntu-latest</code>的环境下，Job包括三个step
-<ul>
-<li>Checkout master 分支</li>
-<li>Setup Python 和 run <code>GenerateREADME.py</code>生成README.md</li>
-<li>git push README.md到Repo</li>
-</ul>
-</li>
-<li><code>GITHUB_ACTIONS_TOKEN</code>定义在Repo的Settings里</li>
-<li>因为当push <code>README.md</code>到Repo时候也会触发<code>GenerateREADME</code> workflow，这样就变成了无限循环下去
-<ul>
-<li>尝试用Actions支持的paths关键字, <code>- '*', -'!README.md</code>，加上以后整个workflow都不在触发了，<strong>失败</strong></li>
-<li>尝试在执行完<code>GenerateREADME.py</code>后，准备push到Repo前进行检查，如果<code>README.md</code>没有发生变化就不进行commit和push的操作，这样相比还是会多一次workflow的触发，不过解开了无限循环</li>
-</ul>
-</li>
-</ol>
 
-            </div>
-          </article>
-        </div>
-        <div class="paper" data-aos="fade-in">
-          
-            <div class="next-post">
-              <div class="next">
-                下一篇
-              </div>
-              <a href="https://tiny656.github.io/post/guo-xing-ps4-bei-fen-huan-yuan-guo-ji-fu-zhang-hao">
-                <h3 class="post-title">
-                  国行PS4备份还原国际服账号
-                </h3>
-              </a>
-            </div>
-          
         </div>
         
-          
+        <div class="row flex-edges">
+  
+    <a href="https://tiny656.github.io/page/2/" class="paper-btn">
+      上一页
+    </a>
+  
+  
+</div>
 
-          
-            <div class="paper" data-aos="fade-in">
-              <div id="disqus_thread"></div>
-            </div>
-          
-        
       </div>
-
+      
       <div class="sm-12 md-4 col sidebar">
   <div class="paper info-container">
     <img src="https://tiny656.github.io/images/avatar.png?v=1568429485734" class="no-responsive avatar">
@@ -316,7 +250,7 @@ jobs:
     </div>
     <div class="row">
       
-        <a href="https://tiny656.github.io/tag/CUgSGThf_" class="badge secondary">
+        <a href="https://tiny656.github.io/tag/CUgSGThf_" class="badge success">
           Github
         </a>
       
@@ -324,11 +258,11 @@ jobs:
           Actions
         </a>
       
-        <a href="https://tiny656.github.io/tag/Z4WzvwYBy" class="badge success">
+        <a href="https://tiny656.github.io/tag/Z4WzvwYBy" class="badge warning">
           Life
         </a>
       
-        <a href="https://tiny656.github.io/tag/YcQ7F_Qrc" class="badge success">
+        <a href="https://tiny656.github.io/tag/YcQ7F_Qrc" class="badge secondary">
           Algorithm
         </a>
       
@@ -336,15 +270,15 @@ jobs:
           Python
         </a>
       
-        <a href="https://tiny656.github.io/tag/0HiI0D0Zs" class="badge warning">
+        <a href="https://tiny656.github.io/tag/0HiI0D0Zs" class="badge secondary">
           Coursera
         </a>
       
-        <a href="https://tiny656.github.io/tag/qt77konh0" class="badge success">
+        <a href="https://tiny656.github.io/tag/qt77konh0" class="badge secondary">
           Data Structure
         </a>
       
-        <a href="https://tiny656.github.io/tag/gridea" class="badge ">
+        <a href="https://tiny656.github.io/tag/gridea" class="badge warning">
           Gridea
         </a>
       
@@ -355,9 +289,7 @@ jobs:
   </div>
 </div>
 
-
     </div>
-
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
 <script type="application/javascript">
@@ -367,26 +299,6 @@ AOS.init();
 hljs.initHighlightingOnLoad()
 
 </script>
-
-
-
-  
-
-  
-    <script src="https://unpkg.com/disqusjs@1.1/dist/disqus.js"></script>
-    <script>
-
-    var options = {
-      shortname: 'tiny656',
-      apikey: 'KPROXOCtTYtTmQ5bfpCsNOgeDwKNaqYYL8fpjSKmHR9k9rsImDKH6OILEtON2fpw',
-    }
-    if ('https://disqus.skk.moe/disqus/') {
-      options.api = 'https://disqus.skk.moe/disqus/'
-    }
-    var dsqjs = new DisqusJS(options)
-
-    </script>
-  
 
 
 
