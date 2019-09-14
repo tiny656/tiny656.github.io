@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://tiny656.github.io</id>
     <title>tiny656</title>
-    <updated>2019-09-13T13:35:28.756Z</updated>
+    <updated>2019-09-14T02:29:19.732Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://tiny656.github.io"/>
     <link rel="self" href="https://tiny656.github.io/atom.xml"/>
@@ -67,7 +67,7 @@ jobs:
 </ul>
 </li>
 <li><code>GITHUB_ACTIONS_TOKEN</code>定义在Repo的Settings里</li>
-<li>因为当push <code>README.md</code>到Repo时候也会触发<code>GenerateREADME</code>Workflow，这样就变成了无限循环下去
+<li>因为当push <code>README.md</code>到Repo时候也会触发<code>GenerateREADME</code> workflow，这样就变成了无限循环下去
 <ul>
 <li>尝试用Actions支持的paths关键字, <code>- '*', -'!README.md</code>，加上以后整个workflow都不在触发了，<strong>失败</strong></li>
 <li>尝试在执行完<code>GenerateREADME.py</code>后，准备push到Repo前进行检查，如果<code>README.md</code>没有发生变化就不进行commit和push的操作，这样相比还是会多一次workflow的触发，不过解开了无限循环</li>
