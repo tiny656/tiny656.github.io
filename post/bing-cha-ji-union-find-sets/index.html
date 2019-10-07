@@ -7,7 +7,7 @@
 <meta name="description" content="those good things melt the years away.">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<link rel="shortcut icon" href="https://tiny656.github.io/favicon.ico?v=1568935505812">
+<link rel="shortcut icon" href="https://tiny656.github.io/favicon.ico?v=1570417554438">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 <link rel="stylesheet" href="https://unpkg.com/papercss@1.6.1/dist/paper.min.css" />
@@ -100,7 +100,7 @@
             <p class="article-meta">
               2014-07-08
               
-                <a href="https://tiny656.github.io/tag/qt77konh0" class="badge warning">
+                <a href="https://tiny656.github.io/tag/qt77konh0" class="badge secondary">
                   Data Structure
                 </a>
               
@@ -209,25 +209,19 @@ int find(int x) {
     unionSet(x+2*n, y);
 }
 </code></pre>
-<p>完整代码：https://gist.github.com/tiny656/edc34d790461afae190e#file-poj_1182-cpp</p>
 <p>BTW，坑爹的这道题是单Case。</p>
 <h4 id="poj-2524-ubiquitous-religions">POJ 2524 Ubiquitous Religions</h4>
 <p>初始每个元素为一个集合，将输入p和q集合合并，最后输出有多少个集合。使用一个component变量维护集合的数量，初始为N个，每当两个不在同一个集合的p和q进行合并时，component的数量就减去1，最后component存储的就是集合数。</p>
-<p>完整代码：https://gist.github.com/tiny656/edc34d790461afae190e#file-poj_2524-cpp</p>
 <h4 id="poj-1611-the-suspects">POJ 1611 The Suspects</h4>
 <p>题意是不断进行集合合并操作，最后输出0所在集合的大小。这里我们就可以使用前面提到的按照集合元素个数的启发式规则来进行合并，最后输出0所在集合最顶端元素的集合元素个数，就是所要求解的答案了。其他的方法我们也可以把所有集合合并完后，对除0以外的所有进行判断是否Find(0) == Find(other)成立，这样来统计0所在集合元素个数。</p>
-<p>完整代码：https://gist.github.com/tiny656/edc34d790461afae190e#file-poj_1611-cpp</p>
 <h4 id="poj-1456-supermarket">POJ 1456 Supermarket</h4>
 <p>题目描述的是对于每个商品有p和d，分别代表商品的价值和它要卖出的截止时间。</p>
 <p>那么我们可以有一个贪心的策略，将商品按照价值从大到小进行排序，如果价值相同按照时间从大到小进行排序，我们要获取的商品价值越大越好，截止时间越久我们选择的空间就越不会与其他时间发生冲突。使用一个d[]标记哪些截止时间被用掉了，如果被用掉，我们就去截止时间之前找未被使用的截止时间，如果没被用掉的，就直接使用。</p>
-<p>完整代码：https://gist.github.com/tiny656/edc34d790461afae190e#file-poj_1456v2-cpp</p>
 <p>那么这题并查集又有什么关系？当我们发现某个截止时间被用掉了，我们for循环向前去枚举查找，没有被用掉的截止时间，这里并查集登场了。用并查集去替代for循环去查找，将被用过的当前点i与它的前一个点i-1进行合并，当我们要知道i之前未使用的截止时间时候，我们只要pos = find(i.time)，就得到了它的位置，细节地方注意一下边界。</p>
-<p>完整代码：https://gist.github.com/tiny656/edc34d790461afae190e#file-poj_1456v1-cpp</p>
 <h4 id="poj-1703-find-them-catch-them">POJ 1703 Find them, Catch them</h4>
 <p>和食物链类似的种类并查集，对于某人X，用X表示他所在的帮派，X+n表示他的敌对帮派。</p>
 <p>对于操作 D, x, y，x和y属于不同帮派，那么x所在帮派和y的敌对帮派是同盟，union(x, y+n)，x的敌对帮派与y的帮派是同盟，union(x+n, y)。敌人的敌人是朋友</p>
 <p>对于操作 A, x, y, 判断x 和 y是否是同一帮派，如果find(x) == find(y)，那么就是同一帮派了。如果find(x) == find(y+n)， 那么就是敌对帮派了。其他就是未知。</p>
-<p>完整代码：https://gist.github.com/tiny656/edc34d790461afae190e#file-poj_1703-cpp</p>
 <h4 id="poj-1988-cube-stacking">POJ 1988 Cube Stacking</h4>
 <p>这个题目描述是有N个栈，初始每个栈里面是1-N个方块，定义两个操作，第一个操作是M X Y，将X所在的栈移动到Y所在的栈的上面，另一个操作是C X，当前X下面有多少个方块。</p>
 <p>采用并查集实现，对于M X Y操作， X所在栈放在Y所在栈上面，我们要合并X，Y所在集合，把Y所在的集合指向X所在的集合。但是对于C X操作进行查询的时候，我们如何得到X下面有多少个方块？如果我们记录了当前点并查集最顶根的距离，如果我们又知道了当前这个并查集元素个数，size为多大，那么二者之差减1就可以得到C X操作的结果了。</p>
@@ -252,21 +246,16 @@ int find(int x) {
 }
 </code></pre>
 <p>附图：</p>
-<p><img src="/image/union_find_sets.jpg" alt="Unioin Find Sets"></p>
-<p>完整代码：https://gist.github.com/tiny656/edc34d790461afae190e#file-poj_1988-cpp</p>
+<figure data-type="image" tabindex="1"><img src="/image/union_find_sets.jpg" alt="Unioin Find Sets"></figure>
 <h4 id="poj-1038-is-it-a-tree">POJ 1038 Is It A Tree?</h4>
 <p>题意很简答，给很多的边，最后判断能否构成一棵树，对于题目来说，树是不存在环，并且仅能只有一棵。</p>
 <p>简单的并查集操作在加边时候判断，两个点是否已经在一个集合了。然后判断一下是否所有点都在一个集合，不能构成森林。</p>
-<p>完整代码：https://gist.github.com/tiny656/edc34d790461afae190e#file-poj_1038-cpp</p>
 <h4 id="poj-2492-a-bugs-life">POJ 2492 A Bugs Life</h4>
 <p>这一题的解题思路与POJ1703类似，每只虫子分为公母两类，如果某一类夹杂了公母，那么就是有问题的。</p>
-<p>完整代码：https://gist.github.com/tiny656/edc34d790461afae190e#file-poj_2492-cpp</p>
 <h4 id="poj-2236-wireless-network">POJ 2236 Wireless Network</h4>
 <p>裸的并查集。需要预先处理一下d^2之内的computer邻接表，然后再做并查集操作时候，将已经open的computer也一起加进来。</p>
-<p>完整代码：https://gist.github.com/tiny656/edc34d790461afae190e#file-poj_2236-cpp</p>
 <h4 id="poj-1962-coporative-network">POJ 1962 Coporative Network</h4>
 <p>这一题的思路做法和POJ1988一样。这里就不赘述了，</p>
-<p>完整代码：https://gist.github.com/tiny656/edc34d790461afae190e#file-poj_1962-cpp</p>
 
             </div>
           </article>
@@ -298,7 +287,7 @@ int find(int x) {
 
       <div class="sm-12 md-4 col sidebar">
   <div class="paper info-container">
-    <img src="https://tiny656.github.io/images/avatar.png?v=1568935505812" class="no-responsive avatar">
+    <img src="https://tiny656.github.io/images/avatar.png?v=1570417554438" class="no-responsive avatar">
     <div class="text-muted">those good things melt the years away.</div>
     <div class="social-container">
       
@@ -416,7 +405,7 @@ int find(int x) {
     </div>
     <div class="row">
       
-        <a href="https://tiny656.github.io/tag/CUgSGThf_" class="badge secondary">
+        <a href="https://tiny656.github.io/tag/CUgSGThf_" class="badge success">
           Github
         </a>
       
@@ -428,11 +417,11 @@ int find(int x) {
           Life
         </a>
       
-        <a href="https://tiny656.github.io/tag/YcQ7F_Qrc" class="badge success">
+        <a href="https://tiny656.github.io/tag/YcQ7F_Qrc" class="badge secondary">
           Algorithm
         </a>
       
-        <a href="https://tiny656.github.io/tag/fAC4IfIQ3" class="badge ">
+        <a href="https://tiny656.github.io/tag/fAC4IfIQ3" class="badge secondary">
           Python
         </a>
       
@@ -440,11 +429,11 @@ int find(int x) {
           Coursera
         </a>
       
-        <a href="https://tiny656.github.io/tag/qt77konh0" class="badge ">
+        <a href="https://tiny656.github.io/tag/qt77konh0" class="badge secondary">
           Data Structure
         </a>
       
-        <a href="https://tiny656.github.io/tag/gridea" class="badge warning">
+        <a href="https://tiny656.github.io/tag/gridea" class="badge success">
           Gridea
         </a>
       

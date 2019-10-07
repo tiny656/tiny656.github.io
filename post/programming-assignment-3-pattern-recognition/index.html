@@ -7,7 +7,7 @@
 <meta name="description" content="those good things melt the years away.">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<link rel="shortcut icon" href="https://tiny656.github.io/favicon.ico?v=1568935505812">
+<link rel="shortcut icon" href="https://tiny656.github.io/favicon.ico?v=1570417554438">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 <link rel="stylesheet" href="https://unpkg.com/papercss@1.6.1/dist/paper.min.css" />
@@ -100,15 +100,15 @@
             <p class="article-meta">
               2014-07-04
               
-                <a href="https://tiny656.github.io/tag/qt77konh0" class="badge ">
+                <a href="https://tiny656.github.io/tag/qt77konh0" class="badge success">
                   Data Structure
                 </a>
               
-                <a href="https://tiny656.github.io/tag/0HiI0D0Zs" class="badge secondary">
+                <a href="https://tiny656.github.io/tag/0HiI0D0Zs" class="badge warning">
                   Coursera
                 </a>
               
-                <a href="https://tiny656.github.io/tag/YcQ7F_Qrc" class="badge success">
+                <a href="https://tiny656.github.io/tag/YcQ7F_Qrc" class="badge secondary">
                   Algorithm
                 </a>
               
@@ -119,7 +119,7 @@
 <p>计算机视觉重要的两个部分：特征检测(Feature Dectection)和模式识别(Pattern Recognition)。特征检测提取出图片的重要特征，模式识别发掘出这些特征中的模式。这里探究的点共线的问题在现实生活中也有很多应用，比如统计数据分析。</p>
 <!--more-->
 <p><strong>Problem.</strong> 从二维平面上的N个互不相同的点中，绘制出每个(最多)连接的4个或4个以上点集合的线段。</p>
-<p><img src="https://tiny656.github.io/post-images/1564240288773.png" alt="Pattern Recognition_1"></p>
+<figure data-type="image" tabindex="1"><img src="https://tiny656.github.io/post-images/1564240288773.png" alt="Pattern Recognition_1"></figure>
 <p><strong>Point data type.</strong> 给定的Point类型的API</p>
 <pre><code>public class Point implements Comparable&lt;Point&gt; {
        public final Comparator&lt;Point&gt; SLOPE_ORDER;        // compare points by slope to this point
@@ -168,7 +168,7 @@ for (int ip = 0; ip &lt; N; ip++) {
 这样算法只需要枚举所有的origin点(<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>p</mi></mrow><annotation encoding="application/x-tex">p</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord mathdefault">p</span></span></span></span>点)，然后把剩余点按照origin点的斜率排序，然后去在排序后的点中寻找是否有共线，复杂度为<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>N</mi><mo>(</mo><mi mathvariant="normal">枚</mi><mi mathvariant="normal">举</mi><mo>)</mo><mo>+</mo><mi>N</mi><mi>l</mi><mi>o</mi><mi>g</mi><mi>N</mi><mo>(</mo><mi mathvariant="normal">排</mi><mi mathvariant="normal">序</mi><mo>)</mo><mo>+</mo><mi>N</mi><mo>(</mo><mi mathvariant="normal">遍</mi><mi mathvariant="normal">历</mi><mi mathvariant="normal">查</mi><mi mathvariant="normal">找</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">N(枚举)+NlogN(排序)+N(遍历查找)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.10903em;">N</span><span class="mopen">(</span><span class="mord cjk_fallback">枚</span><span class="mord cjk_fallback">举</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.10903em;">N</span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span><span class="mord mathdefault">o</span><span class="mord mathdefault" style="margin-right:0.03588em;">g</span><span class="mord mathdefault" style="margin-right:0.10903em;">N</span><span class="mopen">(</span><span class="mord cjk_fallback">排</span><span class="mord cjk_fallback">序</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.10903em;">N</span><span class="mopen">(</span><span class="mord cjk_fallback">遍</span><span class="mord cjk_fallback">历</span><span class="mord cjk_fallback">查</span><span class="mord cjk_fallback">找</span><span class="mclose">)</span></span></span></span>，要求使用的空间比例为<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>N</mi></mrow><annotation encoding="application/x-tex">N</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.10903em;">N</span></span></span></span>。</p>
 <p>注意统计时候不要出现共线的子线段和同一共线线段输出多次，这里使用compareTo()比较点的位置关系来避免。</p>
 <p><strong>Sample data files</strong> 里面有很多输入的例子可以拿来做测试。</p>
-<p><img src="https://tiny656.github.io/post-images/1564240325848.png" alt="Pattern Recognition_2"></p>
+<figure data-type="image" tabindex="2"><img src="https://tiny656.github.io/post-images/1564240325848.png" alt="Pattern Recognition_2"></figure>
 <p>总的来说这三次的Assignment都不是特别难，但是做的时候一定要认真认真认真啊，解决问题的第一步就是要认真阅读题目说明和checklist，弄明白未知是什么？条件是什么？已知是什么？思考怎么来实现？是否有可以使用的例子？每次的不认真造成怒交n次才能换回个100分，真是惨不忍睹。记下来，鞭策自己，不断总结提高。</p>
 
             </div>
@@ -201,7 +201,7 @@ for (int ip = 0; ip &lt; N; ip++) {
 
       <div class="sm-12 md-4 col sidebar">
   <div class="paper info-container">
-    <img src="https://tiny656.github.io/images/avatar.png?v=1568935505812" class="no-responsive avatar">
+    <img src="https://tiny656.github.io/images/avatar.png?v=1570417554438" class="no-responsive avatar">
     <div class="text-muted">those good things melt the years away.</div>
     <div class="social-container">
       
@@ -319,7 +319,7 @@ for (int ip = 0; ip &lt; N; ip++) {
     </div>
     <div class="row">
       
-        <a href="https://tiny656.github.io/tag/CUgSGThf_" class="badge secondary">
+        <a href="https://tiny656.github.io/tag/CUgSGThf_" class="badge warning">
           Github
         </a>
       
@@ -331,7 +331,7 @@ for (int ip = 0; ip &lt; N; ip++) {
           Life
         </a>
       
-        <a href="https://tiny656.github.io/tag/YcQ7F_Qrc" class="badge warning">
+        <a href="https://tiny656.github.io/tag/YcQ7F_Qrc" class="badge ">
           Algorithm
         </a>
       
@@ -339,15 +339,15 @@ for (int ip = 0; ip &lt; N; ip++) {
           Python
         </a>
       
-        <a href="https://tiny656.github.io/tag/0HiI0D0Zs" class="badge secondary">
+        <a href="https://tiny656.github.io/tag/0HiI0D0Zs" class="badge warning">
           Coursera
         </a>
       
-        <a href="https://tiny656.github.io/tag/qt77konh0" class="badge secondary">
+        <a href="https://tiny656.github.io/tag/qt77konh0" class="badge warning">
           Data Structure
         </a>
       
-        <a href="https://tiny656.github.io/tag/gridea" class="badge secondary">
+        <a href="https://tiny656.github.io/tag/gridea" class="badge success">
           Gridea
         </a>
       

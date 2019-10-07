@@ -7,7 +7,7 @@
 <meta name="description" content="those good things melt the years away.">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<link rel="shortcut icon" href="https://tiny656.github.io/favicon.ico?v=1568935505812">
+<link rel="shortcut icon" href="https://tiny656.github.io/favicon.ico?v=1570417554438">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 <link rel="stylesheet" href="https://unpkg.com/papercss@1.6.1/dist/paper.min.css" />
@@ -100,15 +100,15 @@
             <p class="article-meta">
               2014-07-05
               
-                <a href="https://tiny656.github.io/tag/qt77konh0" class="badge secondary">
+                <a href="https://tiny656.github.io/tag/qt77konh0" class="badge success">
                   Data Structure
                 </a>
               
-                <a href="https://tiny656.github.io/tag/0HiI0D0Zs" class="badge success">
+                <a href="https://tiny656.github.io/tag/0HiI0D0Zs" class="badge ">
                   Coursera
                 </a>
               
-                <a href="https://tiny656.github.io/tag/YcQ7F_Qrc" class="badge warning">
+                <a href="https://tiny656.github.io/tag/YcQ7F_Qrc" class="badge success">
                   Algorithm
                 </a>
               
@@ -121,11 +121,11 @@
 <p><strong>Best-first search.</strong> 使用A*算法来解决，我们定义一个Seach Node，它是当前搜索局面的一种状态，记录了从初始到达当前状态的移动次数和上一个状态。初始化时候，当前状态移动次数为0，上一个状态为null，将其放入优先级队列，通过不断的从优先级队列中取出Seach Node去扩展下一级的状态，直到找到目标状态。对于优先级队列中优先级的定义我们可以采用：Hamming priority function 和 Manhattan priority function，第一个表示有多少个块不在目标位置，第二个表示每一个块到他所在目标位置曼哈顿距离之和。</p>
 <p>对于解决8数码来说，为了寻求最少步数，那么当前状态移动步数优先级需要考虑，同时选择Hamming或者Manhattan进行启发式的搜索。当目标状态出现时，我们就是使用了最少的步数。怎么证明？</p>
 <p><strong>A critical optimization.</strong> 在搜索的过程中会遇到重复出现的状态，所以我们在进行下一个状态搜索的时候，判断不要将它相邻已经出现的状态加入到优先级队列中。</p>
-<p><img src="https://tiny656.github.io/post-images/1564240681675.jpg" alt="8 Puzzle_2"></p>
+<figure data-type="image" tabindex="1"><img src="https://tiny656.github.io/post-images/1564240681675.jpg" alt="8 Puzzle_2"></figure>
 <p><strong>Game Tree.</strong> 搜索是一个博弈树的形式展开，每一个节点对应一个状态，树根是初始状态，在每一步中，A*算法删除优先级对联中priority最小的那个节点，然后进行处理</p>
-<p><img src="https://tiny656.github.io/post-images/1564240705011.jpg" alt="8 Puzzle_3"></p>
+<figure data-type="image" tabindex="2"><img src="https://tiny656.github.io/post-images/1564240705011.jpg" alt="8 Puzzle_3"></figure>
 <p>**Detecting infeasible puzzles. ** 有些初始状态是无法通过移动来得到目标状态的，比如：</p>
-<p><img src="https://tiny656.github.io/post-images/1564240722658.jpg" alt="8 Puzzle_4"></p>
+<figure data-type="image" tabindex="3"><img src="https://tiny656.github.io/post-images/1564240722658.jpg" alt="8 Puzzle_4"></figure>
 <p>但是我们通过交换任意行不为空白的相邻的两个，如果按照这个初始状态来进行搜索，我们就可以得到目标状态。对于可行性的判断，可以根据初始状态和目标状态逆序数的奇偶性来进行判断，在进行移动后，应该奇偶性保持一致。但在这次Assignment中，不要求这么做，而是通过加入两个初始节点，一个是原有的，一个是进行相邻交换一次的，同时进行A*的搜索，如果原有的找到了目标解，那么就是可行，否则另一个找到了可行解，原有的就是不可行状态。</p>
 <p>同一个初始状态到目标状态的最小移动次数是存在多解。其他还有IDA*,双向BFS等解法。</p>
 <p>一些优化的地方，使用char[][] 比int[][]的空间更小。在进行曼哈顿距离求解的时候，我们可以用空间换时间，预存每个数字的曼哈顿距离，然后直接返回。</p>
@@ -449,7 +449,7 @@
 
       <div class="sm-12 md-4 col sidebar">
   <div class="paper info-container">
-    <img src="https://tiny656.github.io/images/avatar.png?v=1568935505812" class="no-responsive avatar">
+    <img src="https://tiny656.github.io/images/avatar.png?v=1570417554438" class="no-responsive avatar">
     <div class="text-muted">those good things melt the years away.</div>
     <div class="social-container">
       
@@ -567,23 +567,23 @@
     </div>
     <div class="row">
       
-        <a href="https://tiny656.github.io/tag/CUgSGThf_" class="badge secondary">
+        <a href="https://tiny656.github.io/tag/CUgSGThf_" class="badge ">
           Github
         </a>
       
-        <a href="https://tiny656.github.io/tag/U5j7_8Q751" class="badge secondary">
+        <a href="https://tiny656.github.io/tag/U5j7_8Q751" class="badge success">
           Actions
         </a>
       
-        <a href="https://tiny656.github.io/tag/Z4WzvwYBy" class="badge success">
+        <a href="https://tiny656.github.io/tag/Z4WzvwYBy" class="badge secondary">
           Life
         </a>
       
-        <a href="https://tiny656.github.io/tag/YcQ7F_Qrc" class="badge secondary">
+        <a href="https://tiny656.github.io/tag/YcQ7F_Qrc" class="badge warning">
           Algorithm
         </a>
       
-        <a href="https://tiny656.github.io/tag/fAC4IfIQ3" class="badge warning">
+        <a href="https://tiny656.github.io/tag/fAC4IfIQ3" class="badge ">
           Python
         </a>
       
@@ -591,11 +591,11 @@
           Coursera
         </a>
       
-        <a href="https://tiny656.github.io/tag/qt77konh0" class="badge warning">
+        <a href="https://tiny656.github.io/tag/qt77konh0" class="badge secondary">
           Data Structure
         </a>
       
-        <a href="https://tiny656.github.io/tag/gridea" class="badge ">
+        <a href="https://tiny656.github.io/tag/gridea" class="badge secondary">
           Gridea
         </a>
       

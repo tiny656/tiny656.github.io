@@ -7,7 +7,7 @@
 <meta name="description" content="those good things melt the years away.">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<link rel="shortcut icon" href="https://tiny656.github.io/favicon.ico?v=1568935505812">
+<link rel="shortcut icon" href="https://tiny656.github.io/favicon.ico?v=1570417554438">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 <link rel="stylesheet" href="https://unpkg.com/papercss@1.6.1/dist/paper.min.css" />
@@ -100,11 +100,11 @@
             <p class="article-meta">
               2014-11-06
               
-                <a href="https://tiny656.github.io/tag/fAC4IfIQ3" class="badge ">
+                <a href="https://tiny656.github.io/tag/fAC4IfIQ3" class="badge success">
                   Python
                 </a>
               
-                <a href="https://tiny656.github.io/tag/0HiI0D0Zs" class="badge secondary">
+                <a href="https://tiny656.github.io/tag/0HiI0D0Zs" class="badge ">
                   Coursera
                 </a>
               
@@ -117,7 +117,7 @@
 <p>最后两周就要结束了~~~</p>
 <p>第七周：</p>
 <p>先上图，这周完成Spaceship游戏的一部分。</p>
-<p><img src="https://tiny656.github.io/post-images/1564242073263.png" alt="Spaceship 1"></p>
+<figure data-type="image" tabindex="1"><img src="https://tiny656.github.io/post-images/1564242073263.png" alt="Spaceship 1"></figure>
 <!--more-->
 <p>在这图里面有什么？飞船，陨石，子弹，背景图….</p>
 <p>用OO的对象来看，他们都对应一幅图像，那么抽象一个类ImageInfo来操作这些图像信息，它包括图像的center(中心位置)，size(图像大小)，radius(半径)，lifespan(时间周期)，animated(动画)。可能有些属性比较陌生，有些针对到具体的对象才有用。</p>
@@ -160,15 +160,15 @@
 <p><strong>image_radius</strong>：飞船半径？(这周作业没用到，不知道干嘛的)</p>
 <p>飞船的方法：</p>
 <p><strong>draw(canvas):</strong> 绘制飞船，要求绘制根据是否在冲刺状态，绘制图像不同。所给的飞船image是tiled图像，所以绘制时候计算一下偏移就好</p>
-<p><img src="https://tiny656.github.io/post-images/1564242093040.png" alt="Spaceship 2"></p>
+<figure data-type="image" tabindex="2"><img src="https://tiny656.github.io/post-images/1564242093040.png" alt="Spaceship 2"></figure>
 <p>**update()：**更新当前飞船位置以及角度。基本所有涉及到简单数学计算的公式，课上以及相关ppt都给出来，都比较简单，直接拿来用。对于角度的更新和Pong那周一样，用左右按键按下增加旋转角速度，放开减少旋转角速度，每次更新的时候就只用把飞船的角度加上旋转角速度。</p>
-<p><img src="https://tiny656.github.io/post-images/1564242108604.png" alt="Spaceship 3"></p>
+<figure data-type="image" tabindex="3"><img src="https://tiny656.github.io/post-images/1564242108604.png" alt="Spaceship 3"></figure>
 <p>船的位置更新同理，使用位置加上加速度，但是要考虑飞出边界，所以对WIDTH和HEIGHT分别取模。</p>
-<p><img src="https://tiny656.github.io/post-images/1564242126380.png" alt="Spaceship 4"></p>
+<figure data-type="image" tabindex="4"><img src="https://tiny656.github.io/post-images/1564242126380.png" alt="Spaceship 4"></figure>
 <p>这边与Pong不同的是加速度的计算，Pong只有上下方向，但这里飞船可以旋转指向各个方向，所以加速度修改飞船向着它转角的方向，原理还是一样，把转角方向向水平和垂直方向做投影乘以常量，然后加到原有的加速度上。</p>
-<p><img src="https://tiny656.github.io/post-images/1564242141313.png" alt="Spaceship 5"></p>
+<figure data-type="image" tabindex="5"><img src="https://tiny656.github.io/post-images/1564242141313.png" alt="Spaceship 5"></figure>
 <p>最后剩下的一个问题就是，外太空有&lt;阻力&gt;，所以飞船会不断减速直到速度为0，那么不断按照一定的比例缩小飞船的加速度，直到加速度为0，飞船的位置就不更新了。</p>
-<p><img src="https://tiny656.github.io/post-images/1564242157022.png" alt="Spaceship 6"></p>
+<figure data-type="image" tabindex="6"><img src="https://tiny656.github.io/post-images/1564242157022.png" alt="Spaceship 6"></figure>
 <p>update()的代码如下:</p>
 <pre><code>def update(self):
     self.angle += self.angle_vel
@@ -474,7 +474,7 @@ frame.start()
 
       <div class="sm-12 md-4 col sidebar">
   <div class="paper info-container">
-    <img src="https://tiny656.github.io/images/avatar.png?v=1568935505812" class="no-responsive avatar">
+    <img src="https://tiny656.github.io/images/avatar.png?v=1570417554438" class="no-responsive avatar">
     <div class="text-muted">those good things melt the years away.</div>
     <div class="social-container">
       
@@ -596,19 +596,19 @@ frame.start()
           Github
         </a>
       
-        <a href="https://tiny656.github.io/tag/U5j7_8Q751" class="badge warning">
+        <a href="https://tiny656.github.io/tag/U5j7_8Q751" class="badge ">
           Actions
         </a>
       
-        <a href="https://tiny656.github.io/tag/Z4WzvwYBy" class="badge secondary">
+        <a href="https://tiny656.github.io/tag/Z4WzvwYBy" class="badge warning">
           Life
         </a>
       
-        <a href="https://tiny656.github.io/tag/YcQ7F_Qrc" class="badge secondary">
+        <a href="https://tiny656.github.io/tag/YcQ7F_Qrc" class="badge ">
           Algorithm
         </a>
       
-        <a href="https://tiny656.github.io/tag/fAC4IfIQ3" class="badge ">
+        <a href="https://tiny656.github.io/tag/fAC4IfIQ3" class="badge secondary">
           Python
         </a>
       
@@ -616,11 +616,11 @@ frame.start()
           Coursera
         </a>
       
-        <a href="https://tiny656.github.io/tag/qt77konh0" class="badge secondary">
+        <a href="https://tiny656.github.io/tag/qt77konh0" class="badge success">
           Data Structure
         </a>
       
-        <a href="https://tiny656.github.io/tag/gridea" class="badge warning">
+        <a href="https://tiny656.github.io/tag/gridea" class="badge ">
           Gridea
         </a>
       
